@@ -8,7 +8,7 @@ function HeaderBar() {
   return (
     <Header>
       <Logo src={yLogo} alt={"Y logo"} />
-      {/* <NavLinks /> */}
+      <NavLinks />
       <BurgerMenu />
     </Header>
   )
@@ -30,6 +30,8 @@ const Header = styled.header`
   align-items:center;
   width:100%;
   height:70px;
+  background: rgba(4, 3, 7);
+  backdrop-filter:blur(9px);
   @media(min-width:1440px){
     height:81px;
   }

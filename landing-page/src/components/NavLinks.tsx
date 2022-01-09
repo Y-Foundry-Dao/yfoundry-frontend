@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 function NavLinks() {
   return (
-    <nav>
+    <Nav>
       <Ul>
         <li><a>home</a></li>
         <li><a>about</a></li>
@@ -11,7 +11,7 @@ function NavLinks() {
         <li><a>roadmap</a></li>
         <li><a>join community</a></li>
       </Ul>
-    </nav>
+    </Nav>
   )
 }
 
@@ -20,7 +20,15 @@ const Ul = styled.ul`
   margin:0;
   padding:0;
 
+  color: rgba(255, 255, 255, 0.7);
+
   display:flex;
+`
+
+const Nav = styled.nav`
+  @media(max-width:799px){
+    display:none;
+  }
 `
 
 export default NavLinks

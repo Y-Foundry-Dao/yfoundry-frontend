@@ -23,7 +23,7 @@ const BurgerIcon:React.FC <ComponentProps> = (props:ComponentProps) => {
 
 const Burger:React.FC <StyleProps> = styled.button<StyleProps>`
   position: ${({open}) => open ? 'fixed' : 'absolute' };
-  top: 3%;
+  top: 1rem;
   right:40px;
   display: flex;
   flex-direction: column;
@@ -42,7 +42,7 @@ const Burger:React.FC <StyleProps> = styled.button<StyleProps>`
   div {
     width: 2rem;
     height: 0.25rem;
-    background: #b7002f;
+    background: #FCFEFF;
     border-radius: 10px;
     transition: all 0.2s linear;
     position: relative;
