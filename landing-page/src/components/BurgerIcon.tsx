@@ -62,7 +62,7 @@ const Burger:React.FC <StyleProps> = styled.button<StyleProps>`
     }
   }
 
-  @media(min-width:800px){
+  @media(min-width:756px){
     display:none;
   }
 `
