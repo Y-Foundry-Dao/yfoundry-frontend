@@ -18,9 +18,10 @@ function NavLinks() {
 const Link = styled.a`
   color: rgba(255, 255, 255, 0.7);
   text-decoration:none;
-
+  text-transform:uppercase;
   &:hover{
-
+    color:#D8552A;
+    text-decoration:underline;
   }
 `
 
@@ -29,20 +30,17 @@ const Ul = styled.ul`
   margin:0;
   padding:0;
 
-
-
-  /* border:1px solid white; */
   font-family: 'Kodchasan', sans-serif;
   display:flex;
   justify-content:space-around;
 `
 
 const Li = styled.li`
-  text-transform:uppercase;
+
 `
 
 const Nav = styled.nav`
-  width:70%;
+  width:65%;
   @media(max-width:799px){
     display:none;
   }

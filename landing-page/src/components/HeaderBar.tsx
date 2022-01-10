@@ -20,7 +20,6 @@ const Logo = styled.img`
   @media(min-width:1440px){
     margin:14px 4% 14px;
     width:28px;
-
   }
 `
 
