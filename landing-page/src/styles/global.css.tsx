@@ -1,10 +1,17 @@
 import { createGlobalStyle } from 'styled-components'
+import ThemeType from './ThemeType'
 
-export default createGlobalStyle`
+const GlobalCss = createGlobalStyle<{theme:ThemeType}>`
+html{
+  font-family: 'Kodchasan', sans-serif;
+  background-color:${props => `${props.theme.colors.black}`}
+}
 body {
   margin: 0;
-  font-family: 'Kodchasan', sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   }
 `
+
+export default GlobalCss

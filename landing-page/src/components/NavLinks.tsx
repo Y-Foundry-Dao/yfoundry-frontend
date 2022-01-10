@@ -22,7 +22,7 @@ const Link = styled.a`
   text-transform:uppercase;
 
   &:hover{
-    color:#D8552A;
+    color:${props => `${props.theme.colors.orange}`};
     &::after{
       content:"";
       position:absolute;
@@ -30,7 +30,7 @@ const Link = styled.a`
       left:0;
       width:42px;
       height:2px;
-      background:#D8552A;
+      background:${props => `${props.theme.colors.orange}`};
       border-radius:10px;
     }
   }
@@ -40,8 +40,6 @@ const Ul = styled.ul`
   list-style-type:none;
   margin:0;
   padding:0;
-
-  font-family: 'Kodchasan', sans-serif;
   font-weight:600;
   display:flex;
   justify-content:space-around;
