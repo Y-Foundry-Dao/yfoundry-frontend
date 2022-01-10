@@ -15,12 +15,12 @@ function HeaderBar() {
 }
 
 const Logo = styled.img`
-  position:relative;
   margin:15px 8% 15px;
   width:21px;
   @media(min-width:1440px){
-    margin:14px 10% 14px;
+    margin:14px 4% 14px;
     width:28px;
+
   }
 `
 

@@ -5,27 +5,44 @@ function NavLinks() {
   return (
     <Nav>
       <Ul>
-        <li><a>home</a></li>
-        <li><a>about</a></li>
-        <li><a>litepaper</a></li>
-        <li><a>roadmap</a></li>
-        <li><a>join community</a></li>
+        <Li><Link href="javascript:;">home</Link></Li>
+        <Li><Link href="javascript:;">about</Link></Li>
+        <Li><Link href="javascript:;">litepaper</Link></Li>
+        <Li><Link href="javascript:;">roadmap</Link></Li>
+        <Li><Link href="javascript:;">join community</Link></Li>
       </Ul>
     </Nav>
   )
 }
+
+const Link = styled.a`
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration:none;
+
+  &:hover{
+
+  }
+`
 
 const Ul = styled.ul`
   list-style-type:none;
   margin:0;
   padding:0;
 
-  color: rgba(255, 255, 255, 0.7);
 
+
+  border:1px solid white;
+  font-family:inter;
   display:flex;
+  justify-content:space-around;
+`
+
+const Li = styled.li`
+  text-transform:uppercase;
 `
 
 const Nav = styled.nav`
+  width:70%;
   @media(max-width:799px){
     display:none;
   }
