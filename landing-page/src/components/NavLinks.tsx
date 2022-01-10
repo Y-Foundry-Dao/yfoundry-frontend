@@ -31,8 +31,8 @@ const Ul = styled.ul`
 
 
 
-  border:1px solid white;
-  font-family:inter;
+  /* border:1px solid white; */
+  font-family: 'Kodchasan', sans-serif;
   display:flex;
   justify-content:space-around;
 `
