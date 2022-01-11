@@ -5,11 +5,11 @@ function NavLinks() {
   return (
     <Nav>
       <Ul>
-        <Li><Link href="javascript:;">home</Link></Li>
-        <Li><Link href="javascript:;">about</Link></Li>
-        <Li><Link href="javascript:;">litepaper</Link></Li>
-        <Li><Link href="javascript:;">roadmap</Link></Li>
-        <Li><Link href="javascript:;">join community</Link></Li>
+        <li><Link href="#">home</Link></li>
+        <li><Link href="#">about</Link></li>
+        <li><Link href="#">litepaper</Link></li>
+        <li><Link href="#">roadmap</Link></li>
+        <li><Link href="#">join community</Link></li>
       </Ul>
     </Nav>
   )
@@ -23,6 +23,8 @@ const Link = styled.a`
 
   &:hover{
     color:${props => `${props.theme.colors.orange}`};
+    transition:.15s linear;
+
     &::after{
       content:"";
       position:absolute;
@@ -43,10 +45,6 @@ const Ul = styled.ul`
   font-weight:600;
   display:flex;
   justify-content:space-around;
-`
-
-const Li = styled.li`
-
 `
 
 const Nav = styled.nav`

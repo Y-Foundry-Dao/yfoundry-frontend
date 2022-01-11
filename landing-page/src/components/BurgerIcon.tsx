@@ -34,6 +34,7 @@ const Burger:React.FC <StyleProps> = styled.button<StyleProps>`
   border: none;
   cursor: pointer;
   padding: 0;
+  z-index:2;
 
   &:focus {
     outline: none;

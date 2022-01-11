@@ -2,14 +2,14 @@ import React from 'react'
 import yLogo from '../assets/logo_orange.svg'
 import styled from 'styled-components'
 import NavLinks from './NavLinks'
-import BurgerMenu from './BurgerMenu'
+import Burger from './Burger'
 
 function HeaderBar() {
   return (
     <Header>
       <Logo src={yLogo} alt={"Y logo"} />
       <NavLinks />
-      <BurgerMenu />
+      <Burger />
     </Header>
   )
 }
