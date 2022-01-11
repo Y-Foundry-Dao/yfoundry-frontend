@@ -4,7 +4,8 @@ import ThemeType from './ThemeType'
 const GlobalCss = createGlobalStyle<{theme:ThemeType}>`
 html{
   font-family: 'Kodchasan', sans-serif;
-  background-color:${props => `${props.theme.colors.black}`}
+  background-color:${props => `${props.theme.colors.black}`};
+  color:${props => `${props.theme.colors.white}`}
 }
 body {
   margin: 0;

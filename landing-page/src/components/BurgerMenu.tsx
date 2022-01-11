@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import NavLinks from './NavLinks'
 
 interface Props{
   open:boolean,
@@ -24,17 +23,16 @@ function Menu(props:Props) {
 
 const StyledMenu:any = styled.nav<Props>`
   background: ${props => `${props.theme.colors.black}`};
-  transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
-  width:100%;
+  opacity: ${({open}) => open ? 1 : 0};
+  width:100vw;
   height: 100vh;
   position:fixed;
   top: 0;
   right: 0;
-  transition: transform 0.25s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
   display:flex;
   justify-content:center;
   align-items:center;
-  display: ${({open}) => open ? 'inital' : 'none'};
 `
     
 
@@ -42,7 +40,6 @@ const Link = styled.a`
   color: rgba(255, 255, 255, 0.7);
   text-decoration:none;
   text-transform:uppercase;
-  
   &:hover{
     color:${props => `${props.theme.colors.orange}`};
     transition:.15s linear;
