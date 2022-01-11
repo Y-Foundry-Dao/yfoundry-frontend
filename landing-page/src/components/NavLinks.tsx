@@ -25,7 +25,7 @@ const loading = keyframes`
 
 const Link = styled.a`
   position:relative;
-  color: rgba(255, 255, 255, 0.7);
+  color: ${props => `${props.theme.colors.gray}`};
   text-decoration:none;
   text-transform:uppercase;
   z-index:2;
@@ -59,6 +59,7 @@ const Ul = styled.ul`
 
 const Nav = styled.nav`
   width:65%;
+
   @media(max-width:756px){
     display:none;
   }

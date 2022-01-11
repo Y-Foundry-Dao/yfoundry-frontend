@@ -6,15 +6,12 @@ import GlobalCSS from './styles/global.css'
 import ThemeComponent from './styles/ThemeComponent'
 
 ReactDOM.render(
-
   <React.StrictMode>
     <ThemeComponent>
       <GlobalCSS />
       <App />
     </ThemeComponent>
-  </React.StrictMode>
-,
-
+  </React.StrictMode>,
   document.getElementById('root')
 );
 

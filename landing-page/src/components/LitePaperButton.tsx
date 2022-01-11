@@ -3,16 +3,21 @@ import styled from 'styled-components'
 
 function LitePaperButton() {
   return (
-    <Button>LitePaper</Button>
+    <Button>Lite Paper</Button>
   )
 }
 
 const Button = styled.button`
-  border: 1.38272px solid #1F43BF;
+  border: 2px solid ${props => `${props.theme.colors.blue}`};
+  border-radius:6px;
   background:none;
-  margin:1% 2%;
-  padding:1% 2%;
-  color:rgba(255,255,255,.7)
+  text-transform:uppercase;
+  font-weight:600;
+  font-size:.75rem;
+  margin:2% 2%;
+  padding:2% 6%;
+  color:${props => `${props.theme.colors.gray}`};
+  white-space:nowrap;
 `
 
 export default LitePaperButton

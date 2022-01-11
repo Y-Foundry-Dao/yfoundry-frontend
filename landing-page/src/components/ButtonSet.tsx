@@ -13,11 +13,7 @@ function ButtonSet() {
 }
 
 const Nav = styled.nav`
-  /* align-self:center;
-  width:100%; */
   display:flex;
-  justify-content:center;
-  border:1px solid white;
 `
 
 export default ButtonSet

@@ -1,9 +1,9 @@
-import React, { ButtonHTMLAttributes } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
 interface ComponentProps{
-    open:boolean,
-    setOpen:any,
+  open:boolean,
+  setOpen:any,
 }
 interface StyleProps {
   open:boolean,
@@ -43,7 +43,7 @@ const Burger:React.FC <StyleProps> = styled.button<StyleProps>`
   div {
     width: 1.9rem;
     height: 0.19rem;
-    background: #FCFEFF;
+    background: ${props => `${props.theme.colors.white}`};
     border-radius: 10px;
     transition: all 0.2s linear;
     position: relative;

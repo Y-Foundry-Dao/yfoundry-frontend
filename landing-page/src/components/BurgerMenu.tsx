@@ -37,7 +37,7 @@ const StyledMenu:any = styled.nav<Props>`
     
 
 const Link = styled.a`
-  color: rgba(255, 255, 255, 0.7);
+  color: ${props => `${props.theme.colors.gray}`};
   text-decoration:none;
   text-transform:uppercase;
   &:hover{
