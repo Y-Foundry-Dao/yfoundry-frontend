@@ -29,7 +29,7 @@ const Burger:React.FC <StyleProps> = styled.button<StyleProps>`
   flex-direction: column;
   justify-content: space-around;
   width: 2rem;
-  height: 2rem;
+  height: 1.8rem;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -42,12 +42,12 @@ const Burger:React.FC <StyleProps> = styled.button<StyleProps>`
   
   div {
     width: 1.9rem;
-    height: 0.2rem;
+    height: 0.19rem;
     background: #FCFEFF;
     border-radius: 10px;
     transition: all 0.2s linear;
     position: relative;
-    transform-origin: 0px;
+    transform-origin: 1px;
 
     :first-child {
       transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};

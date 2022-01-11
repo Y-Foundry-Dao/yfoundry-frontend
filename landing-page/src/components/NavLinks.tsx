@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 function NavLinks() {
   return (
@@ -15,15 +15,24 @@ function NavLinks() {
   )
 }
 
+const loading = keyframes`
+  0%{
+    opacity:0;
+  }100%{
+    opacity:1;
+  }
+`
+
 const Link = styled.a`
   position:relative;
   color: rgba(255, 255, 255, 0.7);
   text-decoration:none;
   text-transform:uppercase;
+  z-index:2;
 
   &:hover{
     color:${props => `${props.theme.colors.orange}`};
-    transition:.15s linear;
+    transition:all .2s linear;
 
     &::after{
       content:"";
@@ -32,6 +41,7 @@ const Link = styled.a`
       left:0;
       width:42px;
       height:2px;
+      animation:${loading} .2s 1 linear;
       background:${props => `${props.theme.colors.orange}`};
       border-radius:10px;
     }
