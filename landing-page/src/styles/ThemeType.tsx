@@ -1,5 +1,5 @@
-import theme from './theme'
+import theme from './theme';
 
-type ThemeType = typeof theme
+type ThemeType = typeof theme;
 
-export default ThemeType
+export default ThemeType;

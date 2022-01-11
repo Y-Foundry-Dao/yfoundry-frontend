@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 function CommunityButton() {
   return (
@@ -20,4 +20,4 @@ const Button = styled.button`
   border:none;
 `
 
-export default CommunityButton
+export default CommunityButton;

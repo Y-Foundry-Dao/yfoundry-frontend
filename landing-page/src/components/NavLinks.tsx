@@ -1,5 +1,5 @@
-import React from 'react'
-import styled, { keyframes } from 'styled-components'
+import React from 'react';
+import styled, { keyframes } from 'styled-components';
 
 function NavLinks() {
   return (
@@ -65,4 +65,4 @@ const Nav = styled.nav`
   }
 `
 
-export default NavLinks
+export default NavLinks;

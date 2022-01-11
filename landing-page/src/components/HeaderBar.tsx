@@ -1,8 +1,8 @@
-import React from 'react'
-import yLogo from '../assets/logo_orange.svg'
-import styled from 'styled-components'
-import NavLinks from './NavLinks'
-import Burger from './Burger'
+import React from 'react';
+import yLogo from '../assets/logo_orange.svg';
+import styled from 'styled-components';
+import NavLinks from './NavLinks';
+import Burger from './Burger';
 
 function HeaderBar() {
   return (
@@ -37,4 +37,4 @@ const Header = styled.header`
   }
 `
 
-export default HeaderBar
+export default HeaderBar;

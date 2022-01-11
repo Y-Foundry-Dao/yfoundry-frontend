@@ -1,12 +1,12 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 interface Props{
   open:boolean,
-}
+};
 
 function Menu(props:Props) {
-  const {open} = props
+  const {open} = props;
 
   return (
     <StyledMenu open={open}>
@@ -61,4 +61,4 @@ const Li = styled.li`
   text-align:center;
 `
   
-export default Menu
+export default Menu;

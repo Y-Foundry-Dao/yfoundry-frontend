@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import GlobalCSS from './styles/global.css'
-import ThemeComponent from './styles/ThemeComponent'
+import GlobalCSS from './styles/global.css';
+import ThemeComponent from './styles/ThemeComponent';
 
 ReactDOM.render(
   <React.StrictMode>

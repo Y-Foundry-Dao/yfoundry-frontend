@@ -1,17 +1,17 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 interface ComponentProps{
   open:boolean,
   setOpen:any,
-}
+};
 interface StyleProps {
   open:boolean,
   onClick:Function
-}
+};
 
 const BurgerIcon:React.FC <ComponentProps> = (props:ComponentProps) => {
-  const {open, setOpen} = props
+  const {open, setOpen} = props;
   return (
     <Burger open={open} onClick={() => setOpen(!open)}>
       <div />
@@ -68,4 +68,4 @@ const Burger:React.FC <StyleProps> = styled.button<StyleProps>`
   }
 `
 
-export default BurgerIcon
+export default BurgerIcon;

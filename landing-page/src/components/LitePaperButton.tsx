@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 function LitePaperButton() {
   return (
@@ -20,4 +20,4 @@ const Button = styled.button`
   white-space:nowrap;
 `
 
-export default LitePaperButton
+export default LitePaperButton;
