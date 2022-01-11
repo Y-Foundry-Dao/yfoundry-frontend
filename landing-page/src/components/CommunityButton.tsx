@@ -15,6 +15,8 @@ const Button = styled.button`
   text-transform:uppercase;
   font-weight:600;
   border:none;
+  margin:1% 2%;
+  padding:1% 2%;
 `
 
 export default CommunityButton

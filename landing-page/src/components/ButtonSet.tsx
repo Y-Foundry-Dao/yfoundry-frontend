@@ -5,11 +5,19 @@ import LitePaperButton from './LitePaperButton'
 
 function ButtonSet() {
   return (
-    <nav>
+    <Nav>
       <CommunityButton />
       <LitePaperButton />
-    </nav>
+    </Nav>
   )
 }
+
+const Nav = styled.nav`
+  /* align-self:center;
+  width:100%; */
+  display:flex;
+  justify-content:center;
+  border:1px solid white;
+`
 
 export default ButtonSet

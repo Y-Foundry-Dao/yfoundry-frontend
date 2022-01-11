@@ -59,7 +59,7 @@ const Ul = styled.ul`
 
 const Nav = styled.nav`
   width:65%;
-  @media(max-width:755px){
+  @media(max-width:756px){
     display:none;
   }
 `
