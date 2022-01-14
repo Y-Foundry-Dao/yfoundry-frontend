@@ -1,7 +1,12 @@
+<<<<<<< HEAD:landing-page/src/components/HeaderBar.tsx
 import yLogo from '../assets/logo_orange.svg';
+=======
+import React from 'react';
+import yLogo from '../../assets/logo_orange.svg';
+>>>>>>> added partner Logos, AboutUs, and LitePaper:landing-page/src/components/layout/HeaderBar.tsx
 import styled from 'styled-components';
 import NavLinks from './NavLinks';
-import Burger from './Burger';
+import Burger from '../burger/Burger';
 
 function HeaderBar() {
   return (
