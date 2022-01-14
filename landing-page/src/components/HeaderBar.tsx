@@ -1,4 +1,3 @@
-import React from 'react';
 import yLogo from '../assets/logo_orange.svg';
 import styled from 'styled-components';
 import NavLinks from './NavLinks';

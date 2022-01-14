@@ -1,4 +1,3 @@
-import React from 'react';
 import logo from '../assets/horizontal_logo_orange&white.svg';
 import styled from 'styled-components';
 import ButtonSet from './ButtonSet';
@@ -55,7 +54,7 @@ const BlueY = styled.img`
   position:absolute;
   top:120px;
   right:7%;
-  width:28%;  
+  width:28%;
 
   @media(min-width:1024px){
     width:26%;

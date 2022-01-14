@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 
 interface Props{
@@ -34,7 +33,7 @@ const StyledMenu:any = styled.nav<Props>`
   justify-content:center;
   align-items:center;
 `
-    
+
 
 const Link = styled.a`
   color: ${props => `${props.theme.colors.gray}`};
@@ -60,5 +59,5 @@ const Li = styled.li`
   margin:15px 0px 15px;
   text-align:center;
 `
-  
+
 export default Menu;

@@ -1,4 +1,3 @@
-import React from 'react';
 import HeaderBar from './components/HeaderBar';
 import Main from './components/MainSection';
 
