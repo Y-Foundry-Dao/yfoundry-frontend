@@ -1,9 +1,4 @@
-<<<<<<< HEAD:landing-page/src/components/MainSection.tsx
-import logo from '../assets/horizontal_logo_orange&white.svg';
-=======
-import React from 'react';
 import logo from '../../assets/horizontal_logo_orange&white.svg';
->>>>>>> added partner Logos, AboutUs, and LitePaper:landing-page/src/components/layout/MainSection.tsx
 import styled from 'styled-components';
 import ButtonSet from './ButtonSet';
 import blueY from '../../assets/blue_logo2.svg';
@@ -27,10 +22,6 @@ const Section = styled.section`
   display:flex;
   flex-direction:column;
   width:90%;
-  /* border:1px solid white; */
-  @media(min-width:756px){
-    /* width:70%; */
-  }
 `
 
 const Logo = styled.img`
@@ -67,12 +58,7 @@ const BlueY = styled.img`
   position:absolute;
   top:120px;
   right:7%;
-<<<<<<< HEAD:landing-page/src/components/MainSection.tsx
   width:28%;
-=======
-  width:27%;  
-  /* border:1px solid white; */
->>>>>>> added partner Logos, AboutUs, and LitePaper:landing-page/src/components/layout/MainSection.tsx
 
   @media(min-width:1024px){
     width:26%;

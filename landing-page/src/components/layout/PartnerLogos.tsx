@@ -31,7 +31,7 @@ const Section = styled.section`
 `
 
 const LogoHolder = styled.div`
-  background-color:#161414;
+  background-color:${props => `${props.theme.colors.gray}`};
   margin:20px 0;
   height:45px;
   width: 15%;
