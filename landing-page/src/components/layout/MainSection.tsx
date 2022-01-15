@@ -25,7 +25,6 @@ const Section = styled.section`
 `
 
 const Logo = styled.img`
-  /* border:1px solid white; */
   width:61%;
   margin-bottom:10px;
 
@@ -50,7 +49,6 @@ const Logo = styled.img`
   }
   @media(min-width:1760px){
     margin-bottom:30px;
-    /* width:50% */
   }
 `
 
@@ -64,17 +62,12 @@ const BlueY = styled.img`
     width:26%;
     right:8%;
   }
-  @media(min-width:1440px){
-    /* width:24%; */
-  }
-
   @media(max-width:756px){
     display:none;
   }
 `
 
 const Main = styled.main`
-  /* border:1px solid white; */
   width:93%;
   padding-left:5%;
   margin-top:12%;
@@ -86,7 +79,6 @@ const Main = styled.main`
   }
   @media(min-width:756px){
     margin-top:14%;
-    /* width:85%; */
   }
   @media(min-width:1024px){
     margin-top:13%;
@@ -109,9 +101,6 @@ const HeaderText = styled.h1`
   @media(min-width:756px){
     font-size:1.2rem;
   }  
-  /* @media(min-width:875px){
-    margin-top:13%;
-  } */
   @media(min-width:1024px){
     font-size:1.25em;
   }
