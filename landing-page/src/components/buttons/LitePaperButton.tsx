@@ -17,6 +17,17 @@ const Button = styled.button`
   padding:2% 6%;
   color:${props => `${props.theme.colors.gray}`};
   white-space:nowrap;
+  @media(min-width:756px){
+    font-size:.9rem;
+    padding:1.5% 5%;
+  }
+  @media(min-width:1440px){
+    font-size:1rem;
+    padding:1.25% 5%;
+  }
+  @media(min-width:1760px){
+    font-size:1.2rem;
+  }
 `
 
 export default LitePaperButton;

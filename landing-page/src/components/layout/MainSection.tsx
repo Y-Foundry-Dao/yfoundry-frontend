@@ -1,7 +1,7 @@
-import logo from '../assets/horizontal_logo_orange&white.svg';
+import logo from '../../assets/horizontal_logo_orange&white.svg';
 import styled from 'styled-components';
 import ButtonSet from './ButtonSet';
-import blueY from '../assets/blue_logo2.svg';
+import blueY from '../../assets/blue_logo2.svg';
 
 const text = `A Decentralized System of Vault \nCreation, Maintenance, and Governance.`;
 
@@ -22,31 +22,33 @@ const Section = styled.section`
   display:flex;
   flex-direction:column;
   width:90%;
-
-  @media(min-width:756px){
-    width:60%;
-  }
 `
 
 const Logo = styled.img`
-  width:65%;
+  width:61%;
   margin-bottom:10px;
 
   @media(min-width:425px){
-    width:62%;
+    width:59%;
+  }
+  @media(min-width:600px){
+    width:50%;
   }
   @media(min-width:756px){
-    width:64%;
+    width:45%;
+    margin-bottom:20px;
+  }
+  @media(min-width:875px){
+    width:40%;
   }
   @media(min-width:1024px){
-    width:56%;
+    width:35%;
   }
   @media(min-width:1440px){
-    width:53%;
+    width:30%;
   }
   @media(min-width:1760px){
     margin-bottom:30px;
-    width:50%
   }
 `
 
@@ -58,52 +60,55 @@ const BlueY = styled.img`
 
   @media(min-width:1024px){
     width:26%;
+    right:8%;
   }
-  @media(min-width:1440px){
-    width:24%;
-  }
-
   @media(max-width:756px){
     display:none;
   }
 `
 
 const Main = styled.main`
-  width:90%;
-  margin-left:5%;
+  width:93%;
+  padding-left:5%;
   margin-top:12%;
   display:flex;
   justify-content:space-between;
   @media(min-width:425px){
-    margin-left:12%;
+    width:86%;
+    padding-left:9%;
   }
   @media(min-width:756px){
     margin-top:14%;
-    width:85%;
   }
   @media(min-width:1024px){
     margin-top:13%;
+    padding-left:11%;
   }
   @media(min-width:1440px){
-    margin-top:11%;
+    margin-top:12%;
   }
 `
 
 const HeaderText = styled.h1`
   font-size:1rem;
   font-weight:400;
-  line-height:26px;
+  line-height:24px;
   white-space:pre-wrap;
   margin-bottom:20px;
-
+  @media(min-width:600px){
+    font-size:1.1rem;
+  }
   @media(min-width:756px){
-    font-size:.9rem;
+    font-size:1.2rem;
+  }  
+  @media(min-width:1024px){
+    font-size:1.25em;
   }
   @media(min-width:1440px){
-    font-size:1.2rem;
+    font-size:1.4rem;
   }
   @media(min-width:1760px){
-    font-size:1.4rem;
+    font-size:1.5rem;
     line-height:24px;
   }
 `

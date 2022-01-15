@@ -17,6 +17,17 @@ const Button = styled.button`
   padding:2% 3%;
   white-space:nowrap;
   border:none;
+  @media(min-width:756px){
+    font-size:.9rem;
+    padding:1.5% 3%;
+  }
+  @media(min-width:1440px){
+    font-size:1rem;
+    padding:1.25% 3%;
+  }
+  @media(min-width:1760px){
+    font-size:1.2rem;
+  }
 `
 
 export default CommunityButton;

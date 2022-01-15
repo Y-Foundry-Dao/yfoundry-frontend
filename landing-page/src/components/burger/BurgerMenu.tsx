@@ -23,11 +23,12 @@ function Menu(props:Props) {
 const StyledMenu:any = styled.nav<Props>`
   background: ${props => `${props.theme.colors.black}`};
   opacity: ${({open}) => open ? 1 : 0};
+  z-index: ${({open}) => open ? 1 : -1};
   width:100vw;
   height: 100vh;
   position:fixed;
   top: 0;
-  right: 0;
+  left: 0;
   transition: opacity 0.35s ease-in-out;
   display:flex;
   justify-content:center;
