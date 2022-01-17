@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import twitter from '../../assets/twitter.svg'
 import discord from '../../assets/discord.svg'
@@ -15,7 +14,6 @@ function SocialIcons() {
 }
 
 const Ul = styled.ul`
-  border:1px solid white;
   list-style-type:none;
   width:32%;
   margin:0 2% 0 0;
@@ -28,7 +26,6 @@ const Ul = styled.ul`
 
 const Li = styled.li`
   width:20%;
-  border:1px solid white;
   display:flex;
 `
 
@@ -36,7 +33,6 @@ const Img = styled.img`
   width:100%;
   margin:0;
   padding:0;
-  border:1px solid white;
 `
 
 export default SocialIcons

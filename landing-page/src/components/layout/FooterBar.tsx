@@ -8,6 +8,7 @@ function FooterBar() {
       <Img src={logo} alt={"Y-Foundry Logo"} />
       <SocialIcons />
     </Footer>
+
   )
 }
 
@@ -19,7 +20,6 @@ const Img = styled.img`
 const Footer = styled.footer`
   display:flex;
   justify-content:space-between;
-  margin-top:20%;
   margin-bottom:10%;
 `
 

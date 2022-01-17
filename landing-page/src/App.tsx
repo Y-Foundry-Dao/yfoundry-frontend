@@ -14,6 +14,7 @@ function App() {
       <PartnerLogos />
       <AboutUs />
       <LitePaper />
+      <Div />
       <FooterBar />
     </LandingPage>
   );
@@ -23,6 +24,13 @@ const LandingPage = styled.div`
   display:flex;
   flex-direction:column;
   align-items:center;
+`
+const Div = styled.div`
+  width:70%;
+  height:1px;
+  background:${props => `${props.theme.colors.blue}`};
+  margin-top:20%;
+  margin-bottom:10%;
 `
 
 export default App;
