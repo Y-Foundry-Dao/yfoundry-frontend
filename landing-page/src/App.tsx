@@ -4,6 +4,7 @@ import PartnerLogos from './components/layout/PartnerLogos';
 import AboutUs from './components/layout/AboutUs';
 import styled from 'styled-components';
 import LitePaper from './components/layout/LitePaper';
+import Footer from './components/layout/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <PartnerLogos />
       <AboutUs />
       <LitePaper />
+      <Footer />
     </LandingPage>
   );
 }
