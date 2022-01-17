@@ -12,12 +12,15 @@ function FooterBar() {
 }
 
 const Img = styled.img`
-  width:50px;
+  width:23%;
+  margin-left:8%;
 `
 
 const Footer = styled.footer`
   display:flex;
   justify-content:space-between;
+  margin-top:20%;
+  margin-bottom:10%;
 `
 
 export default FooterBar
