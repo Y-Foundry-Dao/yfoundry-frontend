@@ -3,7 +3,6 @@ import MainSection from './components/layout/MainSection';
 import PartnerLogos from './components/layout/PartnerLogos';
 import AboutUs from './components/layout/AboutUs';
 import styled from 'styled-components';
-import LitePaper from './components/layout/LitePaper';
 import FooterBar from './components/layout/FooterBar';
 
 function App() {
@@ -13,7 +12,6 @@ function App() {
       <MainSection />
       <PartnerLogos />
       <AboutUs />
-      <LitePaper />
       <Div />
       <FooterBar />
     </LandingPage>
@@ -26,11 +24,29 @@ const LandingPage = styled.div`
   align-items:center;
 `
 const Div = styled.div`
-  width:70%;
+  width:78%;
   height:1px;
-  background:${props => `${props.theme.colors.blue}`};
-  margin-top:20%;
-  margin-bottom:10%;
+  background:linear-gradient(0deg, #1f43bf 60%, #A9BCFF 30%);
+  margin-top:14%;
+  margin-bottom:5%;
+  @media(min-width:425px){
+    margin-bottom:4%;
+    width:80%;
+  }
+  @media(min-width:550px){
+    margin-bottom:3%;
+    width:82%;
+  }
+  @media(min-width:756px){
+    margin-bottom:2%;
+    margin-top:10%;
+    width:84%;
+  }
+  @media(min-width:1024px){
+    margin-bottom:2%;
+    margin-top:8%;
+    width:88%;
+  }
 `
 
 export default App;
