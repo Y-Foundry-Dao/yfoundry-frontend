@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import twitter from '../../assets/twitter.svg'
 import discord from '../../assets/discord.svg'
-import telegram from '../../assets/telegram.svg'
+import telegram from '../../assets/whiteTelegram.png'
 
 function SocialIcons() {
   return (
