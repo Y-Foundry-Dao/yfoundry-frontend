@@ -6,7 +6,6 @@ function NavLinks() {
       <Ul>
         <li><Link href="#">home</Link></li>
         <li><Link href="#">about</Link></li>
-        <li><Link href="#">litepaper</Link></li>
         <li><Link href="#">roadmap</Link></li>
         <li><Link href="#">join community</Link></li>
       </Ul>
