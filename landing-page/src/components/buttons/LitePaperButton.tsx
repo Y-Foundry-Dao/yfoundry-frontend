@@ -1,12 +1,19 @@
 import styled from 'styled-components';
 
+const mediumLink =
+  "https://medium.com/@yfoundry/y-foundry-dao-is-bringing-community-designed-vaults-to-terra-299e9ce702ee";
+
 function LitePaperButton() {
   return (
-    <Button>Lite Paper</Button>
+    <Button href={mediumLink} target="_blank" rel="noopener">Lite Paper</Button>
   )
 }
 
-const Button = styled.button`
+const Button = styled.a`
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
   border: 2px solid ${props => `${props.theme.colors.blue}`};
   border-radius:6px;
   background:none;
