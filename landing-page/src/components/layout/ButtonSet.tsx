@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import CommunityButton from '../buttons/CommunityButton';
 import LitePaperButton from '../buttons/LitePaperButton';
