@@ -22,6 +22,8 @@ const LandingPage = styled.div`
   display:flex;
   flex-direction:column;
   align-items:center;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
 `
 const Div = styled.div`
   width:78%;
