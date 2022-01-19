@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 function AboutUs() {
   return (
-    <Div>
+    <Div id='about'>
       <VerticalBars src={verticalBars} alt={""} />
       <AboutUsText />
       <BrainDna src={brainDna} alt={""} />

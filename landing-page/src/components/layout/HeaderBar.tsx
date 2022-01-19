@@ -5,7 +5,7 @@ import Burger from '../burger/Burger';
 
 function HeaderBar() {
   return (
-    <Header>
+    <Header id='home'>
       <Logo src={yLogo} alt={"Y logo"} />
       <NavLinks />
       <Burger />

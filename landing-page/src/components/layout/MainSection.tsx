@@ -11,7 +11,7 @@ function MainSection() {
       <Section>
         <Logo src={logo} alt={"y-foundry dao"} />
         <HeaderText>{text}</HeaderText>
-        <ButtonSet />
+        {/* <ButtonSet /> */}
       </Section>
       <BlueY src={blueY} alt={"big blue y"} />
     </Main>
@@ -70,7 +70,7 @@ const BlueY = styled.img`
 const Main = styled.main`
   width:93%;
   padding-left:5%;
-  margin-top:12%;
+  margin-top:13%;
   display:flex;
   justify-content:space-between;
   @media(min-width:425px){
@@ -78,14 +78,14 @@ const Main = styled.main`
     padding-left:9%;
   }
   @media(min-width:756px){
-    margin-top:14%;
+    margin-top:16%;
   }
   @media(min-width:1024px){
-    margin-top:13%;
+    margin-top:14%;
     padding-left:11%;
   }
   @media(min-width:1440px){
-    margin-top:12%;
+    /* margin-top:12%; */
   }
 `
 

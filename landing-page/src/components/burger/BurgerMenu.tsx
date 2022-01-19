@@ -10,11 +10,11 @@ function Menu(props:Props) {
   return (
     <StyledMenu open={open}>
       <Ul>
-        <Li><Link href="#">home</Link></Li>
-        <Li><Link href="#">about</Link></Li>
-        <Li><Link href="#">litepaper</Link></Li>
+        <Li><Link href="#home">home</Link></Li>
+        <Li><Link href="#about">about</Link></Li>
+        <Li><Link href="#blog">blog</Link></Li>
         <Li><Link href="#">roadmap</Link></Li>
-        <Li><Link href="#">join community</Link></Li>
+        <Li><Link href="#community">join community</Link></Li>
       </Ul>
     </StyledMenu>
   )
