@@ -7,7 +7,7 @@ function SocialIcons() {
   return (
     <Ul>
       <Li><a href={"https://twitter.com/yieldfoundrydao"} target={"_blank"} rel={"noreferrer"}><Img src={twitter} alt={"twitter"} /></a></Li>
-      <Li><a href={"https://discord.gg/TFUegrY7"} target={"_blank"} rel={"noreferrer"}><Img src={discord} alt={"discord"} /></a></Li>
+      <Li><a href={"https://discord.gg/defidesk"} target={"_blank"} rel={"noreferrer"}><Img src={discord} alt={"discord"} /></a></Li>
       <Li><a href={"https://t.me/yfoundrydao"} target={"_blank"} rel={"noreferrer"}><Img src={telegram} alt={"telegram"} /></a></Li>
     </Ul>
   )

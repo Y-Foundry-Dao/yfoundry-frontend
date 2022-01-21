@@ -16,7 +16,7 @@ function Community() {
       </Div>
       <Ul>
         <Li><Link href={"https://twitter.com/yieldfoundrydao"} target={"_blank"} rel={"noreferrer"}><Img src={twitter} alt={"twitter"} /><P>twitter</P></Link></Li>
-        <Li><Link href={"https://discord.gg/TFUegrY7"} target={"_blank"} rel={"noreferrer"}><Img src={discord} alt={"discord"} /><P>discord</P></Link></Li>
+        <Li><Link href={"https://discord.gg/defidesk"} target={"_blank"} rel={"noreferrer"}><Img src={discord} alt={"discord"} /><P>discord</P></Link></Li>
         <Li><Link href={"https://t.me/yfoundrydao"} target={"_blank"} rel={"noreferrer"}><Img src={telegram} alt={"telegram"} /><P>telegram</P></Link></Li>
       </Ul>
     </Section>
