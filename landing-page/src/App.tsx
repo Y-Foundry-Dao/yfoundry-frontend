@@ -4,6 +4,8 @@ import PartnerLogos from './components/layout/PartnerLogos';
 import AboutUs from './components/layout/AboutUs';
 import styled from 'styled-components';
 import FooterBar from './components/layout/FooterBar';
+import Community from './components/layout/Community';
+import Blog from './components/layout/Blog';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <MainSection />
       <PartnerLogos />
       <AboutUs />
+      <Blog/>
+      <Community />
       <Div />
       <FooterBar />
     </LandingPage>

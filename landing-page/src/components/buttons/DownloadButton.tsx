@@ -1,10 +1,15 @@
 import styled from 'styled-components';
+import mediumLogo from '../../assets/mediumLogo.svg'
+import mediumWords from '../../assets/mediumWords.svg'
 
 function DownloadButton() {
   return (
     <Div>
-      <Label>Lite Paper</Label>
-      <Button>Download</Button>
+      <Label>Our Blog</Label>
+      <Button>
+        <ImgLogo src={mediumLogo} alt="medium logo" />
+        <ImgWords src={mediumWords} alt="medium" />
+      </Button>
     </Div>
 
   )
@@ -32,6 +37,16 @@ const Button = styled.button`
   @media(min-width:1760px){
     font-size:1.2rem;
   }
+`
+
+const ImgLogo = styled.img`
+  width:20%;
+  margin-bottom:6px;
+  margin-right:4px;
+`
+
+const ImgWords = styled.img`
+  width:50%;
 `
 
 const Label = styled.p`

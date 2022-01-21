@@ -4,7 +4,7 @@ import logo from '../../assets/horizontal_logo_orange&white.svg'
 
 function FooterBar() {
   return (
-    <Footer>
+    <Footer >
       <Img src={logo} alt={"Y-Foundry Logo"} />
       <SocialIcons />
     </Footer>
