@@ -47,7 +47,7 @@ const Section = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-top: 18%;
+  margin-top: 24%;
   width: 100%;
   column-gap: 50px;
   row-gap: 6px;
