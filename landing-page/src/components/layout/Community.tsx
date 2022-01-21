@@ -6,7 +6,7 @@ import orangeBars from '../../assets/orange_bars_community.svg';
 
 function Community() {
   return (
-    <Section>
+    <Section id='community'>
       <Div>
         <TextSection>
           <Header>Our <OrangeText>Community</OrangeText></Header>
