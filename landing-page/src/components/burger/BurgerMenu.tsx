@@ -12,7 +12,6 @@ function Menu(props:Props) {
       <Ul>
         <Li><Link href="#">home</Link></Li>
         <Li><Link href="#">about</Link></Li>
-        <Li><Link href="#">litepaper</Link></Li>
         <Li><Link href="#">roadmap</Link></Li>
         <Li><Link href="#">join community</Link></Li>
       </Ul>
