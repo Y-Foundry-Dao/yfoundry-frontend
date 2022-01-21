@@ -59,6 +59,7 @@ const Header = styled.h2`
 const P = styled.p`
   line-height:24px;
   font-size:.8rem;
+  text-align: justify;
 
   @media(min-width:425px){
     font-size:.9rem;
