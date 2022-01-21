@@ -3,10 +3,10 @@ import DownloadButton from '../buttons/DownloadButton';
 
 function LitePaper() {
   return (
-    <Section>
+    <Section id='blog'>
       <Div>
         <Header>Do you want to know more about YFD?</Header>
-        <P>Download Our Lite Paper</P>
+        <P>Check out our blog to stay up to date</P>
       </Div>
       <DownloadButton />
     </Section>
@@ -20,7 +20,7 @@ const Section = styled.section`
   justify-content:space-around;
   align-items:center;
   padding:5% 6%;
-  margin-top:16%;
+  margin-top:12%;
   border-radius:15px;
   gap:10%;
 

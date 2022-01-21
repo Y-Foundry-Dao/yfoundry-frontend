@@ -5,6 +5,7 @@ import AboutUs from './components/layout/AboutUs';
 import styled from 'styled-components';
 import FooterBar from './components/layout/FooterBar';
 import Community from './components/layout/Community';
+import LitePaper from './components/layout/LitePaper';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <PartnerLogos />
       <AboutUs />
       <Community />
+      <LitePaper />
       <Div />
       <FooterBar />
     </LandingPage>
