@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import xVentures from '../../assets/0xVentures.svg';
+import xVentures from '../../assets/0xVenturesWhite.svg';
 import apollo from '../../assets/Apollo.png';
 import cetaceanCapital from '../../assets/CetaceanCapital.png';
-import deepVentures from '../../assets/DeepVentures.jpg';
+import deepVentures from '../../assets/DeepVentures.png';
 import hyperion from '../../assets/HyperionLogo.png';
 import lambda from '../../assets/LambdaLogo.png';
 import thorstarter from '../../assets/Thorstarter.png';
@@ -13,7 +13,10 @@ function PartnerLogos() {
   return (
     <Section>
       <LogoHolder>
-        <Logo src={xVentures} alt={"0xVentures Logo"} />
+        <Logo0xVentures src={xVentures} alt={"0xVentures Logo"} />
+      </LogoHolder>
+      <LogoHolder>
+        <Logo src={hyperion} alt={"Hyperion Logo"} />
       </LogoHolder>
       <LogoHolder>
         <Logo src={apollo} alt={"Apollo"} />
@@ -23,9 +26,6 @@ function PartnerLogos() {
       </LogoHolder>
       <LogoHolder>
         <Logo src={deepVentures} alt={"Deep Ventures logo"} />
-      </LogoHolder>
-      <LogoHolder>
-        <Logo src={hyperion} alt={"Hyperion Logo"} />
       </LogoHolder>
       <LogoHolder>
         <Logo src={lambda} alt={"Lambda Logo"} />
@@ -49,14 +49,13 @@ const Section = styled.section`
   justify-content: space-evenly;
   margin-top: 24%;
   width: 100%;
-  column-gap: 50px;
+  column-gap: 16px;
   row-gap: 6px;
 `
 
 const LogoHolder = styled.div`
   display: flex;
   align-items: center;
-  flex-shrink: 0;
 
   @media(max-width:756px) {
     margin: 5px 0 5px;
@@ -64,7 +63,31 @@ const LogoHolder = styled.div`
 `
 
 const Logo = styled.img`
-  height: 60px;
+  height:40px;
+
+  @media(min-width:425px){
+    height:45px;
+  }
+  @media(min-width:756px){
+    height:50px;
+  }
+  @media(min-width:1024px){
+    height:60px;
+  }
+`
+
+const Logo0xVentures = styled(Logo)`
+  height:60px;
+
+  @media(min-width:425px){
+    height:68px;
+  }
+  @media(min-width:756px){
+    height:80px;
+  }
+  @media(min-width:1024px){
+    height:90px;
+  }
 `
 
 export default PartnerLogos
