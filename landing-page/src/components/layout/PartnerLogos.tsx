@@ -47,10 +47,13 @@ const Section = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-top: 24%;
+  margin-top: 18%;
   width: 100%;
   column-gap: 16px;
   row-gap: 6px;
+  @media(min-width:756px) {
+    margin-top: 24%;
+  }
 `
 
 const LogoHolder = styled.div`

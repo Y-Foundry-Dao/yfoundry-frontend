@@ -20,13 +20,14 @@ const Section = styled.section`
   justify-content:space-around;
   align-items:center;
   padding:5% 6%;
-  margin-top:12%;
+  margin-top:8%;
   border-radius:15px;
   gap:10%;
 
   @media(min-width:425px){
     width:65%;
     gap:16%;
+    margin-top:6%;
   }
   @media(min-width:600px){
     width:60%;
@@ -34,6 +35,7 @@ const Section = styled.section`
   }
   @media(min-width:756px){
     width:54%;
+    margin-top:4%;
   }
   @media(min-width:1024px){
     width:50%;

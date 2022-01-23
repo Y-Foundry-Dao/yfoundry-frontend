@@ -27,15 +27,15 @@ function Community() {
 
 const Section = styled.section`
   margin-top:10%;
-  margin-bottom:10%;
+  margin-bottom:4%;
   display:flex;
   flex-direction:column;
   align-items:center;
 
   @media(min-width:756px){
     flex-direction:row;
-    margin-bottom:6%;
-    margin-top:6%;
+    margin-bottom:4%;
+    margin-top:8%;
   }
 
   justify-content:space-between;
