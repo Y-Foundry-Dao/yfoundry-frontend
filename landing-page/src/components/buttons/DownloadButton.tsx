@@ -2,13 +2,18 @@ import styled from 'styled-components';
 import mediumLogo from '../../assets/mediumLogo.svg'
 import mediumWords from '../../assets/mediumWords.svg'
 
+const mediumLink =
+  "https://medium.com/@yfoundry/y-foundry-dao-is-bringing-community-designed-vaults-to-terra-299e9ce702ee";
+
 function DownloadButton() {
   return (
     <Div>
-      <Button>
-        <ImgLogo src={mediumLogo} alt="medium logo" />
-        <ImgWords src={mediumWords} alt="medium" />
-      </Button>
+      <a href={mediumLink} target={"_blank"} rel={"noreferrer"}>
+        <Button>
+          <ImgLogo src={mediumLogo} alt="medium logo" />
+          <ImgWords src={mediumWords} alt="medium" />
+        </Button>
+      </a>
     </Div>
 
   )
@@ -26,7 +31,7 @@ const Button = styled.button`
   margin-top:6%;
   border:none;
   width:100%;
-
+  cursor:pointer;
   display:flex;
   flex-wrap:nowrap;
   align-items:center;
