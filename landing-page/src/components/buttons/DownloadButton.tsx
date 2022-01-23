@@ -45,26 +45,11 @@ const Button = styled.button`
 
 const ImgLogo = styled.img`
   width:20%;
-  /* margin-bottom:3px; */
   margin-right:4px;
 `
 
 const ImgWords = styled.img`
   width:50%;
-`
-
-const Label = styled.p`
-  margin:0;
-  padding:0;
-  font-weight:600;
-  font-size:.8rem;
-
-  @media(min-width:756px){
-    font-size:.9rem;
-  }
-  @media(min-width:1024px){
-    font-size:1.1rem;
-  }
 `
 
 const Div = styled.div`
