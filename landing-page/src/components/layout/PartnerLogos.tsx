@@ -5,7 +5,7 @@ import cetaceanCapital from '../../assets/CetaceanCapital.png';
 import deepVentures from '../../assets/DeepVentures.png';
 import hyperion from '../../assets/HyperionLogo.png';
 import lambda from '../../assets/LambdaLogo.png';
-import thorstarter from '../../assets/Thorstarter.png';
+import thorstarter from '../../assets/Thorstarter.svg';
 import northRock from '../../assets/NorthRockDigital.png';
 
 
