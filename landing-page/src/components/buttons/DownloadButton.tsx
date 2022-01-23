@@ -5,7 +5,6 @@ import mediumWords from '../../assets/mediumWords.svg'
 function DownloadButton() {
   return (
     <Div>
-      <Label>Our Blog</Label>
       <Button>
         <ImgLogo src={mediumLogo} alt="medium logo" />
         <ImgWords src={mediumWords} alt="medium" />
@@ -28,6 +27,11 @@ const Button = styled.button`
   border:none;
   width:100%;
 
+  display:flex;
+  flex-wrap:nowrap;
+  align-items:center;
+  justify-content:center;
+
   @media(min-width:600px){
     width:90%;
   }
@@ -41,7 +45,7 @@ const Button = styled.button`
 
 const ImgLogo = styled.img`
   width:20%;
-  margin-bottom:6px;
+  /* margin-bottom:3px; */
   margin-right:4px;
 `
 
