@@ -8,6 +8,7 @@ import Community from './components/layout/Community';
 import Blog from './components/layout/Blog';
 import BackgroundComposition from './components/background/BackgroundComposition';
 import ScrollButton from './components/buttons/ScrollTopArrow';
+import InvestorCarousel from './components/layout/InvestorCarousel';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       <BackgroundComposition/>
       <HeaderBar />
       <MainSection />
-      <PartnerLogos />
+      <InvestorCarousel />
       <AboutUs />
       <Blog/>
       <Community />

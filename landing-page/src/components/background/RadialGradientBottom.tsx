@@ -15,14 +15,17 @@ const Radial = styled.div`
   top: 1520px;
   background: radial-gradient(50% 50% at 50% 50%, rgba(65, 97, 223, 0.2) 0%, rgba(62, 94, 255, 0) 100%);
   
+  @media(min-width:308px){
+    top:1350px;
+  }
   @media(min-width:395px){
-    top:1470px;
+    top:1400px;
   }
   @media(min-width:425px){
     width:340px;
     height:340px;
     left:-210px;
-    top:1600px;
+    top:1500px;
   }
   @media(min-width:756px){
     background: radial-gradient(50% 50% at 50% 50%, rgba(65, 97, 223, 0.2) 0%, rgba(66, 92, 222, 0) 100%);
