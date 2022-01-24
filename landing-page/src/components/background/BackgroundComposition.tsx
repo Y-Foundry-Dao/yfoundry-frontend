@@ -4,7 +4,6 @@ import RadialGradientTop from "./RadialGradientTop";
 import starsLarge from "../../assets/StarsLarge.svg"
 import starsSmall from "../../assets/StarsSmall.svg"
 
-
 export default function BackgroundComposition() {
   return(
     <Background>
@@ -37,7 +36,6 @@ const StarsSmall = styled.img`
     display:none;
   }
 `
-
 
 const Background = styled.div`
   height:0px;

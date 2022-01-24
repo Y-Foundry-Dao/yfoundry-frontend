@@ -7,7 +7,6 @@ function RadialGradientTop() {
     )
 }
 
-
 const Radial = styled.div`
   position: absolute;
   width: 354px;
@@ -36,7 +35,6 @@ const Radial = styled.div`
     width:420px;
     height:420px;
     left:-220px;
-    /* top:1750px; */
   }
   @media(min-width:950px){
     left:-240px;
