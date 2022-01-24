@@ -6,10 +6,12 @@ import styled from 'styled-components';
 import FooterBar from './components/layout/FooterBar';
 import Community from './components/layout/Community';
 import Blog from './components/layout/Blog';
+import BackgroundComposition from './components/background/BackgroundComposition';
 
 function App() {
   return (
     <LandingPage>
+      <BackgroundComposition/>
       <HeaderBar />
       <MainSection />
       <PartnerLogos />
