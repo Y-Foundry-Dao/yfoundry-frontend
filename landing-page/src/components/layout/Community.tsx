@@ -9,8 +9,11 @@ function Community() {
     <Section id='community'>
       <Div>
         <TextSection>
-          <Header>Our <OrangeText>Community</OrangeText></Header>
-          <Text>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam facilis pariatur doloribus maiores saepe ex earum.</Text>
+          <Header>Our <OrangeText>Vision</OrangeText></Header>
+          <Text>
+            Y-Foundry DAO's aim is to bring about a new type of yield-enhancer that evolves beyond the need for reward-based high-inflationary yield farming,
+            and rises to the current challenges plaguing yield-generating strategies and the Terra ecosystem writ large.
+          </Text>
         </TextSection>
         <OrangeBars src={orangeBars} alt="" />
       </Div>
