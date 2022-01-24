@@ -2,14 +2,18 @@ import styled from 'styled-components';
 import mediumLogo from '../../assets/mediumLogo.svg'
 import mediumWords from '../../assets/mediumWords.svg'
 
+const mediumLink =
+  "https://medium.com/@yfoundry/y-foundry-dao-is-bringing-community-designed-vaults-to-terra-299e9ce702ee";
+
 function DownloadButton() {
   return (
     <Div>
-      <Label>Our Blog</Label>
-      <Button>
-        <ImgLogo src={mediumLogo} alt="medium logo" />
-        <ImgWords src={mediumWords} alt="medium" />
-      </Button>
+      <a href={mediumLink} target={"_blank"} rel={"noreferrer"}>
+        <Button>
+          <ImgLogo src={mediumLogo} alt="medium logo" />
+          <ImgWords src={mediumWords} alt="medium" />
+        </Button>
+      </a>
     </Div>
 
   )
@@ -27,6 +31,11 @@ const Button = styled.button`
   margin-top:6%;
   border:none;
   width:100%;
+  cursor:pointer;
+  display:flex;
+  flex-wrap:nowrap;
+  align-items:center;
+  justify-content:center;
 
   @media(min-width:600px){
     width:90%;
@@ -41,26 +50,11 @@ const Button = styled.button`
 
 const ImgLogo = styled.img`
   width:20%;
-  margin-bottom:6px;
   margin-right:4px;
 `
 
 const ImgWords = styled.img`
   width:50%;
-`
-
-const Label = styled.p`
-  margin:0;
-  padding:0;
-  font-weight:600;
-  font-size:.8rem;
-
-  @media(min-width:756px){
-    font-size:.9rem;
-  }
-  @media(min-width:1024px){
-    font-size:1.1rem;
-  }
 `
 
 const Div = styled.div`
