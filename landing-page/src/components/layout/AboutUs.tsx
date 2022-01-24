@@ -16,14 +16,19 @@ function AboutUs() {
 const Div = styled.div`
   position:relative;
   display:flex;
-  margin-top:12%;
+  margin-top:11%;
   padding-top:8%;
   padding-bottom:5%;
   width:100%;
   overflow-X:hidden;
   overflow-Y:hidden;
+  @media(min-width:425px){
+    margin-top:9%;
+
+  }
   @media(min-width:756px){
     margin-top:8%;
+
   }
   @media(min-width:1024px){
     margin-top:2%;
