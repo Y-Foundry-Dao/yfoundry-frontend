@@ -179,12 +179,12 @@ const bannerMove10 = keyframes`
 `
   
 const LogoHolder1 = styled.div`
-  animation: ${bannerMove1} 35s linear infinite;
+  animation: ${bannerMove1} 40s linear infinite;
   @media(min-width:425px){
-    animation: ${bannerMove2} 35s linear infinite;
+    animation: ${bannerMove2} 40s linear infinite;
   }
   @media(min-width:630px){
-    animation: ${bannerMove3} 35s linear infinite;
+    animation: ${bannerMove3} 40s linear infinite;
   }
   @media(min-width:756px){
     animation: ${bannerMove4} 40s linear infinite;
@@ -196,16 +196,16 @@ const LogoHolder1 = styled.div`
     animation: ${bannerMove6} 40s linear infinite;
   }
   @media(min-width:1024px){
-    animation: ${bannerMove7} 40s linear infinite;
+    animation: ${bannerMove7} 45s linear infinite;
   }
   @media(min-width:1150px){
-    animation: ${bannerMove8} 40s linear infinite;
+    animation: ${bannerMove8} 45s linear infinite;
   }
   @media(min-width:1300px){
-    animation: ${bannerMove9} 40s linear infinite;
+    animation: ${bannerMove9} 45s linear infinite;
   }
   @media(min-width:1400px){
-    animation: ${bannerMove10} 40s linear infinite;
+    animation: ${bannerMove10} 45s linear infinite;
   }
 `
 
