@@ -159,7 +159,22 @@ const bannerMove8 = keyframes`
   0%{
     margin-left: 3500px;
   }100%{
-    margin-left: -3350px;
+    margin-left: -3450px;
+  }
+`
+const bannerMove9 = keyframes`
+  0%{
+    margin-left: 3600px;
+  }100%{
+    margin-left: -3600px;
+  }
+`
+
+const bannerMove10 = keyframes`
+  0%{
+    margin-left: 4000px;
+  }100%{
+    margin-left: -4050px;
   }
 `
   
@@ -185,6 +200,12 @@ const LogoHolder1 = styled.div`
   }
   @media(min-width:1150px){
     animation: ${bannerMove8} 40s linear infinite;
+  }
+  @media(min-width:1300px){
+    animation: ${bannerMove9} 40s linear infinite;
+  }
+  @media(min-width:1400px){
+    animation: ${bannerMove10} 10s linear infinite;
   }
 `
 
