@@ -60,21 +60,26 @@ const TextSection = styled.div`
 `
 
 const Text = styled.p`
-  width:85%;
-  margin:5% 0 0 3%;
-  font-size:.8rem;
+  width: 85%;
+  margin: 5% 0 0 3%;
+  font-size: .8rem;
+  text-align: justify;
 
   @media(min-width:425px){
-    font-size:.9rem;
-    width:75%;
+    font-size: .9rem;
+    width: 75%;
   }
   @media(min-width:756px){
-    font-size:1rem;
-    width:60%;
+    font-size: 1rem;
+    width: 60%;
   }
   @media(min-width:1024px){
-    font-size:1.1rem;
-    width:55%;
+    font-size: 1.1rem;
+    width: 55%;
+  }
+  @media(min-width:1440px){
+    font-size: 1.3rem;
+    line-height: 36px
   }
 `
 
@@ -107,7 +112,6 @@ const OrangeBars = styled.img`
   @media(min-width:756px){
     width:42%;
   }
-  
 `
 const OrangeText = styled.span`
   color:${props => `${props.theme.colors.orange}`};
