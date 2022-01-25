@@ -80,6 +80,7 @@ const Header = styled.h3`
 const P = styled.p`
   font-size:.75rem;
   margin:0;
+  text-align: justify;
   color:${props => `${props.theme.colors.gray}`};
 
   @media(min-width:425px){

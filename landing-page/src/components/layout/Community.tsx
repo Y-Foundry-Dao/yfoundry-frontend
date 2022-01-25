@@ -62,6 +62,7 @@ const TextSection = styled.div`
 const Text = styled.p`
   width:85%;
   margin:5% 0 0 3%;
+  text-align: justify;
   font-size:.8rem;
 
   @media(min-width:425px){

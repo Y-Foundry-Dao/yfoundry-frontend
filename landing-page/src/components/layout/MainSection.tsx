@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import ButtonSet from './ButtonSet';
 import blueY from '../../assets/blue_logo2.svg';
 
-const text = `A Decentralized System of Vault \nCreation, Maintenance, and Governance.`;
+const text = `A Decentralized System of Vault \nCreation, Maintenance and Governance.`;
 
 function MainSection() {
   return (
@@ -93,6 +93,7 @@ const HeaderText = styled.h1`
   font-size:1rem;
   font-weight:400;
   line-height:24px;
+  text-align: justify;
   white-space:pre-wrap;
   margin-bottom:20px;
   @media(min-width:600px){
