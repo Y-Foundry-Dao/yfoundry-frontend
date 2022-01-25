@@ -205,7 +205,7 @@ const LogoHolder1 = styled.div`
     animation: ${bannerMove9} 40s linear infinite;
   }
   @media(min-width:1400px){
-    animation: ${bannerMove10} 10s linear infinite;
+    animation: ${bannerMove10} 40s linear infinite;
   }
 `
 
