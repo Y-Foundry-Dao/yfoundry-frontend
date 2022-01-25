@@ -43,22 +43,6 @@ function InvestorCarousel() {
       <LogoHolder>
         <Logo src={northRock} alt={"North Rock Digital Logo"} />
       </LogoHolder>
-      
-      {/* <LogoHolder>
-        <Logo0xVentures src={xVentures} alt={"0xVentures Logo"} />
-      </LogoHolder>
-      
-      <LogoHolder>
-        <Logo src={hyperion} alt={"Hyperion Logo"} />
-      </LogoHolder>
-      
-      <LogoHolder>
-        <Logo src={apollo} alt={"Apollo"} /> 
-      </LogoHolder>
-      
-      <LogoHolder>
-        <Logo src={cetaceanCapital} alt={"Cetacean Capital Logo"} />
-      </LogoHolder> */}
     </Carousel>
   )
 }
@@ -72,7 +56,7 @@ const Carousel = styled.div`
   flex-wrap: nowrap;
   justify-content: center;
   margin-top: 18%;
-  width: 3550px;
+  width: 100%;
   gap:100px;
   @media(min-width:756px) {
     margin-top: 24%;
@@ -116,16 +100,92 @@ const Logo0xVentures = styled(Logo)`
   }
 `
 
-const bannerMove = keyframes`
+const bannerMove1 = keyframes`
   0%{
-    margin-left: 3800px;
+    margin-left: 2200px;
   }100%{
-    margin-left: -5000px;
+    margin-left: -2100px;
+  }
+`
+
+const bannerMove2 = keyframes`
+  0%{
+    margin-left: 2350px;
+  }100%{
+    margin-left: -2450px;
+  }
+`
+
+const bannerMove3 = keyframes`
+  0%{
+    margin-left: 2500px;
+  }100%{
+    margin-left: -2500px;
+  }
+`
+
+const bannerMove4 = keyframes`
+  0%{
+    margin-left: 2750px;
+  }100%{
+    margin-left: -2800px;
+  }
+`
+
+const bannerMove5 = keyframes`
+  0%{
+    margin-left: 2870px;
+  }100%{
+    margin-left: -2900px;
+  }
+`
+
+const bannerMove6 = keyframes`
+  0%{
+    margin-left: 2950px;
+  }100%{
+    margin-left: -3000px;
+  }
+`
+
+const bannerMove7 = keyframes`
+  0%{
+    margin-left: 3250px;
+  }100%{
+    margin-left: -3300px;
+  }
+`
+const bannerMove8 = keyframes`
+  0%{
+    margin-left: 3500px;
+  }100%{
+    margin-left: -3350px;
   }
 `
   
 const LogoHolder1 = styled.div`
-  animation: ${bannerMove} 30s linear infinite;
+  animation: ${bannerMove1} 35s linear infinite;
+  @media(min-width:425px){
+    animation: ${bannerMove2} 35s linear infinite;
+  }
+  @media(min-width:630px){
+    animation: ${bannerMove3} 35s linear infinite;
+  }
+  @media(min-width:756px){
+    animation: ${bannerMove4} 40s linear infinite;
+  }  
+  @media(min-width:875px){
+    animation: ${bannerMove5} 40s linear infinite;
+  }
+  @media(min-width:950px){
+    animation: ${bannerMove6} 40s linear infinite;
+  }
+  @media(min-width:1024px){
+    animation: ${bannerMove7} 40s linear infinite;
+  }
+  @media(min-width:1150px){
+    animation: ${bannerMove8} 40s linear infinite;
+  }
 `
 
 export default InvestorCarousel
