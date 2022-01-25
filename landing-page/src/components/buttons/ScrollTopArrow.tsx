@@ -26,18 +26,26 @@ const ScrollButton = () =>{
   window.addEventListener('scroll', toggleVisible);
   
   return (
-    <Button>
-     <FaAngleUp onClick={scrollToTop} 
-     style={{display: visible ? 'inline' : 'none'}} />
-    </Button>
+    <ButtonHolder>
+      <Button>
+        <FaAngleUp onClick={scrollToTop} 
+        style={{display: visible ? 'inline' : 'none'}} />
+      </Button>
+    </ButtonHolder>
+
   );
 }
 
+const ButtonHolder = styled.div`
+  position:fixed;
+  display:flex;
+  width:100%;
+  bottom: 40px; 
+  justify-content:center;
+  align-items:center;
+`
+
 const Button = styled.div`
-   position: fixed; 
-   width: 100%;
-   left: 50%;
-   bottom: 40px;
    height: 20px;
    font-size: 3rem;
    z-index: 1;
