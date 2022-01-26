@@ -10,7 +10,7 @@ import northRock from '../../assets/NorthRockDigital.png';
 // Core modules imports are same as usual
 
 // Direct React component imports
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay, FreeMode } from 'swiper';
+import { Navigation, A11y, Autoplay, FreeMode } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -23,17 +23,19 @@ import 'swiper/css/scrollbar';
 function InvestorCarousel() {
   return (
     <StyledSwiper
-    modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay, FreeMode]}
-    spaceBetween={0}
     slidesPerView={4}
-    navigation
-    // autoplay={{delay:0, pauseOnMouseEnter:true, disableOnInteraction:false}}
-    freeMode
+    spaceBetween={20}
     loop={true}
-    loopPreventsSlide={true}
+    loopFillGroupWithBlank={true}
+    navigation={true}
+    className="mySwiper"
+    modules={[Navigation, A11y, Autoplay, FreeMode]}
+    autoplay={{delay:0, pauseOnMouseEnter:true, disableOnInteraction:false}}
+    freeMode
+    loopPreventsSlide
     speed={12000}
-    onSwiper={(swiper) => console.log(swiper)}
-    onSlideChange={() => console.log('slide change')}
+    // onSwiper={(swiper: any) => console.log(swiper)}
+    // onSlideChange={() => console.log('slide change')}
     >
       <SwiperSlide><Logo0xVentures src={xVentures} alt={"0xVentures Logo"} /></SwiperSlide>
       <SwiperSlide><Logo src={hyperion} alt={"Hyperion Logo"} /></SwiperSlide>
@@ -48,7 +50,7 @@ function InvestorCarousel() {
 }
 
 const StyledSwiper = styled(Swiper)`
-  padding-top: 2%;
+  padding-top: 20px;
   border: 1px ${props => `${props.theme.colors.orange}`};
   border-style: solid none;
   display: flex;
@@ -60,6 +62,7 @@ const StyledSwiper = styled(Swiper)`
   @media(min-width:756px) {
     margin-top: 24%;
   }
+  text-align: center;
 `
 
 const StyledSwiperSlide = styled.div`
@@ -175,7 +178,7 @@ const bannerMove10 = keyframes`
     margin-left: -4050px;
   }
 `
-  
+
 const LogoHolder1 = styled.div`
   animation: ${bannerMove1} 40s linear infinite;
   @media(min-width:425px){
@@ -186,7 +189,7 @@ const LogoHolder1 = styled.div`
   }
   @media(min-width:756px){
     animation: ${bannerMove4} 40s linear infinite;
-  }  
+  }
   @media(min-width:875px){
     animation: ${bannerMove5} 40s linear infinite;
   }
