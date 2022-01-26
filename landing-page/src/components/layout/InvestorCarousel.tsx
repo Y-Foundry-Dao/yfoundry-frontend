@@ -23,27 +23,36 @@ import 'swiper/css/scrollbar';
 function InvestorCarousel() {
   return (
     <StyledSwiper
-    slidesPerView={4}
+    slidesPerView={1}
     spaceBetween={20}
     loop={true}
+    centeredSlides={true}
+    grabCursor={true}
     loopFillGroupWithBlank={true}
     navigation={true}
     className="mySwiper"
     modules={[Navigation, A11y, Autoplay, FreeMode]}
     autoplay={{delay:0, pauseOnMouseEnter:true, disableOnInteraction:false}}
     freeMode
-    loopPreventsSlide
-    speed={12000}
-    // onSwiper={(swiper: any) => console.log(swiper)}
-    // onSlideChange={() => console.log('slide change')}
+    loopPreventsSlide={true}
+    speed={5000}
+    breakpoints={{
+      425:{
+        slidesPerView:2
+      },
+      756:{
+        slidesPerView:3
+      }
+    }}
     >
-      <SwiperSlide><Logo0xVentures src={xVentures} alt={"0xVentures Logo"} /></SwiperSlide>
+      
       <SwiperSlide><Logo src={hyperion} alt={"Hyperion Logo"} /></SwiperSlide>
       <SwiperSlide><Logo src={apollo} alt={"Apollo"} /></SwiperSlide>
-      <SwiperSlide><Logo src={cetaceanCapital} alt={"Cetacean Capital Logo"} /></SwiperSlide>
       <SwiperSlide><Logo src={deepVentures} alt={"Deep Ventures logo"} /></SwiperSlide>
+      <SwiperSlide><Logo src={cetaceanCapital} alt={"Cetacean Capital Logo"} /></SwiperSlide>
       <SwiperSlide><Logo src={lambda} alt={"Lambda Logo"} /></SwiperSlide>
       <SwiperSlide><Logo src={thorstarter} alt={"Thorstarter Logo"} /></SwiperSlide>
+      <SwiperSlide><Logo0xVentures src={xVentures} alt={"0xVentures Logo"} /></SwiperSlide>
       <SwiperSlide><Logo src={northRock} alt={"North Rock Digital Logo"} /></SwiperSlide>
     </StyledSwiper>
   )
@@ -51,11 +60,11 @@ function InvestorCarousel() {
 
 const StyledSwiper = styled(Swiper)`
   padding-top: 20px;
+  padding-bottom:20px;
   border: 1px ${props => `${props.theme.colors.orange}`};
   border-style: solid none;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
   margin-top: 18%;
   width: 100%;
   gap:100px;
@@ -65,16 +74,9 @@ const StyledSwiper = styled(Swiper)`
   text-align: center;
 `
 
-const StyledSwiperSlide = styled.div`
-  display: flex;
-  align-items: center;
-  @media(max-width:756px) {
-    margin: 5px 0 5px;
-  }
-`
-
 const Logo = styled.img`
   height:40px;
+  padding-top:0px;
 
   @media(min-width:425px){
     height:45px;
@@ -88,7 +90,11 @@ const Logo = styled.img`
 `
 
 const Logo0xVentures = styled(Logo)`
-  height:60px;
+  /* height:80px; */
+  /* height:60px;
+  padding-top:0px;
+  border:1px solid white;
+  padding-bottom:10px;
 
   @media(min-width:425px){
     height:68px;
@@ -98,116 +104,7 @@ const Logo0xVentures = styled(Logo)`
   }
   @media(min-width:1024px){
     height:90px;
-  }
-`
-
-const bannerMove1 = keyframes`
-  0%{
-    margin-left: 2200px;
-  }100%{
-    margin-left: -2100px;
-  }
-`
-
-const bannerMove2 = keyframes`
-  0%{
-    margin-left: 2350px;
-  }100%{
-    margin-left: -2450px;
-  }
-`
-
-const bannerMove3 = keyframes`
-  0%{
-    margin-left: 2500px;
-  }100%{
-    margin-left: -2500px;
-  }
-`
-
-const bannerMove4 = keyframes`
-  0%{
-    margin-left: 2750px;
-  }100%{
-    margin-left: -2800px;
-  }
-`
-
-const bannerMove5 = keyframes`
-  0%{
-    margin-left: 2870px;
-  }100%{
-    margin-left: -2900px;
-  }
-`
-
-const bannerMove6 = keyframes`
-  0%{
-    margin-left: 2950px;
-  }100%{
-    margin-left: -3000px;
-  }
-`
-
-const bannerMove7 = keyframes`
-  0%{
-    margin-left: 3250px;
-  }100%{
-    margin-left: -3300px;
-  }
-`
-const bannerMove8 = keyframes`
-  0%{
-    margin-left: 3500px;
-  }100%{
-    margin-left: -3450px;
-  }
-`
-const bannerMove9 = keyframes`
-  0%{
-    margin-left: 3600px;
-  }100%{
-    margin-left: -3600px;
-  }
-`
-
-const bannerMove10 = keyframes`
-  0%{
-    margin-left: 4000px;
-  }100%{
-    margin-left: -4050px;
-  }
-`
-
-const LogoHolder1 = styled.div`
-  animation: ${bannerMove1} 40s linear infinite;
-  @media(min-width:425px){
-    animation: ${bannerMove2} 40s linear infinite;
-  }
-  @media(min-width:630px){
-    animation: ${bannerMove3} 40s linear infinite;
-  }
-  @media(min-width:756px){
-    animation: ${bannerMove4} 40s linear infinite;
-  }
-  @media(min-width:875px){
-    animation: ${bannerMove5} 40s linear infinite;
-  }
-  @media(min-width:950px){
-    animation: ${bannerMove6} 40s linear infinite;
-  }
-  @media(min-width:1024px){
-    animation: ${bannerMove7} 45s linear infinite;
-  }
-  @media(min-width:1150px){
-    animation: ${bannerMove8} 45s linear infinite;
-  }
-  @media(min-width:1300px){
-    animation: ${bannerMove9} 45s linear infinite;
-  }
-  @media(min-width:1400px){
-    animation: ${bannerMove10} 45s linear infinite;
-  }
+  } */
 `
 
 export default InvestorCarousel
