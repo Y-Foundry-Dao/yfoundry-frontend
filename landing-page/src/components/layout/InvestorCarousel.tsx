@@ -35,7 +35,7 @@ function InvestorCarousel() {
     autoplay={{delay:0, pauseOnMouseEnter:true, disableOnInteraction:false}}
     freeMode
     loopPreventsSlide={true}
-    speed={5000}
+    speed={10000}
     breakpoints={{
       425:{
         slidesPerView:2
