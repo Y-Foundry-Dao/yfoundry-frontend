@@ -48,6 +48,7 @@ const Div = styled.div`
   flex-direction:column;
   gap:10px;
   width:50%;
+  text-align: justify;
 
   @media(min-width:425px){
     width:43%;
