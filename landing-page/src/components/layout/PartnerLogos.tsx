@@ -11,34 +11,77 @@ import northRock from '../../assets/NorthRockDigital.png';
 
 function PartnerLogos() {
   return (
+    <Backers>
+    <Header>Our <Orange>Backers</Orange></Header>
     <Section>
-      <LogoHolder>
-        <Logo0xVentures src={xVentures} alt={"0xVentures Logo"} />
-      </LogoHolder>
-      <LogoHolder>
-        <Logo src={hyperion} alt={"Hyperion Logo"} />
-      </LogoHolder>
-      <LogoHolder>
-        <Logo src={apollo} alt={"Apollo"} />
-      </LogoHolder>
-      <LogoHolder>
-        <Logo src={cetaceanCapital} alt={"Cetacean Capital Logo"} />
-      </LogoHolder>
-      <LogoHolder>
-        <Logo src={deepVentures} alt={"Deep Ventures logo"} />
-      </LogoHolder>
-      <LogoHolder>
-        <Logo src={lambda} alt={"Lambda Logo"} />
-      </LogoHolder>
-      <LogoHolder>
-        <Logo src={thorstarter} alt={"Thorstarter Logo"} />
-      </LogoHolder>
-      <LogoHolder>
-        <Logo src={northRock} alt={"North Rock Digital Logo"} />
-      </LogoHolder>
-    </Section>
+        <LogoHolder>
+          <Logo0xVentures src={xVentures} alt={"0xVentures Logo"} />
+        </LogoHolder>
+        <LogoHolder>
+          <Logo src={hyperion} alt={"Hyperion Logo"} />
+        </LogoHolder>
+        <LogoHolder>
+          <Logo src={apollo} alt={"Apollo"} />
+        </LogoHolder>
+        <LogoHolder>
+          <Logo src={cetaceanCapital} alt={"Cetacean Capital Logo"} />
+        </LogoHolder>
+        <LogoHolder>
+          <Logo src={deepVentures} alt={"Deep Ventures logo"} />
+        </LogoHolder>
+        <LogoHolder>
+          <Logo src={lambda} alt={"Lambda Logo"} />
+        </LogoHolder>
+        <LogoHolder>
+          <Logo src={thorstarter} alt={"Thorstarter Logo"} />
+        </LogoHolder>
+        <LogoHolder>
+          <Logo src={northRock} alt={"North Rock Digital Logo"} />
+        </LogoHolder>
+      </Section>
+    </Backers>
+
+
   )
 }
+
+const Backers = styled.div`
+  margin-top: 18%;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align: justify;
+  @media(min-width:756px) {
+    margin-top: 24%;
+  }
+`
+
+const Orange = styled.span`
+  color: ${props => `${props.theme.colors.orange}`};
+`
+
+const Header = styled.h2`
+  margin:0 0;
+  width:92%;
+  font-size:1.4rem;
+  margin-bottom:2%;
+  align-self:center;
+  text-align: justify;
+
+  @media(min-width:425px){
+    font-size:1.5rem;
+  }
+  @media(min-width:756px){
+    font-size:1.6rem;
+    width:80%;
+  }
+
+  @media(min-width:1025px){
+    font-size:1.8rem;
+    width:70%;
+  }
+`
 
 const Section = styled.section`
   padding: 2%;
@@ -47,13 +90,9 @@ const Section = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-top: 18%;
-  width: 100%;
+  width: 99%;
   column-gap: 16px;
   row-gap: 6px;
-  @media(min-width:756px) {
-    margin-top: 24%;
-  }
 `
 
 const LogoHolder = styled.div`
