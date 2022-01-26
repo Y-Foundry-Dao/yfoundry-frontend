@@ -3,7 +3,7 @@ import mediumLogo from '../../assets/mediumLogo.svg'
 import mediumWords from '../../assets/mediumWords.svg'
 
 const mediumLink =
-  "https://medium.com/@yfoundry/y-foundry-dao-is-bringing-community-designed-vaults-to-terra-299e9ce702ee";
+  "https://medium.com/@yfoundry/";
 
 function DownloadButton() {
   return (
