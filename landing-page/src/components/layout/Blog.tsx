@@ -48,6 +48,7 @@ const Div = styled.div`
   flex-direction:column;
   gap:10px;
   width:50%;
+  text-align: justify;
 
   @media(min-width:425px){
     width:43%;
@@ -80,6 +81,7 @@ const Header = styled.h3`
 const P = styled.p`
   font-size:.75rem;
   margin:0;
+  text-align: justify;
   color:${props => `${props.theme.colors.gray}`};
 
   @media(min-width:425px){

@@ -4,10 +4,8 @@ function NavLinks() {
   return (
     <Nav>
       <Ul>
-        <li><Link href="#home">home</Link></li>
         <li><Link href="#about">about</Link></li>
         <li><Link href="#blog">blog</Link></li>
-        <li><Link href="#">roadmap</Link></li>
         <li><Link href="#community">join community</Link></li>
       </Ul>
     </Nav>
