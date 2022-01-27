@@ -1,22 +1,73 @@
 import logo from '../../assets/horizontal_logo_orange&white.svg';
 import styled from 'styled-components';
-import ButtonSet from './ButtonSet';
 import blueY from '../../assets/blue_logo2.svg';
+import moon from "../../assets/moon.svg"
+import planet from "../../assets/planet.svg"
 
 const text = `A Decentralized System of Vault \nCreation, Maintenance and Governance.`;
 
 function MainSection() {
   return (
     <Main>
+      <Moon src={moon}/>
+      <Planet src={planet}/>
       <Section>
         <Logo src={logo} alt={"y-foundry dao"} />
         <HeaderText>{text}</HeaderText>
-        {/* <ButtonSet /> */}
       </Section>
       <BlueY src={blueY} alt={"big blue y"} />
     </Main>
   )
 }
+
+const Moon = styled.img`
+  position:absolute;
+  top:-70px;
+  left:42%;
+
+  @media(min-width:756px){
+    top:-70px;
+    left:42%;
+  }
+  @media(min-width:875px){
+    top:-70px;
+    left:39%;
+  }
+  @media(min-width:1024px){
+    top:-65px;
+    left:38%;
+  }
+  @media(min-width:1440px){
+  }
+
+  @media(max-width:756px){
+    display:none;
+  }
+`
+const Planet = styled.img`
+  position:absolute;
+  top:-110px;
+  right:2%;
+
+  @media(min-width:900px){
+    top:-120px;
+  }
+  @media(min-width:1024px){
+    top:-130px;
+    right:4%;
+  }
+  @media(min-width:1200px){
+    top:-150px;
+    /* right:6%; */
+  }
+  @media(min-width:1440px){
+    top:-170px;
+    /* right:6%; */
+  }
+  @media(max-width:756px){
+    display:none;
+  }
+`
 
 const Section = styled.section`
   display:flex;
@@ -35,17 +86,17 @@ const Logo = styled.img`
     width:50%;
   }
   @media(min-width:756px){
-    width:45%;
+    width:46%;
     margin-bottom:20px;
   }
   @media(min-width:875px){
-    width:40%;
+    width:42%;
   }
   @media(min-width:1024px){
-    width:35%;
+    width:38%;
   }
   @media(min-width:1440px){
-    width:30%;
+    width:36%;
   }
   @media(min-width:1760px){
     margin-bottom:30px;
@@ -54,13 +105,26 @@ const Logo = styled.img`
 
 const BlueY = styled.img`
   position:absolute;
-  top:120px;
-  right:7%;
-  width:28%;
+  top:-100px;
+  right:4%;
+  width:26%;
 
+  @media(min-width:900px){
+    top:-110px;
+  }
   @media(min-width:1024px){
+    width:25%;
+    top:-120px;
+    right:6%;
+  }
+  @media(min-width:1200px){
+    top:-150px;
+    right:6%;
+  }
+  @media(min-width:1440px){
     width:26%;
-    right:8%;
+    top:-180px;
+    right:6%;
   }
   @media(max-width:756px){
     display:none;
@@ -68,6 +132,7 @@ const BlueY = styled.img`
 `
 
 const Main = styled.main`
+  position:relative;
   width:93%;
   padding-left:5%;
   margin-top:13%;
