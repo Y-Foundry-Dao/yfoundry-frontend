@@ -16,6 +16,8 @@ import 'swiper/css';
 
 function InvestorCarousel() {
   return (
+    <Div>
+      <Header>Our <OrangeText>Backers</OrangeText></Header>
     <StyledSwiper
     slidesPerView={2}
     loop={true}
@@ -43,8 +45,48 @@ function InvestorCarousel() {
       <SwiperSlide><Logo src={xVentures} alt={"0xVentures Logo"} /></SwiperSlide>
       <SwiperSlide><Logo src={northRock} alt={"North Rock Digital Logo"} /></SwiperSlide>
     </StyledSwiper>
+    </Div>
+
   )
 }
+
+
+
+const Div = styled.div`
+  width: 100%;
+  margin-top: 18%;
+  display:flex;
+  flex-wrap:wrap;
+
+  @media(min-width:756px) {
+    margin-top: 24%;
+  }
+`
+
+const OrangeText = styled.span`
+  color:${props => `${props.theme.colors.orange}`};
+`
+
+const Header = styled.h4`
+  margin:0 0 3% 3%;
+  font-size:1.3rem;
+  width:70%;
+  padding-left:3%;
+
+  @media(min-width:425px){
+    font-size:1.5rem;
+  }
+  @media(min-width:756px){
+    font-size:1.6rem;
+    width:55%;
+    margin-left:11%;
+    padding-left:2%;
+  }
+  @media(min-width:1025px){
+    font-size:1.8rem;
+    width:60%;
+  }
+`
 
 const StyledSwiper = styled(Swiper)`
   padding-top: 20px;
@@ -53,12 +95,6 @@ const StyledSwiper = styled(Swiper)`
   border-style: solid none;
   display: flex;
   flex-wrap: nowrap;
-  margin-top: 18%;
-  width: 100%;
-  gap:100px;
-  @media(min-width:756px) {
-    margin-top: 24%;
-  }
   text-align: center;
 `
 
