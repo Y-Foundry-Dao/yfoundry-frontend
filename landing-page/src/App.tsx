@@ -1,4 +1,4 @@
-import HeaderBar from './components/layout/HeaderBar';
+import HeaderBar from './components/navigation/HeaderBar';
 import MainSection from './components/layout/MainSection';
 import PartnerLogos from './components/layout/PartnerLogos';
 import AboutUs from './components/layout/AboutUs';
