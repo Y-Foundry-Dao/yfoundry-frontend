@@ -7,7 +7,7 @@ import FooterBar from './components/sections/footer/FooterBar';
 import Community from './components/sections/vision/Vision';
 import Blog from './components/sections/blog/Blog';
 import BackgroundComposition from './components/background/BackgroundComposition';
-import ScrollButton from './components/buttons/ScrollTopArrow';
+import ScrollButton from './components/ScrollTopArrow';
 
 function App() {
   return (
