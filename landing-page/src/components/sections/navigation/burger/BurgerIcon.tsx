@@ -2,12 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 interface ComponentProps{
-  open:boolean,
-  setOpen:any,
+  open: boolean,
+  setOpen: any,
 };
 interface StyleProps {
-  open:boolean,
-  onClick:Function
+  open: boolean,
+  onClick: Function
 };
 
 const BurgerIcon:React.FC <ComponentProps> = (props:ComponentProps) => {
@@ -34,7 +34,7 @@ const Burger:React.FC <StyleProps> = styled.button<StyleProps>`
   border: none;
   cursor: pointer;
   padding: 0;
-  z-index:2;
+  z-index: 2;
 
   &:focus {
     outline: none;
