@@ -5,7 +5,7 @@ import mediumWords from '../../../assets/mediumWords.svg'
 const mediumLink =
   "https://medium.com/@yfoundry/";
 
-function DownloadButton() {
+function MediumButton() {
   return (
     <Div>
       <a href={mediumLink} target={"_blank"} rel={"noreferrer"}>
@@ -72,4 +72,4 @@ const Div = styled.div`
   }
 `
 
-export default DownloadButton;
+export default MediumButton;

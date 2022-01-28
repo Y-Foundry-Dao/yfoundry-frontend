@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import DownloadButton from './DownloadButton';
+import MediumButton from './MediumButton';
 
 function LitePaper() {
   return (
@@ -8,7 +8,7 @@ function LitePaper() {
         <Header>Do you want to know more about YFD?</Header>
         <P>Check out our blog to stay up to date</P>
       </Div>
-      <DownloadButton />
+      <MediumButton />
     </Section>
   )
 }
