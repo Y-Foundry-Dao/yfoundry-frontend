@@ -1,6 +1,6 @@
 import HeaderBar from './components/navigation/HeaderBar';
 import MainSection from './components/layout/MainSection';
-import PartnerLogos from './components/layout/PartnerLogos';
+import PartnerLogos from './components/layout/backers/PartnerLogos';
 import AboutUs from './components/layout/aboutUs/AboutUs';
 import styled from 'styled-components';
 import FooterBar from './components/layout/footer/FooterBar';
