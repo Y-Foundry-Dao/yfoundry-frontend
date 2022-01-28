@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import mediumLogo from '../../assets/mediumLogo.svg'
-import mediumWords from '../../assets/mediumWords.svg'
+import mediumLogo from '../../../assets/mediumLogo.svg'
+import mediumWords from '../../../assets/mediumWords.svg'
 
 const mediumLink =
   "https://medium.com/@yfoundry/";

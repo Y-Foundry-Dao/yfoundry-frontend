@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import DownloadButton from '../buttons/DownloadButton';
+import DownloadButton from './DownloadButton';
 
 function LitePaper() {
   return (

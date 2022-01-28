@@ -5,7 +5,7 @@ import AboutUs from './components/layout/aboutUs/AboutUs';
 import styled from 'styled-components';
 import FooterBar from './components/layout/FooterBar';
 import Community from './components/layout/Community';
-import Blog from './components/layout/Blog';
+import Blog from './components/layout/blog/Blog';
 import BackgroundComposition from './components/background/BackgroundComposition';
 import ScrollButton from './components/buttons/ScrollTopArrow';
 
