@@ -1,5 +1,5 @@
 import HeaderBar from './components/navigation/HeaderBar';
-import MainSection from './components/layout/MainSection';
+import MainSection from './components/layout/hero/HeroSection';
 import PartnerLogos from './components/layout/backers/PartnerLogos';
 import AboutUs from './components/layout/aboutUs/AboutUs';
 import styled from 'styled-components';
