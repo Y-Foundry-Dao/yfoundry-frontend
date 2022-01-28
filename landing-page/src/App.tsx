@@ -3,7 +3,7 @@ import MainSection from './components/layout/MainSection';
 import PartnerLogos from './components/layout/PartnerLogos';
 import AboutUs from './components/layout/aboutUs/AboutUs';
 import styled from 'styled-components';
-import FooterBar from './components/layout/FooterBar';
+import FooterBar from './components/layout/footer/FooterBar';
 import Community from './components/layout/Community';
 import Blog from './components/layout/blog/Blog';
 import BackgroundComposition from './components/background/BackgroundComposition';
