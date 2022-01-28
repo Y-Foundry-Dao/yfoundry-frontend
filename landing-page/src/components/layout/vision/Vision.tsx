@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import twitter from '../../assets/twitter.svg';
-import discord from '../../assets/discord.svg';
-import telegram from '../../assets/whiteTelegram.png';
-import orangeBars from '../../assets/orange_bars_community.svg';
+import twitter from '../../../assets/twitter.svg';
+import discord from '../../../assets/discord.svg';
+import telegram from '../../../assets/whiteTelegram.png';
+import orangeBars from '../../../assets/orange_bars_community.svg';
 
-function Community() {
+function Vision() {
   return (
     <Section id='community'>
       <Div>
@@ -163,4 +163,4 @@ const Img = styled.img`
   padding:0;
 `
 
-export default Community;
+export default Vision;

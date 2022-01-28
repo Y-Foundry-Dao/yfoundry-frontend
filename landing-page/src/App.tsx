@@ -4,7 +4,7 @@ import PartnerLogos from './components/layout/backers/PartnerLogos';
 import AboutUs from './components/layout/aboutUs/AboutUs';
 import styled from 'styled-components';
 import FooterBar from './components/layout/footer/FooterBar';
-import Community from './components/layout/Community';
+import Community from './components/layout/vision/Vision';
 import Blog from './components/layout/blog/Blog';
 import BackgroundComposition from './components/background/BackgroundComposition';
 import ScrollButton from './components/buttons/ScrollTopArrow';
