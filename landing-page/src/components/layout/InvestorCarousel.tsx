@@ -26,24 +26,24 @@ function InvestorCarousel() {
     loopFillGroupWithBlank={true}
     className="mySwiper"
     modules={[A11y, Autoplay, FreeMode]}
-    autoplay={{delay:0, pauseOnMouseEnter:true, disableOnInteraction:false}}
+    autoplay={{delay:0, pauseOnMouseEnter:false, disableOnInteraction:false}}
     freeMode
     loopPreventsSlide={true}
-    speed={10000}
+    speed={7200}
     breakpoints={{
       756:{
         slidesPerView:4
       }
     }}
     >
-      <SwiperSlide><Logo src={hyperion} alt={"Hyperion Logo"} /></SwiperSlide>
-      <SwiperSlide><Logo src={apollo} alt={"Apollo"} /></SwiperSlide>
-      <SwiperSlide><LogoDeepVentures src={deepVentures} alt={"Deep Ventures logo"} /></SwiperSlide>
-      <SwiperSlide><Logo src={cetaceanCapital} alt={"Cetacean Capital Logo"} /></SwiperSlide>
-      <SwiperSlide><Logo src={lambda} alt={"Lambda Logo"} /></SwiperSlide>
-      <SwiperSlide><Logo src={thorstarter} alt={"Thorstarter Logo"} /></SwiperSlide>
-      <SwiperSlide><Logo src={xVentures} alt={"0xVentures Logo"} /></SwiperSlide>
-      <SwiperSlide><Logo src={northRock} alt={"North Rock Digital Logo"} /></SwiperSlide>
+      <SwiperSlide data-swiper-autoplay="1200"><Logo src={hyperion} alt={"Hyperion Logo"} /></SwiperSlide>
+      <SwiperSlide data-swiper-autoplay="1200"><Logo src={apollo} alt={"Apollo"} /></SwiperSlide>
+      <SwiperSlide data-swiper-autoplay="1200"><LogoDeepVentures src={deepVentures} alt={"Deep Ventures logo"} /></SwiperSlide>
+      <SwiperSlide data-swiper-autoplay="1200"><Logo src={cetaceanCapital} alt={"Cetacean Capital Logo"} /></SwiperSlide>
+      <SwiperSlide data-swiper-autoplay="1200"><Logo src={lambda} alt={"Lambda Logo"} /></SwiperSlide>
+      <SwiperSlide data-swiper-autoplay="1200"><Logo src={thorstarter} alt={"Thorstarter Logo"} /></SwiperSlide>
+      <SwiperSlide data-swiper-autoplay="1200"><Logo src={xVentures} alt={"0xVentures Logo"} /></SwiperSlide>
+      <SwiperSlide data-swiper-autoplay="1200"><Logo src={northRock} alt={"North Rock Digital Logo"} /></SwiperSlide>
     </StyledSwiper>
     </Div>
 
