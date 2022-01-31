@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import twitter from '../../assets/twitter.svg';
-import discord from '../../assets/discord.svg';
-import telegram from '../../assets/whiteTelegram.png';
-import orangeBars from '../../assets/orange_bars_community.svg';
+import twitter from '../../../assets/twitter.svg';
+import discord from '../../../assets/discord.svg';
+import telegram from '../../../assets/whiteTelegram.png';
+import orangeBars from '../../../assets/orange_bars_community.svg';
 
 function Community() {
   return (
