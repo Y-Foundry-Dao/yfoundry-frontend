@@ -37,12 +37,12 @@ const ScrollButton = () =>{
 }
 
 const ButtonHolder = styled.div`
-  position:fixed;
-  display:flex;
-  width:100%;
+  position: fixed;
+  display: flex;
+  width: 100%;
   bottom: 40px; 
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
 `
 
 const Button = styled.div`
