@@ -1,6 +1,6 @@
 import HeaderBar from './components/sections/navigation/HeaderBar';
 import MainSection from './components/sections/hero/HeroSection';
-import PartnerLogos from './components/sections/backers/PartnerLogos';
+import InvestorCarousel from './components/sections/backers/InvestorCarousel';
 import AboutUs from './components/sections/aboutUs/AboutUs';
 import styled from 'styled-components';
 import FooterBar from './components/sections/footer/FooterBar';
@@ -15,7 +15,7 @@ function App() {
       <BackgroundComposition/>
       <HeaderBar />
       <MainSection />
-      <PartnerLogos />
+      <InvestorCarousel />
       <AboutUs />
       <Blog/>
       <Community />
