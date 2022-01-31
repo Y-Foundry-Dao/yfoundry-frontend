@@ -24,39 +24,38 @@ const StyledMenu:any = styled.nav<Props>`
   z-index: ${({open}) => open ? 1 : -1};
   width:100vw;
   height: 100vh;
-  position:fixed;
+  position: fixed;
   top: 0;
   left: 0;
   transition: opacity 0.35s ease-in-out;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
-
 
 const Link = styled.a`
   color: ${props => `${props.theme.colors.gray}`};
-  text-decoration:none;
-  text-transform:uppercase;
+  text-decoration: none;
+  text-transform: uppercase;
   &:hover{
-    color:${props => `${props.theme.colors.orange}`};
-    transition:.15s linear;
+    color: ${props => `${props.theme.colors.orange}`};
+    transition: .15s linear;
   }
 `
 
 const Ul = styled.ul`
-  list-style-type:none;
-  margin:0;
-  padding:0;
-  font-weight:600;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 `
 
 const Li = styled.li`
-  margin:15px 0px 15px;
-  text-align:center;
+  margin: 15px 0px 15px;
+  text-align: center;
 `
 
 export default Menu;
