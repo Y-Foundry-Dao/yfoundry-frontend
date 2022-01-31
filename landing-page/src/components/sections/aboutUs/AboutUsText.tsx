@@ -24,57 +24,57 @@ const Orange = styled.span`
 `
 
 const Section = styled.section`
-  display:flex;
-  flex-direction:column;
-  padding-top:5%;
-  padding-left:6%;
-  width:70%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%;
+  padding-left: 6%;
+  width: 70%;
 
-  @media(min-width:425px){
-    width:65%;
+  @media(min-width: 425px){
+    width: 65%;
   }
-  @media(min-width:756px){
-    padding-top:0%;
+  @media(min-width: 756px){
+    padding-top: 0%;
   }
-  @media(min-width:1025px){
-    width:34%;
-    padding-left:9%;
+  @media(min-width: 1025px){
+    width: 34%;
+    padding-left: 9%;
   }
 `
 
 const Header = styled.h2`
-  margin:3% 0;
-  font-size:1.4rem;
+  margin: 3% 0;
+  font-size: 1.4rem;
 
-  @media(min-width:425px){
-    font-size:1.5rem;
+  @media(min-width: 425px){
+    font-size: 1.5rem;
   }
-  @media(min-width:756px){
-    font-size:1.6rem;
+  @media(min-width: 756px){
+    font-size: 1.6rem;
   }
-  @media(min-width:1025px){
-    font-size:1.8rem;
+  @media(min-width: 1025px){
+    font-size: 1.8rem;
   }
 `
 const P = styled.p`
-  line-height:24px;
-  font-size:.8rem;
+  line-height: 24px;
+  font-size: .8rem;
   text-align: justify;
 
-  @media(min-width:425px){
-    font-size:.9rem;
+  @media(min-width: 425px){
+    font-size: .9rem;
   }
-  @media(min-width:756px){
-    line-height:28px;
-    font-size:1rem;
+  @media(min-width: 756px){
+    line-height: 28px;
+    font-size: 1rem;
   }
-  @media(min-width:1025px){
-    line-height:30px
+  @media(min-width: 1025px){
+    line-height: 30px
   }
-  @media(min-width:1440px){
-    font-size:1.3rem;
-    line-height:36px
+  @media(min-width: 1440px){
+    font-size: 1.3rem;
+    line-height: 36px
   }
 `
 
-export default AboutUsText
+export default AboutUsText;
