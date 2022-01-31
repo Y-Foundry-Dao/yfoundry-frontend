@@ -96,6 +96,7 @@ const StyledSwiper = styled(Swiper)`
   display: flex;
   flex-wrap: nowrap;
   text-align: center;
+  z-index:0;
 `
 
 const Logo = styled.img`
