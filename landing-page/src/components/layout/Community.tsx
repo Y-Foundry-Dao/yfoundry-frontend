@@ -132,8 +132,8 @@ const Header = styled.h4`
 
 const Ul = styled.ul`
   list-style-type:none;
-  width:33%;
-  gap:60px;
+  width:80%;
+  gap:20px;
   padding:0;
   font-weight:600;
   display:flex;
@@ -150,14 +150,13 @@ const Ul = styled.ul`
 `
 
 const Li = styled.li`
-  width:30%;
+  width:20%;
   display:flex;
   flex-direction:column;
   align-items:center;
 `
 
 const Img = styled.img`
-  width:80%;
   height:50px;
   margin:0;
   padding:0;
