@@ -14,7 +14,7 @@ function Burger() {
   return (
     <div ref={burgerRef}>
       <BurgerIcon open={open} setOpen={setOpen} />
-      <BurgerMenu open={open} />
+      <BurgerMenu open={open} setOpen={setOpen} />
     </div>
   )
 }

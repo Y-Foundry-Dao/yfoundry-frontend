@@ -1,18 +1,19 @@
 import styled from 'styled-components';
 
 interface Props{
-  open:boolean,
+  open: boolean,
+  setOpen: any
 };
 
 function Menu(props:Props) {
-  const {open} = props;
+  const {open, setOpen} = props;
 
   return (
     <StyledMenu open={open}>
       <Ul>
-        <Li><Link href="#about">about</Link></Li>
-        <Li><Link href="#blog">blog</Link></Li>
-        <Li><Link href="#community">join community</Link></Li>
+        <Li onClick={() => setOpen(!open)}><Link href="#about">about</Link></Li>
+        <Li onClick={() => setOpen(!open)}><Link href="#blog">blog</Link></Li>
+        <Li onClick={() => setOpen(!open)}><Link href="#community">join community</Link></Li>
       </Ul>
     </StyledMenu>
   )
