@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
 interface Props{
-  open:boolean,
+  open: boolean,
+  setOpen: any
 };
 
 function Menu(props:Props) {
-  const {open} = props;
+  const {open, setOpen} = props;
 
   return (
     <StyledMenu open={open}>
