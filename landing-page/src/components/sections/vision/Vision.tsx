@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import twitter from '../../../assets/twitter.svg';
-import discord from '../../../assets/discord.svg';
-import telegram from '../../../assets/newTelegram.svg';
+import {ReactComponent as Twitter} from '../../../assets/twitter.svg';
+import {ReactComponent as Discord} from '../../../assets/discord.svg';
+import {ReactComponent as Telegram} from '../../../assets/newTelegram.svg';
 import orangeBars from '../../../assets/orange_bars_community.svg';
 
 function Community() {
@@ -18,9 +18,9 @@ function Community() {
         <OrangeBars src={orangeBars} alt="" />
       </Div>
       <Ul>
-        <Li><Link href={"https://twitter.com/yieldfoundrydao"} target={"_blank"} rel={"noreferrer"}><Img src={twitter} alt={"twitter"} /><P>twitter</P></Link></Li>
-        <Li><Link href={"https://discord.gg/defidesk"} target={"_blank"} rel={"noreferrer"}><Img src={discord} alt={"discord"} /><P>discord</P></Link></Li>
-        <Li><Link href={"https://t.me/yfoundrydao"} target={"_blank"} rel={"noreferrer"}><Img src={telegram} alt={"telegram"} /><P>telegram</P></Link></Li>
+        <Li><Link href={"https://twitter.com/yieldfoundrydao"} target={"_blank"} rel={"noreferrer"}><StyledTwitter /><P>twitter</P></Link></Li>
+        <Li><Link href={"https://discord.gg/defidesk"} target={"_blank"} rel={"noreferrer"}><StyledDiscord /><P>discord</P></Link></Li>
+        <Li><Link href={"https://t.me/yfoundrydao"} target={"_blank"} rel={"noreferrer"}><StyledTelegram /><P>telegram</P></Link></Li>
       </Ul>
     </Section>
 
@@ -156,10 +156,35 @@ const Li = styled.li`
   align-items:center;
 `
 
-const Img = styled.img`
+const StyledDiscord = styled(Discord)`
   height:50px;
   margin:0;
   padding:0;
+
+  &:hover path{
+    fill:#1F43BF
+  }
+`
+
+const StyledTwitter = styled(Twitter)`
+  height:50px;
+  margin:0;
+  padding:0;
+  z-index:0;
+
+  &:hover path{
+    fill:#1F43BF
+  }
+`
+
+const StyledTelegram = styled(Telegram)`
+  height:50px;
+  margin:0;
+  padding:0;
+
+  &:hover path{
+    fill:#1F43BF
+  }
 `
 
 export default Community;
