@@ -20,7 +20,6 @@ const Link = styled.a`
 `
 
 const Ul = styled.ul`
-border:1px solid white;
   list-style-type: none;
   width: 28%;
   margin: 0 2% 0 0;
@@ -49,45 +48,41 @@ border:1px solid white;
 `
 
 const Li = styled.li`
-border:1px solid white;
   width: 20%;
   display: flex;
 `
 
 const StyledDiscord = styled(Discord)`
-border:1px solid white;
-  width:100%;
-  height:50px;
-  margin:0;
-  padding:0;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 0;
 
   &:hover path{
-    fill:#1F43BF
+    fill: #1F43BF;
   }
 `
 
 const StyledTwitter = styled(Twitter)`
-border:1px solid white;
-  width:100%;
-  height:50px;
-  margin:0;
-  padding:0;
-  z-index:0;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
 
   &:hover path{
-    fill:#1F43BF
+    fill: #1F43BF;
   }
 `
 
 const StyledTelegram = styled(Telegram)`
-border:1px solid white;
-  width:100%;
-  height:50px;
-  margin:0;
-  padding:0;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 0;
 
   &:hover path{
-    fill:#1F43BF
+    fill: #1F43BF;
   }
 `
 
