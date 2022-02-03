@@ -1,12 +1,13 @@
 import styled, { keyframes } from 'styled-components';
+import {Link} from 'react-scroll';
 
 function NavLinks() {
   return (
     <Nav>
       <Ul>
-        <li><Link href="#about">about</Link></li>
-        <li><Link href="#blog">blog</Link></li>
-        <li><Link href="#community">join community</Link></li>
+        <li><StyledLink to="about" smooth={true} >about</StyledLink></li>
+        <li><StyledLink to="blog" smooth={true} >blog</StyledLink></li>
+        <li><StyledLink to="community" smooth={true} >join community</StyledLink></li>
       </Ul>
     </Nav>
   )
@@ -20,12 +21,13 @@ const loading = keyframes`
   }
 `
 
-const Link = styled.a`
+const StyledLink = styled(Link)`
   position: relative;
   color: ${props => `${props.theme.colors.gray}`};
   text-decoration: none;
   text-transform: uppercase;
   z-index: 2;
+  cursor:pointer;
 
   &:hover{
     color: ${props => `${props.theme.colors.orange}`};
