@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import {ReactComponent as Twitter} from '../../../assets/twitter.svg';
 import {ReactComponent as Discord} from '../../../assets/discord.svg';
-import {ReactComponent as Telegram} from '../../../assets/newTelegram.svg';
+import {ReactComponent as Telegram} from '../../../assets/Telegram.svg';
 import orangeBars from '../../../assets/orange_bars_community.svg';
 
 function Community() {
