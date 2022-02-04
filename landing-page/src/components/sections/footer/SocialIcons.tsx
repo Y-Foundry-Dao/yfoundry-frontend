@@ -20,9 +20,11 @@ const Link = styled.a`
 `
 
 const Ul = styled.ul`
+  height:100%;
+  align-self:center;
   list-style-type: none;
   width: 28%;
-  margin: 0 2% 0 0;
+  margin: 0 5% 0 0;
   padding: 0;
   font-weight: 600;
   display: flex;
