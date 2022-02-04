@@ -1,22 +1,30 @@
 import styled from 'styled-components';
-import twitter from '../../../assets/twitter.svg';
-import discord from '../../../assets/discord.svg';
-import telegram from '../../../assets/whiteTelegram.png';
+import {ReactComponent as Twitter} from '../../../assets/twitter.svg';
+import {ReactComponent as Discord} from '../../../assets/discord.svg';
+import {ReactComponent as Telegram} from '../../../assets/Telegram.svg';
 
 function SocialIcons() {
   return (
     <Ul>
-      <Li><a href={"https://twitter.com/yieldfoundrydao"} target={"_blank"} rel={"noreferrer"}><Img src={twitter} alt={"twitter"} /></a></Li>
-      <Li><a href={"https://discord.gg/defidesk"} target={"_blank"} rel={"noreferrer"}><Img src={discord} alt={"discord"} /></a></Li>
-      <Li><a href={"https://t.me/yfoundrydao"} target={"_blank"} rel={"noreferrer"}><Img src={telegram} alt={"telegram"} /></a></Li>
+      <Li><Link href={"https://twitter.com/yieldfoundrydao"} target={"_blank"} rel={"noreferrer"}><StyledTwitter /></Link></Li>
+      <Li><Link href={"https://discord.gg/defidesk"} target={"_blank"} rel={"noreferrer"}><StyledDiscord /></Link></Li>
+      <Li><Link href={"https://t.me/yfoundrydao"} target={"_blank"} rel={"noreferrer"}><StyledTelegram /></Link></Li>
     </Ul>
   )
 }
 
+const Link = styled.a`
+  display:block;
+  width:100%;
+  z-index:1;
+`
+
 const Ul = styled.ul`
+  height:100%;
+  align-self:center;
   list-style-type: none;
   width: 28%;
-  margin: 0 2% 0 0;
+  margin: 0 5% 0 0;
   padding: 0;
   font-weight: 600;
   display: flex;
@@ -46,10 +54,38 @@ const Li = styled.li`
   display: flex;
 `
 
-const Img = styled.img`
+const StyledDiscord = styled(Discord)`
   width: 100%;
+  height: 50px;
   margin: 0;
   padding: 0;
+
+  &:hover path{
+    fill: #1F43BF;
+  }
+`
+
+const StyledTwitter = styled(Twitter)`
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+
+  &:hover path{
+    fill: #1F43BF;
+  }
+`
+
+const StyledTelegram = styled(Telegram)`
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+
+  &:hover path{
+    fill: #1F43BF;
+  }
 `
 
 export default SocialIcons;
