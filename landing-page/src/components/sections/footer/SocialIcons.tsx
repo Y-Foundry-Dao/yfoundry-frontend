@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import {ReactComponent as Twitter} from '../../../assets/twitter.svg';
-import {ReactComponent as Discord} from '../../../assets/discord.svg';
-import {ReactComponent as Telegram} from '../../../assets/Telegram.svg';
+import {ReactComponent as twitter} from 'assets/twitter.svg';
+import {ReactComponent as discord} from 'assets/discord.svg';
+import {ReactComponent as telegram} from 'assets/whiteTelegram.png';
 
 function SocialIcons() {
   return (

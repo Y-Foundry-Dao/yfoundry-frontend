@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import SocialIcons from './SocialIcons';
-import logo from '../../../assets/horizontal_logo_orange&white.svg';
+import logo from 'assets/horizontal_logo_orange&white.svg';
 
 function FooterBar() {
   return (

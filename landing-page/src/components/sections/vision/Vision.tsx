@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import {ReactComponent as Twitter} from '../../../assets/twitter.svg';
-import {ReactComponent as Discord} from '../../../assets/discord.svg';
-import {ReactComponent as Telegram} from '../../../assets/Telegram.svg';
-import orangeBars from '../../../assets/orange_bars_community.svg';
+import {ReactComponent as twitter} from 'assets/twitter.svg';
+import {ReactComponent as discord} from 'assets/discord.svg';
+import {ReactComponent as telegram} from 'assets/whiteTelegram.svg';
+import orangeBars from 'assets/orange_bars_community.svg';
 
 function Community() {
   return (
@@ -108,7 +108,7 @@ const OrangeBars = styled.img`
   @media(min-width: 756px){
     width: 42%;
   }
-  
+
 `
 const OrangeText = styled.span`
   color: ${props => `${props.theme.colors.orange}`};

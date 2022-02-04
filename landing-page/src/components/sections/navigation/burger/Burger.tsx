@@ -1,6 +1,6 @@
 import {useState, useRef} from 'react';
 import BurgerIcon from './BurgerIcon';
-import useOnClickOutside from '../../../../utilities/useOnClickOutside';
+import useOnClickOutside from 'utilities/useOnClickOutside';
 import BurgerMenu from './BurgerMenu';
 
 
