@@ -38,7 +38,7 @@ const Section = styled.section`
     margin-top: 4%;
   }
   @media(min-width: 1024px){
-    width: 50%;
+    width: 52%;
     padding: 4% 2%;
   }
 `
@@ -47,48 +47,63 @@ const Div = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 50%;
-  text-align: justify;
+  width: 44%;
+  text-align: left;
 
-  @media(min-width: 425px){
-    width: 43%;
+  @media(min-width: 375px){
+    width: 42%;
   }
-  @media(min-width: 600px){
+  @media(min-width: 475px){
+    width: 40%;
+  }
+  @media(min-width: 520px){
     width: 38%;
+  }
+  @media(min-width: 580px){
+    width: 36%;
   }
   @media(min-width: 756px){
     width: 32%;
   }
-  @media(min-width: 1024px){
-    width: 24%;
-  }
 `
 
 const Header = styled.h3`
-  font-size: 1rem;
+  font-size: .8rem;
   line-height: 106%;
   margin: 0;
   font-weight: 600;
 
+  @media(min-width: 375px){
+    font-size: .9rem;
+  }
   @media(min-width: 425px){
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   @media(min-width: 1024px){
+    font-size: 1.15rem;
+  }
+  @media(min-width: 1440px){
     font-size: 1.25rem;
   }
 `
 
 const P = styled.p`
-  font-size: .75rem;
+  font-size: .7rem;
   margin: 0;
-  text-align: justify;
+  text-align: left;
   color: ${props => `${props.theme.colors.gray}`};
 
+  @media(min-width: 375px){
+    font-size: .8rem;
+  }
   @media(min-width: 425px){
     font-size: .9rem;
   }
   @media(min-width: 1024px){
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+  }
+  @media(min-width: 1024px){
+    font-size: 1.15rem;
   }
 `
 
