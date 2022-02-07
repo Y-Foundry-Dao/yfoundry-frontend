@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 import {ReactComponent as Twitter} from '../../../assets/twitter.svg';
 import {ReactComponent as Discord} from '../../../assets/discord.svg';
 import {ReactComponent as Telegram} from '../../../assets/Telegram.svg';
@@ -156,13 +156,22 @@ const Li = styled.li`
   align-items: center;
 `
 
+const colorChangeBlue = keyframes`
+  0%{
+    /* opacity: 0; */
+  }100%{
+    fill: #1F43BF;
+  }
+`
+
+
 const StyledDiscord = styled(Discord)`
   height: 50px;
   margin: 0;
   padding: 0;
 
   &:hover path{
-    fill: #1F43BF;
+    animation: ${colorChangeBlue} .2s linear forwards;
   }
 `
 
