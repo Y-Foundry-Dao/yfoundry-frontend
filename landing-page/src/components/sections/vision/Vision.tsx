@@ -157,13 +157,10 @@ const Li = styled.li`
 `
 
 const colorChangeBlue = keyframes`
-  0%{
-    /* opacity: 0; */
-  }100%{
+  100%{
     fill: #1F43BF;
   }
 `
-
 
 const StyledDiscord = styled(Discord)`
   height: 50px;
@@ -171,7 +168,7 @@ const StyledDiscord = styled(Discord)`
   padding: 0;
 
   &:hover path{
-    animation: ${colorChangeBlue} .2s linear forwards;
+    animation: ${colorChangeBlue} .15s linear forwards;
   }
 `
 
@@ -182,7 +179,7 @@ const StyledTwitter = styled(Twitter)`
   z-index: 0;
 
   &:hover path{
-    fill: #1F43BF;
+    animation: ${colorChangeBlue} .15s linear forwards;
   }
 `
 
@@ -192,7 +189,7 @@ const StyledTelegram = styled(Telegram)`
   padding: 0;
 
   &:hover path{
-    fill: #1F43BF;
+    animation: ${colorChangeBlue} .15s linear forwards;
   }
 `
 

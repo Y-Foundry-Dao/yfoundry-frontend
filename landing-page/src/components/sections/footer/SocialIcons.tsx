@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 import {ReactComponent as Twitter} from '../../../assets/twitter.svg';
 import {ReactComponent as Discord} from '../../../assets/discord.svg';
 import {ReactComponent as Telegram} from '../../../assets/Telegram.svg';
@@ -54,6 +54,12 @@ const Li = styled.li`
   display: flex;
 `
 
+const colorChangeBlue = keyframes`
+  100%{
+    fill: #1F43BF;
+  }
+`
+
 const StyledDiscord = styled(Discord)`
   width: 100%;
   height: 50px;
@@ -61,7 +67,7 @@ const StyledDiscord = styled(Discord)`
   padding: 0;
 
   &:hover path{
-    fill: #1F43BF;
+    animation: ${colorChangeBlue} .15s linear forwards;
   }
 `
 
@@ -73,7 +79,7 @@ const StyledTwitter = styled(Twitter)`
   z-index: 0;
 
   &:hover path{
-    fill: #1F43BF;
+    animation: ${colorChangeBlue} .15s linear forwards;
   }
 `
 
@@ -84,7 +90,7 @@ const StyledTelegram = styled(Telegram)`
   padding: 0;
 
   &:hover path{
-    fill: #1F43BF;
+    animation: ${colorChangeBlue} .15s linear forwards;
   }
 `
 
