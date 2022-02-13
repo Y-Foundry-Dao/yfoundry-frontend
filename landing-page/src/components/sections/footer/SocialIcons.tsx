@@ -6,9 +6,9 @@ import {ReactComponent as Telegram} from '../../../assets/Telegram.svg';
 function SocialIcons() {
   return (
     <Ul>
-      <Li><Link href={"https://twitter.com/yieldfoundrydao"} target={"_blank"} rel={"noreferrer"}><StyledTwitter /></Link></Li>
-      <Li><Link href={"https://discord.gg/defidesk"} target={"_blank"} rel={"noreferrer"}><StyledDiscord /></Link></Li>
-      <Li><Link href={"https://t.me/yfoundrydao"} target={"_blank"} rel={"noreferrer"}><StyledTelegram /></Link></Li>
+      <Li><Link href={"https://twitter.com/yieldfoundrydao"} target={"_blank"} rel={"noreferrer"} aria-label="Twitter Link" ><StyledTwitter /></Link></Li>
+      <Li><Link href={"https://discord.gg/defidesk"} target={"_blank"} rel={"noreferrer"} aria-label="Discord Link" ><StyledDiscord /></Link></Li>
+      <Li><Link href={"https://t.me/yfoundrydao"} target={"_blank"} rel={"noreferrer"} aria-label="Telegram Link" ><StyledTelegram /></Link></Li>
     </Ul>
   )
 }
