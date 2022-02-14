@@ -52,7 +52,7 @@ function InvestorCarousel() {
 
 
 
-const Div = styled.div`
+const Div = styled.section`
   width: 100%;
   margin-top: 18%;
   display:flex;
@@ -67,7 +67,7 @@ const OrangeText = styled.span`
   color:${props => `${props.theme.colors.orange}`};
 `
 
-const Header = styled.h4`
+const Header = styled.h2`
   margin:0 0 3% 3%;
   font-size:1.3rem;
   width:70%;
