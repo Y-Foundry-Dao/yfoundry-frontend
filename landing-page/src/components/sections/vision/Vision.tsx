@@ -19,7 +19,7 @@ function Community() {
       </Div>
       <Ul>
         <Li><Link href={"https://twitter.com/yieldfoundrydao"} target={"_blank"} rel={"noreferrer"}><StyledTwitter /><P>twitter</P></Link></Li>
-        <Li><Link href={"https://discord.gg/s7FckBHkCF"} target={"_blank"} rel={"noreferrer"}><StyledDiscord /><P>discord</P></Link></Li>
+        <Li><Link href={"https://discord.gg/yfd"} target={"_blank"} rel={"noreferrer"}><StyledDiscord /><P>discord</P></Link></Li>
         <Li><Link href={"https://t.me/yfoundrydao"} target={"_blank"} rel={"noreferrer"}><StyledTelegram /><P>telegram</P></Link></Li>
       </Ul>
     </Section>
