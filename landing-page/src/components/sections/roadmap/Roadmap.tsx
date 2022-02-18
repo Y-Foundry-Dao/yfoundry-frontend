@@ -11,8 +11,24 @@ function Roadmap() {
 }
 
 const Section = styled.section`
-  border:1px solid white;
-  width:50%;
+  width:90%;
+  margin-left:5%;
+  @media(min-width:425px){
+    margin-left:10%;
+  }
+  @media(min-width:550px){
+    width:80%;
+    margin-left:16%;
+  }
+  @media(min-width:756px){
+    width:75%;
+    margin-left:24%;
+  }
+  @media(min-width:1170px){
+    width:70%;
+    padding-left:0;
+    margin-left:0;
+  }
 `
 
 export default Roadmap

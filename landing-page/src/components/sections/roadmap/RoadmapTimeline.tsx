@@ -9,7 +9,7 @@ function RoadmapTimeline() {
     <VerticalTimeline lineColor='#D8552A'>
 
       <VerticalTimelineElement
-        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none' }}
+        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none', marginLeft:'4%' }}
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
         iconStyle={{ background: '#1F43BF', }}
       >
@@ -22,7 +22,7 @@ function RoadmapTimeline() {
       </VerticalTimelineElement>
 
       <VerticalTimelineElement
-        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none' }}
+        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none',  }}
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
         iconStyle={{ background: '#1F43BF' }}
       >
@@ -34,7 +34,7 @@ function RoadmapTimeline() {
       </VerticalTimelineElement>
 
       <VerticalTimelineElement
-        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none' }}
+        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none', marginLeft:'4%' }}
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
         iconStyle={{ background: '#1F43BF' }}
       >
@@ -59,7 +59,7 @@ function RoadmapTimeline() {
       </VerticalTimelineElement>
 
       <VerticalTimelineElement
-        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none' }}
+        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none', marginLeft:'4%' }}
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
         iconStyle={{ background: '#1F43BF' }}
       >
@@ -83,7 +83,7 @@ function RoadmapTimeline() {
       </VerticalTimelineElement>
 
       <VerticalTimelineElement
-        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none' }}
+        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none', marginLeft:'4%' }}
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
         iconStyle={{ background: '#1F43BF' }}
       >
@@ -96,7 +96,7 @@ function RoadmapTimeline() {
       </VerticalTimelineElement>
 
       <VerticalTimelineElement
-        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none' }}
+        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none',  }}
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
         iconStyle={{ background: '#1F43BF' }}
       >
