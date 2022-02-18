@@ -13,11 +13,14 @@ function RoadmapTimeline() {
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
         iconStyle={{ background: '#1F43BF', }}
       >
-        <Title >Team Building</Title>
-        <Category >Planning</Category>
+        <Date >January 2022</Date>
+        <Category >Seed Round Funding</Category>
         <ul>
-          <li>yfoundry.io website launch</li>
-          <li>Technical Requirements</li>
+          <li>1.5M in Funding Reached</li>
+        </ul>
+        <Category >Web Presence Launch</Category>
+        <ul>
+          <li>Website Launched</li>
         </ul>
       </VerticalTimelineElement>
 
@@ -26,10 +29,14 @@ function RoadmapTimeline() {
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
         iconStyle={{ background: '#1F43BF' }}
       >
-        <Title >DAO Building</Title>
-        <Category >Planning - Development</Category>
+        <Date >February 2022</Date>
+        <Category >Development</Category>
         <ul>
-          <li>Scenario/Market Simulator</li>
+          <li>Core Contract Development</li>
+        </ul>
+        <Category >DAO + Community Building</Category>
+        <ul>
+          <li>Community Discord</li>
         </ul>
       </VerticalTimelineElement>
 
@@ -38,10 +45,13 @@ function RoadmapTimeline() {
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
         iconStyle={{ background: '#1F43BF' }}
       >
-        <Title>Partner Building</Title>
-        <Category >Development</Category>
+        <Date>March 2022</Date>
+        <Category >DGSF</Category>
         <ul>
-          <li>Trigger/Scheduler</li>
+          <li>"Upsilon" DGSF Launch</li>
+          <ul>
+            <li>BETA</li>
+          </ul>
         </ul>
       </VerticalTimelineElement>
 
@@ -50,11 +60,13 @@ function RoadmapTimeline() {
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
         iconStyle={{ background: '#1F43BF' }}
       >
-        <Title >DAO Building</Title>
-        <Category >Development</Category>
+        <Date>April 2022</Date>
+        <Category >Hedge+</Category>
         <ul>
-          <li>DGSF Smart Contract</li>
-          <li>HedgePlus</li>
+          <li>Vault Launch</li>
+          <ul>
+            <li>BETA</li>
+          </ul>
         </ul>
       </VerticalTimelineElement>
 
@@ -63,10 +75,14 @@ function RoadmapTimeline() {
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
         iconStyle={{ background: '#1F43BF' }}
       >
-        <Title >Project GravityDrop</Title>
+        <Date >May 2022</Date>
         <Category >MVP</Category>
         <ul>
           <li>Governance</li>
+          <ul>
+            <li>BETA</li>
+          </ul>
+          <li>Community Farming Events</li>
         </ul>
       </VerticalTimelineElement>
 
@@ -75,10 +91,13 @@ function RoadmapTimeline() {
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
         iconStyle={{ background: '#1F43BF' }}
       >
-        <Title>Partner Building</Title>
-        <Category >Development - MVP</Category>
+        <Date>June 2022</Date>
+        <Category >Shielded Shorts</Category>
         <ul>
-          <li>Shielded Shorts</li>
+          <li>2nd Vault Product</li>
+          <ul>
+            <li>BETA</li>
+          </ul>
         </ul>
       </VerticalTimelineElement>
 
@@ -87,11 +106,11 @@ function RoadmapTimeline() {
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
         iconStyle={{ background: '#1F43BF' }}
       >
-        <Title >Project GravityDrop</Title>
+        <Date >July 2022</Date>
         <Category >V1 Launch</Category>
         <ul>
-          <li>Launch</li>
-          <li>Strategy X</li>
+          <li>Simulation Engine</li>
+          <li>Vault moved out of BETA</li>
         </ul>
       </VerticalTimelineElement>
 
@@ -100,10 +119,10 @@ function RoadmapTimeline() {
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
         iconStyle={{ background: '#1F43BF' }}
       >
-        <Title >Project GravityDrop</Title>
-        <Category >MVP - V1 Launch</Category>
+        <Date >Quarter 3 2022</Date>
+        <Category >Community Vaults</Category>
         <ul>
-          <li>Community Farming Events</li>
+          <li>Community Vault Proposals</li>
         </ul>
       </VerticalTimelineElement>
 
@@ -111,10 +130,10 @@ function RoadmapTimeline() {
   )
 }
 
-const Title = styled.h3`
+const Date = styled.h3`
   color: ${props => `${props.theme.colors.orange}`};
   margin: 0;
-  font-size:1.1rem;
+  font-size:1rem;
   letter-spacing:1px;
   font-weight:600;
 `
