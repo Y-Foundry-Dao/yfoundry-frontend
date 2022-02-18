@@ -5,13 +5,11 @@ import 'react-vertical-timeline-component/style.min.css';
 function Roadmap() {
   return (
     
-    <VerticalTimeline>
+    <VerticalTimeline lineColor='#D8552A'>
       <VerticalTimelineElement
-        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none' }}
         contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-        date="2011 - present"
-        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-        // icon={<WorkIcon />}
+        iconStyle={{ background: '#1F43BF', }}
       >
         <h3>Team Building</h3>
         <h4>Planning</h4>
@@ -21,9 +19,8 @@ function Roadmap() {
         </ul>
       </VerticalTimelineElement>
       <VerticalTimelineElement
-        date="2010 - 2011"
-        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-        // icon={<WorkIcon />}
+        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none' }}
+        iconStyle={{ background: '#1F43BF' }}
       >
         <h3 >Art Director</h3>
         <h4 >San Francisco, CA</h4>
@@ -33,9 +30,8 @@ function Roadmap() {
         </ul>
       </VerticalTimelineElement>
       <VerticalTimelineElement
-        date="2008 - 2010"
-        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-        // icon={<WorkIcon />}
+        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none' }}
+        iconStyle={{ background: '#1F43BF' }}
       >
         <h3 >Web Designer</h3>
         <h4 >Los Angeles, CA</h4>
@@ -45,10 +41,8 @@ function Roadmap() {
         </ul>
       </VerticalTimelineElement>
       <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="2006 - 2008"
-        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-        // icon={<WorkIcon />}
+        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none' }}
+        iconStyle={{ background: '#1F43BF' }}
       >
         <h3 >Web Designer</h3>
         <h4 >San Francisco, CA</h4>
@@ -58,39 +52,33 @@ function Roadmap() {
         </ul>
       </VerticalTimelineElement>
       <VerticalTimelineElement
-        className="vertical-timeline-element--education"
-        date="April 2013"
-        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-        // icon={<SchoolIcon />}
+        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none' }}
+        iconStyle={{ background: '#1F43BF' }}
       >
-        <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-        <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
+        <h3 >Content Marketing for Web, Mobile and Social Media</h3>
+        <h4 >Online Course</h4>
         <ul>
           <li>yfoundry.io website launch</li>
           <li>Technical Requirements</li>
         </ul>
       </VerticalTimelineElement>
       <VerticalTimelineElement
-        className="vertical-timeline-element--education"
-        date="November 2012"
-        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-        // icon={<SchoolIcon />}
+        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none' }}
+        iconStyle={{ background: '#1F43BF' }}
       >
-        <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-        <h4 className="vertical-timeline-element-subtitle">Certification</h4>
+        <h3 >Agile Development Scrum Master</h3>
+        <h4 >Certification</h4>
         <ul>
           <li>yfoundry.io website launch</li>
           <li>Technical Requirements</li>
         </ul>
       </VerticalTimelineElement>
       <VerticalTimelineElement
-        className="vertical-timeline-element--education"
-        date="2002 - 2006"
-        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-        // icon={<SchoolIcon />}
+        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none' }}
+        iconStyle={{ background: '#1F43BF' }}
       >
-        <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-        <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
+        <h3 >Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
+        <h4 >Bachelor Degree</h4>
         <ul>
           <li>yfoundry.io website launch</li>
           <li>Technical Requirements</li>
