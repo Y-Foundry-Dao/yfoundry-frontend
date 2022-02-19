@@ -6,12 +6,12 @@ import styled from 'styled-components'
 function RoadmapTimeline() {
   return (
     
-    <VerticalTimeline lineColor='#D8552A'>
+    <MyVerticalTimeline lineColor='#D8552A'>
 
-      <VerticalTimelineElement
-        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none', marginLeft:'12%' }}
+      <MyVerticalTimelineElement
+        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none' }}
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
-        iconStyle={{ background: '#1F43BF', }}
+        iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'15px'}}
       >
         <Date >January 2022</Date>
         <Category >Seed Round Funding</Category>
@@ -22,12 +22,12 @@ function RoadmapTimeline() {
         <ul>
           <li>Website Launched</li>
         </ul>
-      </VerticalTimelineElement>
+      </MyVerticalTimelineElement>
 
-      <VerticalTimelineElement
-        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none',  marginLeft:'12%' }}
+      <MyVerticalTimelineElement
+        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none' }}
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
-        iconStyle={{ background: '#1F43BF' }}
+        iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'15px'}}
       >
         <Date >February 2022</Date>
         <Category >Development</Category>
@@ -38,12 +38,12 @@ function RoadmapTimeline() {
         <ul>
           <li>Community Discord</li>
         </ul>
-      </VerticalTimelineElement>
+      </MyVerticalTimelineElement>
 
-      <VerticalTimelineElement
-        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none', marginLeft:'12%' }}
+      <MyVerticalTimelineElement
+        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none' }}
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
-        iconStyle={{ background: '#1F43BF' }}
+        iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'15px'}}
       >
         <Date>March 2022</Date>
         <Category >DGSF</Category>
@@ -53,12 +53,12 @@ function RoadmapTimeline() {
             <li>BETA</li>
           </ul>
         </ul>
-      </VerticalTimelineElement>
+      </MyVerticalTimelineElement>
 
-      <VerticalTimelineElement
-        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none', marginLeft:'12%'  }}
+      <MyVerticalTimelineElement
+        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none'  }}
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
-        iconStyle={{ background: '#1F43BF' }}
+        iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'15px'}}
       >
         <Date>April 2022</Date>
         <Category >Hedge+</Category>
@@ -68,12 +68,12 @@ function RoadmapTimeline() {
             <li>BETA</li>
           </ul>
         </ul>
-      </VerticalTimelineElement>
+      </MyVerticalTimelineElement>
 
-      <VerticalTimelineElement
-        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none', marginLeft:'12%' }}
+      <MyVerticalTimelineElement
+        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none' }}
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
-        iconStyle={{ background: '#1F43BF' }}
+        iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'15px'}}
       >
         <Date >May 2022</Date>
         <Category >MVP</Category>
@@ -84,12 +84,12 @@ function RoadmapTimeline() {
           </ul>
           <li>Community Farming Events</li>
         </ul>
-      </VerticalTimelineElement>
+      </MyVerticalTimelineElement>
 
-      <VerticalTimelineElement
-        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none', marginLeft:'12%'  }}
+      <MyVerticalTimelineElement
+        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none'  }}
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
-        iconStyle={{ background: '#1F43BF' }}
+        iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'15px'}}
       >
         <Date>June 2022</Date>
         <Category >Shielded Shorts</Category>
@@ -99,12 +99,12 @@ function RoadmapTimeline() {
             <li>BETA</li>
           </ul>
         </ul>
-      </VerticalTimelineElement>
+      </MyVerticalTimelineElement>
 
-      <VerticalTimelineElement
-        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none', marginLeft:'12%' }}
+      <MyVerticalTimelineElement
+        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none' }}
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
-        iconStyle={{ background: '#1F43BF' }}
+        iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'15px'}}
       >
         <Date >July 2022</Date>
         <Category >V1 Launch</Category>
@@ -112,23 +112,60 @@ function RoadmapTimeline() {
           <li>Simulation Engine</li>
           <li>Vault moved out of BETA</li>
         </ul>
-      </VerticalTimelineElement>
+      </MyVerticalTimelineElement>
 
-      <VerticalTimelineElement
-        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none', marginLeft:'12%'   }}
+      <MyVerticalTimelineElement
+        contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none'   }}
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
-        iconStyle={{ background: '#1F43BF' }}
+        iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'15px'}}
       >
         <Date >Quarter 3 2022</Date>
         <Category >Community Vaults</Category>
         <ul>
           <li>Community Vault Proposals</li>
         </ul>
-      </VerticalTimelineElement>
+      </MyVerticalTimelineElement>
 
-    </VerticalTimeline>
+    </MyVerticalTimeline>
   )
 }
+
+const MyVerticalTimeline = styled(VerticalTimeline)`
+  margin-left:5%;
+  margin-top:4%;
+  
+  @media(min-width:425px){
+    margin-left:10%;
+    margin-right:5%;
+  }
+  @media(min-width:550px){
+    margin-left:25%;
+  }
+  @media(min-width:756px){
+    margin-left:50%;
+  }
+  @media(min-width:1170px){
+    margin-left:0;
+    margin-right:0;
+  }
+
+  ::before{
+    width:2px;
+    @media(min-width:1170px){
+      left:50%;
+    }
+
+  }
+`
+const MyVerticalTimelineElement = styled(VerticalTimelineElement)`
+    margin-left:19px;
+    margin-right:5px;
+    @media(min-width:1170px){
+      margin-left:0;
+      margin-right:0;
+    }
+
+`
 
 const Date = styled.h3`
   color: ${props => `${props.theme.colors.orange}`};
