@@ -25,7 +25,7 @@ const BackText = styled.p`
   font-size:4.5rem;
   letter-spacing:.02em;
   font-weight:600;
-  top:-85px;
+  top:-80px;
   opacity:.2;
   background:linear-gradient(120deg,rgba(31,67,191,0.6) 0%, rgba(196,188,255,0.3) 100%);
   background-clip: text;
