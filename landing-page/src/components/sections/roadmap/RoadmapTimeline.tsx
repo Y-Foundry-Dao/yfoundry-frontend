@@ -131,21 +131,31 @@ function RoadmapTimeline() {
 }
 
 const MyVerticalTimeline = styled(VerticalTimeline)`
+  /* border:1px solid white; */
   margin-left:5%;
   margin-top:4%;
   
+  @media(min-width:375px){
+    margin-left:8%;
+    margin-right:5%;
+  }
   @media(min-width:425px){
     margin-left:10%;
     margin-right:5%;
   }
   @media(min-width:550px){
-    margin-left:25%;
+    margin-left:16%;
+    margin-right:6%;
   }
   @media(min-width:756px){
-    margin-left:50%;
+    margin-left:25%;
+  }
+  @media(min-width:1024px){
+    margin-left:30%;
+
   }
   @media(min-width:1170px){
-    margin-left:0;
+    margin-left:3.5%;
     margin-right:0;
   }
 

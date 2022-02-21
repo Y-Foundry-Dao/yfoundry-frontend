@@ -1,12 +1,18 @@
 import styled from 'styled-components'
 import RoadmapTimeline from './RoadmapTimeline'
+import roadmapBlueBars from '../../../assets/RoadmapBlueBars.svg';
+import roadmapOrangeBars from '../../../assets/RoadmapOrangeBars.svg';
 
 function Roadmap() {
   return (
     <Section>
       <Header>Our <OrangeText>Roadmap</OrangeText></Header>
       <BackText>Roadmap</BackText>
-      <RoadmapTimeline />
+      <RoadmapSection>
+        <RoadmapBlueBars src={roadmapBlueBars} />
+        <RoadmapTimeline  />
+        <RoadmapOrangeBars src={roadmapOrangeBars} />
+      </RoadmapSection>
     </Section>
   )
 }
@@ -17,6 +23,23 @@ const Section = styled.section`
   align-items:center;
   width:100%;
   margin-top:80px;
+`
+
+const RoadmapBlueBars = styled.img`
+    @media(max-width:1170px){
+    display: none;
+  }
+`
+const RoadmapOrangeBars = styled.img`
+    @media(max-width:1170px){
+    display: none;
+  }
+`
+
+const RoadmapSection = styled.div`
+  border:1px solid white;
+  display: flex;
+  width:100%;
 `
 
 const BackText = styled.p`
