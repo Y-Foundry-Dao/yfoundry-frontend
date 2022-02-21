@@ -9,6 +9,7 @@ function RoadmapTimeline() {
     <MyVerticalTimeline lineColor='#D8552A'>
 
       <MyVerticalTimelineElement
+        position='right'
         contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none' }}
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
         iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'15px'}}
@@ -25,6 +26,7 @@ function RoadmapTimeline() {
       </MyVerticalTimelineElement>
 
       <MyVerticalTimelineElement
+        position='left'
         contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none' }}
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
         iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'15px'}}
@@ -41,6 +43,7 @@ function RoadmapTimeline() {
       </MyVerticalTimelineElement>
 
       <MyVerticalTimelineElement
+        position='right'
         contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none' }}
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
         iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'15px'}}
@@ -56,6 +59,7 @@ function RoadmapTimeline() {
       </MyVerticalTimelineElement>
 
       <MyVerticalTimelineElement
+        position='left'
         contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none'  }}
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
         iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'15px'}}
@@ -71,6 +75,7 @@ function RoadmapTimeline() {
       </MyVerticalTimelineElement>
 
       <MyVerticalTimelineElement
+        position='right'
         contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none' }}
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
         iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'15px'}}
@@ -87,6 +92,7 @@ function RoadmapTimeline() {
       </MyVerticalTimelineElement>
 
       <MyVerticalTimelineElement
+        position='left'
         contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none'  }}
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
         iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'15px'}}
@@ -102,6 +108,7 @@ function RoadmapTimeline() {
       </MyVerticalTimelineElement>
 
       <MyVerticalTimelineElement
+        position='right'
         contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none' }}
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
         iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'15px'}}
@@ -115,6 +122,7 @@ function RoadmapTimeline() {
       </MyVerticalTimelineElement>
 
       <MyVerticalTimelineElement
+        position='left'
         contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none'   }}
         contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
         iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'15px'}}
