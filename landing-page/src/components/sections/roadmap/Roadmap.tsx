@@ -26,18 +26,19 @@ const Section = styled.section`
 `
 
 const RoadmapBlueBars = styled.img`
+  margin-top:-650px;
     @media(max-width:1170px){
     display: none;
   }
 `
 const RoadmapOrangeBars = styled.img`
+    margin-top:1450px;
     @media(max-width:1170px){
     display: none;
   }
 `
 
 const RoadmapSection = styled.div`
-  border:1px solid white;
   display: flex;
   width:100%;
 `
