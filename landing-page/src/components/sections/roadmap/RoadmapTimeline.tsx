@@ -5,7 +5,7 @@ import styled from 'styled-components';
 function RoadmapTimeline() {
   return (
     <MyVerticalTimeline>
-
+      <CompletedTimeline/>
       <MyVerticalTimelineElementRight position='right'>
         <Date>January 2022</Date>
         <Category>Seed Round Funding</Category>
@@ -95,6 +95,52 @@ function RoadmapTimeline() {
     </MyVerticalTimeline>
   )
 }
+
+// taken directly from the css code for the original center line
+// changed the values so it is orange
+// and added media queries to make it the right length
+const CompletedTimeline = styled.div`
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  position: ;
+  padding: 0 0;
+
+  ::after{
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both;
+  }
+
+  ::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 17px;
+    height: 22%;
+    width: 5px;
+    background: ${props => `${props.theme.colors.orange}`};
+
+    @media(min-width: 343px){
+      /* fixes length of line so it doesn't show past icon */
+      height: 21.05%;
+    }
+    @media(min-width: 343px){
+      /* fixes length of line so it doesn't show past icon */
+      height: 21.3%;
+    }
+    @media(min-width: 510px){
+      /* fixes length of line so it doesn't show past icon */
+      height: 19.9%;
+    }
+    
+    /* moves the orange line to the center */
+    @media(min-width: 1170px){
+      left: 49.80%;
+    }
+  }
+`
 
 const MyVerticalTimeline = styled(VerticalTimeline)`
   margin-left: 6%;
