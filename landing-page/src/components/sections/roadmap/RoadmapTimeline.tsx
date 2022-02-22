@@ -125,7 +125,8 @@ const MyVerticalTimeline = styled(VerticalTimeline)`
 
   ::before{
     width: 3px;
-    background: grey;
+    background: #6D7989;
+    opacity: .1;
 
     @media(min-width: 1170px){
       left: 50%;
