@@ -224,13 +224,13 @@ const MyVerticalTimelineElementLeft = styled(VerticalTimelineElement)`
 const Date = styled.h3`
   color: ${props => `${props.theme.colors.orange}`};
   margin: 0px;
-  font-size:1rem;
-  letter-spacing:1px;
-  font-weight:600;
-  margin-top:8px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-top: 8px;
 
   @media(min-width:1170px){
-    margin-top:0px;
+    margin-top: 0px;
   }
 `
 
