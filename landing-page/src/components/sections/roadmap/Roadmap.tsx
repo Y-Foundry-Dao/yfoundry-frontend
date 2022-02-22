@@ -26,12 +26,15 @@ const Section = styled.section`
 `
 
 const RoadmapBlueBars = styled.img`
-  margin-top:-650px;
+    width: 10%;
+    margin-top:-650px;
+    margin-right:0;
     @media(max-width:1170px){
     display: none;
   }
 `
 const RoadmapOrangeBars = styled.img`
+    width: 10%;
     margin-top:1450px;
     @media(max-width:1170px){
     display: none;
@@ -40,16 +43,17 @@ const RoadmapOrangeBars = styled.img`
 
 const RoadmapSection = styled.div`
   display: flex;
+  justify-content:space-between;
   width:100%;
 `
 
 const BackText = styled.p`
   margin: 0;
   position: relative;
-  font-size:4.5rem;
+  font-size:3.5rem;
   letter-spacing:.02em;
   font-weight:600;
-  top:-80px;
+  top:-60px;
   opacity:.2;
   background:linear-gradient(120deg,rgba(31,67,191,0.6) 0%, rgba(196,188,255,0.3) 100%);
   background-clip: text;
@@ -57,6 +61,10 @@ const BackText = styled.p`
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
+  @media(min-width:756px){
+    font-size:4.5rem;
+    top:-80px
+  }
 `
 
 const Header = styled.h4`

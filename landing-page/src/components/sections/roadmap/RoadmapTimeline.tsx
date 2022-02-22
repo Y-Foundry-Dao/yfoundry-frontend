@@ -1,18 +1,18 @@
 
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 function RoadmapTimeline() {
   return (
     
     <MyVerticalTimeline lineColor='#D8552A'>
 
-      <MyVerticalTimelineElement
+      <MyVerticalTimelineElementRight
         position='right'
         contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none' }}
-        contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
-        iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'15px'}}
+        contentArrowStyle={{ border:'none',width:'64px', height:'1px', padding:'0', backgroundColor:'#D8552A',top:'34px', left:'-54px' }}
+        iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'18px', zIndex:'2'}}
       >
         <Date >January 2022</Date>
         <Category >Seed Round Funding</Category>
@@ -23,13 +23,13 @@ function RoadmapTimeline() {
         <ul>
           <li>Website Launched</li>
         </ul>
-      </MyVerticalTimelineElement>
+      </MyVerticalTimelineElementRight>
 
-      <MyVerticalTimelineElement
+      <MyVerticalTimelineElementLeft
         position='left'
         contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none' }}
-        contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
-        iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'15px'}}
+        contentArrowStyle={{ border:'none',width:'64px', height:'1px', padding:'0', backgroundColor:'#D8552A',top:'34px', left:'-54px' }}
+        iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'18px', zIndex:'2'}}
       >
         <Date >February 2022</Date>
         <Category >Development</Category>
@@ -40,13 +40,13 @@ function RoadmapTimeline() {
         <ul>
           <li>Community Discord</li>
         </ul>
-      </MyVerticalTimelineElement>
+      </MyVerticalTimelineElementLeft>
 
-      <MyVerticalTimelineElement
+      <MyVerticalTimelineElementRight
         position='right'
         contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none' }}
-        contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
-        iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'15px'}}
+        contentArrowStyle={{ border:'none',width:'64px', height:'1px', padding:'0', backgroundColor:'#D8552A',top:'34px', left:'-54px' }}
+        iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'18px', zIndex:'2'}}
       >
         <Date>March 2022</Date>
         <Category >DGSF</Category>
@@ -56,13 +56,13 @@ function RoadmapTimeline() {
             <li>BETA</li>
           </ul>
         </ul>
-      </MyVerticalTimelineElement>
+      </MyVerticalTimelineElementRight>
 
-      <MyVerticalTimelineElement
+      <MyVerticalTimelineElementLeft
         position='left'
         contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none'  }}
-        contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
-        iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'15px'}}
+        contentArrowStyle={{ border:'none',width:'64px', height:'1px', padding:'0', backgroundColor:'#D8552A',top:'34px', left:'-54px' }}
+        iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'18px', zIndex:'2'}}
       >
         <Date>April 2022</Date>
         <Category >Hedge+</Category>
@@ -72,13 +72,13 @@ function RoadmapTimeline() {
             <li>BETA</li>
           </ul>
         </ul>
-      </MyVerticalTimelineElement>
+      </MyVerticalTimelineElementLeft>
 
-      <MyVerticalTimelineElement
+      <MyVerticalTimelineElementRight
         position='right'
         contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none' }}
-        contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
-        iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'15px'}}
+        contentArrowStyle={{ border:'none',width:'64px', height:'1px', padding:'0', backgroundColor:'#D8552A',top:'34px', left:'-54px' }}
+        iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'18px', zIndex:'2'}}
       >
         <Date >May 2022</Date>
         <Category >MVP</Category>
@@ -89,13 +89,13 @@ function RoadmapTimeline() {
           </ul>
           <li>Community Farming Events</li>
         </ul>
-      </MyVerticalTimelineElement>
+      </MyVerticalTimelineElementRight>
 
-      <MyVerticalTimelineElement
+      <MyVerticalTimelineElementLeft
         position='left'
         contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none'  }}
-        contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
-        iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'15px'}}
+        contentArrowStyle={{ border:'none',width:'64px', height:'1px', padding:'0', backgroundColor:'#D8552A',top:'34px', left:'-54px' }}
+        iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'18px', zIndex:'2'}}
       >
         <Date>June 2022</Date>
         <Category >Shielded Shorts</Category>
@@ -105,13 +105,13 @@ function RoadmapTimeline() {
             <li>BETA</li>
           </ul>
         </ul>
-      </MyVerticalTimelineElement>
+      </MyVerticalTimelineElementLeft>
 
-      <MyVerticalTimelineElement
+      <MyVerticalTimelineElementRight
         position='right'
         contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none' }}
-        contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
-        iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'15px'}}
+        contentArrowStyle={{ border:'none',width:'64px', height:'1px', padding:'0', backgroundColor:'#D8552A',top:'34px', left:'-54px'  }}
+        iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'18px', zIndex:'2'}}
       >
         <Date >July 2022</Date>
         <Category >V1 Launch</Category>
@@ -119,28 +119,27 @@ function RoadmapTimeline() {
           <li>Simulation Engine</li>
           <li>Vault moved out of BETA</li>
         </ul>
-      </MyVerticalTimelineElement>
+      </MyVerticalTimelineElementRight>
 
-      <MyVerticalTimelineElement
+      <MyVerticalTimelineElementLeft
         position='left'
         contentStyle={{ background: 'rgba(33, 149, 243, 0)', boxShadow:'none'   }}
-        contentArrowStyle={{ borderRight: '7px solid  rgba(33, 149, 243, 0)' }}
-        iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'15px'}}
+        contentArrowStyle={{ border:'none',width:'64px', height:'1px', padding:'0', backgroundColor:'#D8552A',top:'34px', left:'-54px' }}
+        iconStyle={{ background: '#1F43BF', boxShadow: '0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%)', width:'30px', height:'30px', marginLeft:'-15px', marginTop:'18px', zIndex:'2'}}
       >
-        <Date >Quarter 3 2022</Date>
+        <Date>Quarter 3 2022</Date>
         <Category >Community Vaults</Category>
         <ul>
           <li>Community Vault Proposals</li>
         </ul>
-      </MyVerticalTimelineElement>
+      </MyVerticalTimelineElementLeft>
 
     </MyVerticalTimeline>
   )
 }
 
 const MyVerticalTimeline = styled(VerticalTimeline)`
-  /* border:1px solid white; */
-  margin-left:5%;
+  margin-left:6%;
   margin-top:4%;
   
   @media(min-width:375px){
@@ -163,19 +162,19 @@ const MyVerticalTimeline = styled(VerticalTimeline)`
 
   }
   @media(min-width:1170px){
-    margin-left:3.5%;
+    margin-left:0%;
     margin-right:0;
   }
 
   ::before{
-    width:2px;
+    width:3px;
     @media(min-width:1170px){
       left:50%;
     }
 
   }
 `
-const MyVerticalTimelineElement = styled(VerticalTimelineElement)`
+const MyVerticalTimelineElementRight = styled(VerticalTimelineElement)`
     margin-left:19px;
     margin-right:5px;
     @media(min-width:1170px){
@@ -183,14 +182,49 @@ const MyVerticalTimelineElement = styled(VerticalTimelineElement)`
       margin-right:0;
     }
 
+    & .vertical-timeline-element-content-arrow {
+      @media(min-width:1170px){
+        margin-left:0;
+        margin-right:0;
+        width:66px !important;
+      }
+    }
+`
+
+const MyVerticalTimelineElementLeft = styled(VerticalTimelineElement)`
+    margin-left:19px;
+    margin-right:5px;
+    @media(min-width:1170px){
+      margin-left:0;
+      margin-right:0;
+    }
+
+    & .vertical-timeline-element-content-arrow {
+      @media(min-width:1170px){
+        left: 40% !important;
+        width:318px !important;
+      }
+      @media(min-width:1280px){
+        left:38% !important;
+        width:356px !important;
+      }
+      @media(min-width:1390px){
+        left:36% !important;
+        width:396px !important;
+      }
+    }
 `
 
 const Date = styled.h3`
   color: ${props => `${props.theme.colors.orange}`};
-  margin: 0;
+  margin: 0px;
   font-size:1rem;
   letter-spacing:1px;
   font-weight:600;
+  margin-top:8px;
+  @media(min-width:1170px){
+      margin-top:0px;
+    }
 `
 
 const Category = styled.h4`
