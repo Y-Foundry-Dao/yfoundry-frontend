@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 function RoadmapTimeline() {
   return (
-    <MyVerticalTimeline lineColor='#D8552A'>
+    <MyVerticalTimeline>
 
       <MyVerticalTimelineElementRight position='right'>
         <Date>January 2022</Date>
@@ -125,11 +125,11 @@ const MyVerticalTimeline = styled(VerticalTimeline)`
 
   ::before{
     width: 3px;
+    background: grey;
 
     @media(min-width: 1170px){
       left: 50%;
     }
-
   }
 `
 const MyVerticalTimelineElementRight = styled(VerticalTimelineElement)`
