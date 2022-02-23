@@ -103,7 +103,6 @@ const CompletedTimeline = styled.div`
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
-  position: ;
   padding: 0 0;
 
   ::after{
