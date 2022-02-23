@@ -6,14 +6,14 @@ import styled from 'styled-components';
 function AboutUs() {
   return (
     <Div id='about'>
-      <VerticalBars src={verticalBars} alt={""} />
+      <VerticalBars src={verticalBars} alt={""} role="presentation" />
       <AboutUsText />
-      <BrainDna src={brainDna} alt={""} />
+      <BrainDna src={brainDna} alt={""} role="presentation" />
     </Div>
   )
 }
 
-const Div = styled.div`
+const Div = styled.section`
   position: relative;
   display: flex;
   margin-top: 11%;
