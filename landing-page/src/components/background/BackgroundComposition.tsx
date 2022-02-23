@@ -7,8 +7,8 @@ import starsSmall from "../../assets/StarsSmall.svg";
 export default function BackgroundComposition() {
   return(
     <Background>
-      <StarsLarge src={starsLarge}/>
-      <StarsSmall src={starsSmall}/>
+      <StarsLarge src={starsLarge} alt="" role="presentation" />
+      <StarsSmall src={starsSmall} alt="" role="presentation" />
       <RadialGradientTop />
       <RadialGradientBottom />
     </Background>
