@@ -22,7 +22,8 @@ const Section = styled.section`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 80px;
+  margin-top: 100px;
+  margin-bottom: 80px;
 `
 
 const RoadmapBlueBars = styled.img`
@@ -55,7 +56,7 @@ const BackText = styled.p`
   font-size: 3.5rem;
   letter-spacing: .02em;
   font-weight: 600;
-  top: -60px;
+  top: -20px;
   opacity: .2;
 
   /* workaround to add gradient to text */
@@ -68,12 +69,12 @@ const BackText = styled.p`
 
   @media(min-width: 756px){
     font-size: 4.5rem;
-    top: -80px
+    top: -40px
   }
 `
 
 const Header = styled.h4`
-  margin: 0;
+  margin: 0 0 -40px 0;
   text-align: center;
   font-size: 1.3rem;
   width: 130px;

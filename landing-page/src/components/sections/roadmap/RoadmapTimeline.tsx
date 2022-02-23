@@ -115,6 +115,7 @@ const CompletedTimeline = styled.div`
   /* the actual code that changes the center line parameters */
   ::before{
     content: '';
+    border-radius:10px;
     position: absolute;
     top: 0;
     left: 17px;
@@ -176,6 +177,7 @@ const MyVerticalTimeline = styled(VerticalTimeline)`
     width: 3px;
     background: #6D7989;
     opacity: .1;
+    border-radius: 10px;
 
     @media(min-width: 1170px){
       left: 50%;
