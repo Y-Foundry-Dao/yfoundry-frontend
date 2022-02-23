@@ -57,6 +57,8 @@ const BackText = styled.p`
   font-weight: 600;
   top: -60px;
   opacity: .2;
+
+  /* workaround to add gradient to text */
   background: linear-gradient(120deg, rgba(31, 67, 191, 0.6) 0%, rgba(196, 188, 255, 0.3) 100%);
   background-clip: text;
   -webkit-background-clip: text;

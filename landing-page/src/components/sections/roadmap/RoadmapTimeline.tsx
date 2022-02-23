@@ -112,6 +112,7 @@ const CompletedTimeline = styled.div`
   clear: both;
   }
 
+  /* the actual code that changes the center line parameters */
   ::before{
     content: '';
     position: absolute;
@@ -141,7 +142,9 @@ const CompletedTimeline = styled.div`
   }
 `
 
+// extended the default VerticalTimeline styles
 const MyVerticalTimeline = styled(VerticalTimeline)`
+  /* margins are used to create spaces on the left and right */
   margin-left: 6%;
   margin-top: 4%;
   
@@ -168,6 +171,7 @@ const MyVerticalTimeline = styled(VerticalTimeline)`
     margin-right: 0;
   }
 
+  /* parameters for main vertical line */
   ::before{
     width: 3px;
     background: #6D7989;
@@ -178,6 +182,8 @@ const MyVerticalTimeline = styled(VerticalTimeline)`
     }
   }
 `
+
+// any elements that will be on the right side of the line when viewed in desktop mode
 const MyVerticalTimelineElementRight = styled(VerticalTimelineElement)`
   margin-left: 19px;
   margin-right: 5px;
@@ -187,6 +193,8 @@ const MyVerticalTimelineElementRight = styled(VerticalTimelineElement)`
     margin-right: 0;
   }
 
+  /* library originally uses this class name to create an arrow */
+  /* this code overwrites the styles to create the horizontal line */
   & .vertical-timeline-element-content-arrow {
     border: none; 
     width: 64px; 
@@ -203,6 +211,7 @@ const MyVerticalTimelineElementRight = styled(VerticalTimelineElement)`
     }
   }
 
+  /* styles for the blue dots */
   & .vertical-timeline-element-icon{
     background: ${props => `${props.theme.colors.blue}`};
     box-shadow: 0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%);
@@ -213,12 +222,15 @@ const MyVerticalTimelineElementRight = styled(VerticalTimelineElement)`
     z-index: 2;
   }
 
+  /* overrides styles that would originally create a box around the element */
   & .vertical-timeline-element-content{
     background: none;
     box-shadow: none;
   }
 `
 
+// extended the default VerticalTimelineElement styles
+// any elements that will be on the left side of the line when viewed in desktop mode
 const MyVerticalTimelineElementLeft = styled(VerticalTimelineElement)`
   margin-left: 19px;
   margin-right: 5px;
@@ -228,6 +240,8 @@ const MyVerticalTimelineElementLeft = styled(VerticalTimelineElement)`
     margin-right: 0;
   }
 
+  /* library originally uses this class name to create an arrow */
+  /* this code overwrites the styles to create the horizontal line */
   & .vertical-timeline-element-content-arrow {
     border: none; 
     width: 64px; 
@@ -251,6 +265,7 @@ const MyVerticalTimelineElementLeft = styled(VerticalTimelineElement)`
     }
   }
 
+    /* styles for the blue dots */
   & .vertical-timeline-element-icon{
     background: ${props => `${props.theme.colors.blue}`};
     box-shadow: 0 0 0 14px #1f42bf63, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%);
@@ -261,6 +276,7 @@ const MyVerticalTimelineElementLeft = styled(VerticalTimelineElement)`
     z-index: 2;
   }
 
+    /* overrides styles that would originally create a box around the element */
   & .vertical-timeline-element-content{
     background: none;
     box-shadow: none;
@@ -275,6 +291,7 @@ const Date = styled.h3`
   font-weight: 600;
   margin-top: 8px;
 
+  /* positions horizontal line between the title and blue dot */
   @media(min-width:1170px){
     margin-top: 0px;
   }
