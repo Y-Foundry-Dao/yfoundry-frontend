@@ -50,6 +50,7 @@ const RoadmapSection = styled.div`
   width: 100%;
 `
 
+// transparent text behind header
 const BackText = styled.p`
   margin: 0;
   position: relative;
