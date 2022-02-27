@@ -5,15 +5,33 @@ function NavLinks() {
   return (
     <Nav>
       <Ul>
-        <li><StyledLink to="about" smooth={true} >about</StyledLink></li>
-        <li><StyledLink to="blog" smooth={true} >blog</StyledLink></li>
-        <li><StyledLink to="community" smooth={true} >join community</StyledLink></li>
+        <li><StyledLink smooth to="about" >about</StyledLink></li>
+        <li><StyledLink smooth to="blog" >blog</StyledLink></li>
+        <li><StyledLink smooth to="community" >join community</StyledLink></li>
       </Ul>
     </Nav>
   )
 }
 
-const loading = keyframes`
+const Nav = styled.nav`
+  width: 65%;
+
+  /* hides nav bar on mobile */
+  @media(max-width:756px){
+    display: none;
+  }
+`
+
+const Ul = styled.ul`
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-around;
+`
+
+const fadeIn = keyframes`
   0%{
     opacity: 0;
   }100%{
@@ -33,6 +51,7 @@ const StyledLink = styled(Link)`
     color: ${props => `${props.theme.colors.orange}`};
     transition: all .2s linear;
 
+    /* Styles for orange underline on hover */
     &::after{
       content: "";
       position: absolute;
@@ -40,27 +59,10 @@ const StyledLink = styled(Link)`
       left: 0;
       width: 42px;
       height: 2px;
-      animation: ${loading} .2s 1 linear;
+      animation: ${fadeIn} .2s 1 linear;
       background: ${props => `${props.theme.colors.orange}`};
       border-radius: 10px;
     }
-  }
-`
-
-const Ul = styled.ul`
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  font-weight: 600;
-  display: flex;
-  justify-content: space-around;
-`
-
-const Nav = styled.nav`
-  width: 65%;
-
-  @media(max-width:756px){
-    display: none;
   }
 `
 

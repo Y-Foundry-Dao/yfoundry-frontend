@@ -1,7 +1,8 @@
 import {useState, useRef} from 'react';
+
 import BurgerIcon from './BurgerIcon';
-import useOnClickOutside from '../../../../utilities/useOnClickOutside';
 import BurgerMenu from './BurgerMenu';
+import useOnClickOutside from '../../../../utilities/useOnClickOutside';
 
 
 function Burger() {
@@ -9,6 +10,7 @@ function Burger() {
 
   const burgerRef = useRef<HTMLDivElement>(null);
 
+  // closes menu when clicking anywhere outside of it
   useOnClickOutside(burgerRef, () => setOpen(false));
 
   return (

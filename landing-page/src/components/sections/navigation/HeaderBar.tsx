@@ -1,7 +1,8 @@
-import yLogo from '../../../assets/logo_orange.svg';
 import styled from 'styled-components';
+
 import NavLinks from './NavLinks';
-import Burger from './burger/Burger'
+import Burger from './burger/Burger';
+import yLogo from '../../../assets/logo_orange.svg';
 
 function HeaderBar() {
   return (
