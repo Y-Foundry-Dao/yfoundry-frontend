@@ -12,7 +12,7 @@ function Menu(props:Props) {
     <StyledMenu open={open}>
       <Ul>
         <Li onClick={() => setOpen(!open)}><Link href="#about">about</Link></Li>
-        <Li onClick={() => setOpen(!open)}><Link href="#blog">blog</Link></Li>
+        <Li onClick={() => setOpen(!open)}><Link href="#medium">medium</Link></Li>
         <Li onClick={() => setOpen(!open)}><Link href="#community">join community</Link></Li>
       </Ul>
     </StyledMenu>
@@ -38,6 +38,7 @@ const Link = styled.a`
   color: ${props => `${props.theme.colors.gray}`};
   text-decoration: none;
   text-transform: uppercase;
+  
   &:hover{
     color: ${props => `${props.theme.colors.orange}`};
     transition: .15s linear;

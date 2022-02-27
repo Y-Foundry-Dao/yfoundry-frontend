@@ -6,7 +6,7 @@ function NavLinks() {
     <Nav>
       <Ul>
         <li><StyledLink smooth to="about" >about</StyledLink></li>
-        <li><StyledLink smooth to="blog" >blog</StyledLink></li>
+        <li><StyledLink smooth to="medium" >medium</StyledLink></li>
         <li><StyledLink smooth to="community" >join community</StyledLink></li>
       </Ul>
     </Nav>

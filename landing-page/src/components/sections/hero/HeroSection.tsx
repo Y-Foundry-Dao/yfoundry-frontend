@@ -1,5 +1,6 @@
-import logo from '../../../assets/horizontal_logo_orange&white.svg';
 import styled from 'styled-components';
+
+import logo from '../../../assets/horizontal_logo_orange&white.svg';
 import blueY from '../../../assets/blue_logo2.svg';
 
 const text = `A Decentralized System of Vault \nCreation, Maintenance and Governance.`;

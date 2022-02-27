@@ -6,35 +6,47 @@ import mediumWords from '../../../assets/mediumWords.svg';
 
 function MediumButton() {
   return (
-    <Div>
+    <ButtonContainer>
       <a href={medium} target="_blank" rel="noreferrer">
         <Button>
           <ImgLogo src={mediumLogo} alt="" />
           <ImgWords src={mediumWords} alt="medium" />
         </Button>
       </a>
-    </Div>
-
+    </ButtonContainer>
   )
 }
 
+const ButtonContainer = styled.div`
+  width: 50%;
+  padding-bottom: 8%;
+  display: flex;
+  flex-direction: column;
+  
+  @media(min-width: 425px){
+    width: 40%;
+    padding-bottom: 2%;
+  }
+  @media(min-width: 756px){
+    width: 35%;
+  }
+`
+
 const Button = styled.button`
-  background-color: ${props => `${props.theme.colors.blue}`};
+  width: 100%;
+  padding: 7%;
+  margin-top: 6%;
   border-radius: 6px;
-  color: ${props => `${props.theme.colors.white}`};
-  text-transform: uppercase;
   font-weight: 600;
   font-size: .75rem;
-  padding: 7%;
-  white-space: nowrap;
-  margin-top: 6%;
   border: none;
-  width: 100%;
-  cursor: pointer;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
+  background-color: ${props => `${props.theme.colors.blue}`};
+  color: ${props => `${props.theme.colors.white}`};
+  cursor: pointer;
 
   @media(min-width: 600px){
     width: 90%;
@@ -54,21 +66,6 @@ const ImgLogo = styled.img`
 
 const ImgWords = styled.img`
   width: 50%;
-`
-
-const Div = styled.div`
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 8%;
-  
-  @media(min-width: 425px){
-    width: 40%;
-    padding-bottom: 2%;
-  }
-  @media(min-width: 756px){
-    width: 35%;
-  }
 `
 
 export default MediumButton;
