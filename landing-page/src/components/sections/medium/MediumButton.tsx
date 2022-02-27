@@ -6,18 +6,16 @@ import mediumWords from '../../../assets/mediumWords.svg';
 
 function MediumButton() {
   return (
-    <ButtonContainer>
-      <a href={medium} target="_blank" rel="noreferrer">
-        <Button>
-          <ImgLogo src={mediumLogo} alt="" />
-          <ImgWords src={mediumWords} alt="medium" />
-        </Button>
-      </a>
-    </ButtonContainer>
+    <Link href={medium} target="_blank" rel="noreferrer">
+      <Button>
+        <ImgLogo src={mediumLogo} alt="" />
+        <ImgWords src={mediumWords} alt="medium" />
+      </Button>
+    </Link>
   )
 }
 
-const ButtonContainer = styled.div`
+const Link = styled.a`
   width: 50%;
   padding-bottom: 8%;
   display: flex;
@@ -37,9 +35,9 @@ const Button = styled.button`
   padding: 7%;
   margin-top: 6%;
   border-radius: 6px;
+  border:none;
   font-weight: 600;
   font-size: .75rem;
-  border: none;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
