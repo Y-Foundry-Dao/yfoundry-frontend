@@ -1,16 +1,18 @@
-import styled, {keyframes} from 'styled-components';
+import styled from 'styled-components';
 
-import links from '../../../utilities/links';
-import {ReactComponent as Twitter} from '../../../assets/twitter.svg';
-import {ReactComponent as Discord} from '../../../assets/discord.svg';
-import {ReactComponent as Telegram} from '../../../assets/Telegram.svg';
+import socialInfo from '../../../utilities/socialInfo';
 
 function SocialIcons() {
   return (
     <Ul>
-      <Li><Link href={links.twitter} target="_blank" rel="noreferrer" aria-label="Twitter"><StyledTwitter /></Link></Li>
-      <Li><Link href={links.discord} target="_blank" rel="noreferrer" aria-label="Discord"><StyledDiscord /></Link></Li>
-      <Li><Link href={links.telegram} target="_blank" rel="noreferrer" aria-label="Telegram"><StyledTelegram /></Link></Li>
+      {Object.values(socialInfo).map((value) => {
+        return (
+          <Li>
+            <Link href={value.link} target="_blank" rel="noreferrer" aria-label="Telegram">
+              {value.iconFooter}
+            </Link>
+          </Li>
+        )})}
     </Ul>
   )
 }
@@ -54,46 +56,6 @@ const Link = styled.a`
   display: block;
   width: 100%;
   z-index: 1;
-`
-
-const colorChangeBlue = keyframes`
-  100%{
-    fill: #1F43BF;
-  }
-`
-
-const StyledDiscord = styled(Discord)`
-  width: 100%;
-  height: 50px;
-  margin: 0;
-  padding: 0;
-
-  &:hover path{
-    animation: ${colorChangeBlue} .15s linear forwards;
-  }
-`
-
-const StyledTwitter = styled(Twitter)`
-  width: 100%;
-  height: 50px;
-  margin: 0;
-  padding: 0;
-  z-index: 0;
-
-  &:hover path{
-    animation: ${colorChangeBlue} .15s linear forwards;
-  }
-`
-
-const StyledTelegram = styled(Telegram)`
-  width: 100%;
-  height: 50px;
-  margin: 0;
-  padding: 0;
-
-  &:hover path{
-    animation: ${colorChangeBlue} .15s linear forwards;
-  }
 `
 
 export default SocialIcons;
