@@ -89,8 +89,9 @@ const socialInfo = {
     iconVision: <StyledTwitterVision />,
     iconFooter: <StyledTwitterFooter />,
     text: "twitter"
-  },
+  }
 }
 
+export const medium = "https://medium.com/@yfoundry/"
 
 export default socialInfo

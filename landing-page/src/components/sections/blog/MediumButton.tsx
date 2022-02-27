@@ -1,16 +1,15 @@
 import styled from 'styled-components';
+
+import { medium } from '../../../utilities/socialInfo';
 import mediumLogo from '../../../assets/mediumLogo.svg';
 import mediumWords from '../../../assets/mediumWords.svg';
-
-const mediumLink =
-  "https://medium.com/@yfoundry/";
 
 function MediumButton() {
   return (
     <Div>
-      <a href={mediumLink} target={"_blank"} rel={"noreferrer"}>
+      <a href={medium} target="_blank" rel="noreferrer">
         <Button>
-          <ImgLogo src={mediumLogo} alt="medium logo" />
+          <ImgLogo src={mediumLogo} alt="" />
           <ImgWords src={mediumWords} alt="medium" />
         </Button>
       </a>
