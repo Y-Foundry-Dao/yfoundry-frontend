@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import HeaderBar from './components/sections/navigation/HeaderBar';
 import MainSection from './components/sections/hero/HeroSection';
-import InvestorCarousel from './components/sections/backers/InvestorCarousel';
+import InvestorCarousel from './components/sections/backers/Backers';
 import AboutUs from './components/sections/aboutUs/AboutUs';
 import FooterBar from './components/sections/footer/FooterBar';
 import Community from './components/sections/vision/Vision';
