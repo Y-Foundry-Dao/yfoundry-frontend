@@ -5,11 +5,11 @@ import socialInfo from '../../../utilities/socialInfo';
 function SocialIcons() {
   return (
     <Ul>
-      {Object.values(socialInfo).map((value) => {
+      {Object.values(socialInfo).map((social) => {
         return (
           <Li>
-            <Link href={value.link} target="_blank" rel="noreferrer" aria-label="Telegram">
-              {value.iconFooter}
+            <Link href={social.link} target="_blank" rel="noreferrer" aria-label="Telegram">
+              {social.iconFooter}
             </Link>
           </Li>
         )})}
