@@ -1,27 +1,29 @@
+import styled from 'styled-components';
+
 import AboutUsText from './AboutUsText';
 import verticalBars from '../../../assets/vertical_bars.svg';
 import brainDna from '../../../assets/brain_dna.svg';
-import styled from 'styled-components';
 
 function AboutUs() {
   return (
-    <Div id='about'>
-      <VerticalBars src={verticalBars} alt={""} role="presentation" />
+    <AboutUsComponent id='about'>
+      <VerticalBars src={verticalBars} alt="" />
       <AboutUsText />
-      <BrainDna src={brainDna} alt={""} role="presentation" />
-    </Div>
+      <BrainDna src={brainDna} alt="" />
+    </AboutUsComponent>
   )
 }
 
-const Div = styled.section`
-  position: relative;
-  display: flex;
+const AboutUsComponent = styled.section`
   margin-top: 11%;
   padding-top: 8%;
   padding-bottom: 5%;
   width: 100%;
+  position: relative;
+  display: flex;
   overflow-X: hidden;
   overflow-Y: hidden;
+
   @media(min-width: 425px){
     margin-top: 9%;
 
@@ -42,6 +44,7 @@ const VerticalBars = styled.img`
     width: 18%;
     padding-left: 2%
   }
+  /* hides the element on small screens */
   @media(max-width:1024px){
     display: none;
   }

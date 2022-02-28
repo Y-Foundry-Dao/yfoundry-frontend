@@ -20,7 +20,7 @@ function App() {
       <AboutUs />
       <Blog/>
       <Community />
-      <Div />
+      <Line />
       <FooterBar />
       <ScrollButton/>
     </LandingPage>
@@ -36,7 +36,7 @@ const LandingPage = styled.div`
 `
 
 // Line above footer
-const Div = styled.div`
+const Line = styled.div`
   width: 78%;
   height: 1px;
   margin-top: 14%;

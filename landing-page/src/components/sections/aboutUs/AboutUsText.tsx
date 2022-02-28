@@ -19,10 +19,6 @@ function AboutUsText() {
   )
 }
 
-const Orange = styled.span`
-  color: ${props => `${props.theme.colors.orange}`};
-`
-
 const Section = styled.section`
   display: flex;
   flex-direction: column;
@@ -56,6 +52,11 @@ const Header = styled.h2`
     font-size: 1.8rem;
   }
 `
+
+const Orange = styled.span`
+  color: ${props => `${props.theme.colors.orange}`};
+`
+
 const P = styled.p`
   line-height: 24px;
   font-size: .8rem;

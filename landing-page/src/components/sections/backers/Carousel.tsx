@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import 'swiper/css';
 import { A11y, Autoplay, FreeMode } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -12,23 +13,23 @@ import lambda from '../../../assets/LambdaLogo.png';
 import thorstarter from '../../../assets/Thorstarter.svg';
 import northRock from '../../../assets/NorthRockDigital.png';
 
+// parameters:
+//  modules - swiper modules to add features
+//  autoplay - allows the carousel to move on its own
+//    delay - time between transitions in ms
+//    pauseOnMouseEnter - autoplay pauses on mouseover
+//    disableOnInteraction - when false, the carousel will restart autoplaying after user interaction
+//  freeMode - lets the carousel slide freely rather than snapping
+//  loop - enables continuous loop mode
+//  centeredSlides - centers the active slide
+//  grabCursor - shows 'grab' cursor on desktop view
+//  loopFillGroupWithBlank - loop mode will fill groups with insufficient number of slides with blank slides
+//  loopPreventsSlide - prevents transitions when transition already in progress
+//  slidesPerView - slides visible at the same time on slider's container
+//  speed - duration of the transition between slides
+//  breakpoints - different styles for various screen sizes
 function Carousel() {
   return (
-    // parameters:
-    //  modules - swiper modules to add features
-    //  autoplay - allows the carousel to move on its own
-    //    delay - time between transitions in ms
-    //    pauseOnMouseEnter - autoplay pauses on mouseover
-    //    disableOnInteraction - when false, the carousel will restart autoplaying after user interaction
-    //  freeMode - lets the carousel slide freely rather than snapping
-    //  loop - enables continuous loop mode
-    //  centeredSlides - centers the active slide
-    //  grabCursor - shows 'grab' cursor on desktop view
-    //  loopFillGroupWithBlank - loop mode will fill groups with insufficient number of slides with blank slides
-    //  loopPreventsSlide - prevents transitions when transition already in progress
-    //  slidesPerView - slides visible at the same time on slider's container
-    //  speed - duration of the transition between slides
-    //  breakpoints - different styles for various screen sizes
     <StyledSwiper
       modules={[A11y, Autoplay, FreeMode]}
       autoplay={{delay:0, pauseOnMouseEnter:false, disableOnInteraction:false}}
@@ -48,8 +49,8 @@ function Carousel() {
     >
       {/* data-swiper-autoplay - sets the individual delay for the slides */}
       <SwiperSlide data-swiper-autoplay="1200"><Logo src={hyperion} alt={"Hyperion Logo"} /></SwiperSlide>
-      <SwiperSlide data-swiper-autoplay="1200"><Logo src={apollo} alt={"Apollo"} /></SwiperSlide>
-      <SwiperSlide data-swiper-autoplay="1200"><LogoDeepVentures src={deepVentures} alt={"Deep Ventures logo"} /></SwiperSlide>
+      <SwiperSlide data-swiper-autoplay="1200"><Logo src={apollo} alt={"Apollo Logo"} /></SwiperSlide>
+      <SwiperSlide data-swiper-autoplay="1200"><LogoDeepVentures src={deepVentures} alt={"Deep Ventures Logo"} /></SwiperSlide>
       <SwiperSlide data-swiper-autoplay="1200"><Logo src={cetaceanCapital} alt={"Cetacean Capital Logo"} /></SwiperSlide>
       <SwiperSlide data-swiper-autoplay="1200"><Logo src={lambda} alt={"Lambda Logo"} /></SwiperSlide>
       <SwiperSlide data-swiper-autoplay="1200"><Logo src={thorstarter} alt={"Thorstarter Logo"} /></SwiperSlide>

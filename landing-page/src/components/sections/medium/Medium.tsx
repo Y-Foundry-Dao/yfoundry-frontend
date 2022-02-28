@@ -16,14 +16,14 @@ function Medium() {
 
 const Section = styled.section`
   width: 70%;
-  border: 1px solid ${props => `${props.theme.colors.orange}`};
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   padding: 5% 6%;
   margin-top: 8%;
   border-radius: 15px;
   gap: 10%;
+  border: 1px solid ${props => `${props.theme.colors.orange}`};
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
   @media(min-width: 425px){
     width: 65%;
@@ -45,10 +45,10 @@ const Section = styled.section`
 `
 
 const Div = styled.div`
+  width: 44%;
+  gap: 10px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  width: 44%;
   text-align: left;
 
   @media(min-width: 375px){
