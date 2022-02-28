@@ -13,7 +13,6 @@ interface StyleProps {
 };
 
 const BurgerIcon: React.FC <ComponentProps> = ({open, setOpen}: ComponentProps) => {
-
   return (
     <Burger aria-label="Burger Menu" open={open} onClick={() => setOpen(!open)}>
       <div />

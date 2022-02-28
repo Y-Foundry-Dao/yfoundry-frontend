@@ -18,7 +18,7 @@ const Logo = styled.img`
   margin: 15px 8% 15px;
   width: 21px;
 
-  @media(min-width:1440px){
+  @media(min-width: 1440px){
     margin: 14px 4% 14px;
     width: 28px;
   }
