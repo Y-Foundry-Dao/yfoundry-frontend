@@ -5,7 +5,7 @@ import roadmapOrangeBars from '../../../assets/RoadmapOrangeBars.svg';
 
 function Roadmap() {
   return (
-    <Section>
+    <Section id='roadmap'>
       <Header>Our <OrangeText>Roadmap</OrangeText></Header>
       <BackText>Roadmap</BackText>
       <RoadmapSection>

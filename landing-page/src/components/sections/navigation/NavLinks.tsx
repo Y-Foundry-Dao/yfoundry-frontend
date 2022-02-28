@@ -8,6 +8,7 @@ function NavLinks() {
         <li><StyledLink to="about" smooth={true} >about</StyledLink></li>
         <li><StyledLink to="blog" smooth={true} >blog</StyledLink></li>
         <li><StyledLink to="community" smooth={true} >join community</StyledLink></li>
+        <li><StyledLink smooth to="roadmap" >roadmap</StyledLink></li>
       </Ul>
     </Nav>
   )
