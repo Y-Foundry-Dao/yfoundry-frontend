@@ -19,7 +19,7 @@ const BurgerIcon: React.FC <ComponentProps> = ({open, setOpen}: ComponentProps) 
       <div />
       <div />
     </Burger>
-  )
+  );
 }
 
 const Burger:React.FC <StyleProps> = styled.button<StyleProps>`

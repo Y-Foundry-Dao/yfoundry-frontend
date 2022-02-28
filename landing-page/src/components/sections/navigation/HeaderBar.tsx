@@ -11,7 +11,7 @@ function HeaderBar() {
       <NavLinks />
       <Burger />
     </Header>
-  )
+  );
 }
 
 const Logo = styled.img`

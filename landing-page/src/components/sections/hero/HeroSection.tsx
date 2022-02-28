@@ -9,12 +9,12 @@ function HeroSection() {
   return (
     <Main>
       <Section>
-        <Logo src={logo} alt={"y-foundry dao"} />
+        <Logo src={logo} alt="y-foundry dao" />
         <HeaderText>{text}</HeaderText>
       </Section>
-      <BlueY src={blueY} alt={"big blue y"} />
+      <BlueY src={blueY} alt="big blue y" />
     </Main>
-  )
+  );
 }
 
 const Main = styled.main`

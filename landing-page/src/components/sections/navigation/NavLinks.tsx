@@ -10,7 +10,7 @@ function NavLinks() {
         <li><StyledLink smooth to="community" >join community</StyledLink></li>
       </Ul>
     </Nav>
-  )
+  );
 }
 
 const Nav = styled.nav`

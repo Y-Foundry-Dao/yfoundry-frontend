@@ -15,7 +15,7 @@ function SocialIcons() {
           </Li>
         )})}
     </Ul>
-  )
+  );
 }
 
 const Ul = styled.ul`

@@ -18,8 +18,7 @@ function Community() {
       </Div>
       <SocialIcons />
     </Section>
-
-  )
+  );
 }
 
 const Section = styled.section`
@@ -90,7 +89,7 @@ const TextParagraph = styled.p`
     font-size: 1rem;
     width: 60%;
   }
-  @media(min-width:1024px){
+  @media(min-width: 1024px){
     font-size: 1.1rem;
     width: 55%;
   }

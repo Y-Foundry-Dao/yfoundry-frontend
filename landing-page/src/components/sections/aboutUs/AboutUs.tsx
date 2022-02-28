@@ -11,7 +11,7 @@ function AboutUs() {
       <AboutUsText />
       <BrainDna src={brainDna} alt="" />
     </AboutUsComponent>
-  )
+  );
 }
 
 const AboutUsComponent = styled.section`
@@ -42,10 +42,10 @@ const VerticalBars = styled.img`
 
   @media(min-width: 1024px){
     width: 18%;
-    padding-left: 2%
+    padding-left: 2%;
   }
   /* hides the element on small screens */
-  @media(max-width:1024px){
+  @media(max-width: 1024px){
     display: none;
   }
 `

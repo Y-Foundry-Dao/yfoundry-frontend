@@ -11,7 +11,7 @@ function Medium() {
       </Div>
       <MediumButton />
     </Section>
-  )
+  );
 }
 
 const Section = styled.section`

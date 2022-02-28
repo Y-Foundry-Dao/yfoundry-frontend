@@ -16,7 +16,7 @@ function Menu(props:Props) {
         <Li onClick={() => setOpen(!open)}><Link href="#community">join community</Link></Li>
       </Ul>
     </StyledMenu>
-  )
+  );
 }
 
 const StyledMenu:any = styled.nav<Props>`

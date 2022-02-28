@@ -12,7 +12,7 @@ function MediumButton() {
         <ImgWords src={mediumWords} alt="medium" />
       </Button>
     </Link>
-  )
+  );
 }
 
 const Link = styled.a`

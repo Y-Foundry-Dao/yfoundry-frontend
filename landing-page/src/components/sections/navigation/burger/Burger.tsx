@@ -18,7 +18,7 @@ function Burger() {
       <BurgerIcon open={open} setOpen={setOpen} />
       <BurgerMenu open={open} setOpen={setOpen} />
     </div>
-  )
+  );
 }
 
 

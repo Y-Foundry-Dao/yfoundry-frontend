@@ -8,7 +8,7 @@ function Backers() {
       <Header>Our <OrangeText>Backers</OrangeText></Header>
       <Carousel />
     </BackersComponent>
-  )
+  );
 }
 
 const BackersComponent = styled.section`

@@ -57,7 +57,7 @@ function Carousel() {
       <SwiperSlide data-swiper-autoplay="1200"><Logo src={xVentures} alt={"0xVentures Logo"} /></SwiperSlide>
       <SwiperSlide data-swiper-autoplay="1200"><Logo src={northRock} alt={"North Rock Digital Logo"} /></SwiperSlide>
     </StyledSwiper>
-  )
+  );
 }
 
 // Styles for the carousel

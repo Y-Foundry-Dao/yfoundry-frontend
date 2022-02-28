@@ -13,7 +13,7 @@ export default function BackgroundComposition() {
       <RadialGradientTop />
       <RadialGradientBottom />
     </Background>
-  )
+  );
 }
 
 const StarsLarge = styled.img`
