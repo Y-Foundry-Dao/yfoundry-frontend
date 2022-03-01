@@ -14,6 +14,7 @@ function Menu(props:Props) {
         <Li onClick={() => setOpen(!open)}><Link href="#about">about</Link></Li>
         <Li onClick={() => setOpen(!open)}><Link href="#blog">blog</Link></Li>
         <Li onClick={() => setOpen(!open)}><Link href="#community">join community</Link></Li>
+        <Li onClick={() => setOpen(!open)}><Link href="#roadmap">roadmap</Link></Li>
       </Ul>
     </StyledMenu>
   )

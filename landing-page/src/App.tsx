@@ -8,6 +8,8 @@ import Community from './components/sections/vision/Vision';
 import Blog from './components/sections/blog/Blog';
 import BackgroundComposition from './components/background/BackgroundComposition';
 import ScrollButton from './components/ScrollTopArrow';
+// import RoadmapTimeline from './components/sections/roadmap/RoadmapTimeline';
+import Roadmap from './components/sections/roadmap/Roadmap';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <AboutUs />
       <Blog/>
       <Community />
+      <Roadmap />
+      {/* <RoadmapTimeline /> */}
       <Div />
       <FooterBar />
       <ScrollButton/>

@@ -46,20 +46,21 @@ const Radial = styled.div`
     left: -250px;
     top: 2000px;
   }
-  @media(min-width: 1150px){
-    top: 2100px;
+  @media(min-width: 1170px){
+    top: 3100px;
+    left:-290px;
   }
   @media(min-width: 1300px){
     width: 520px;
     height: 520px;
-    left: -260px;
-    top: 2200px;
+    left: -310px;
+    top: 3200px;
   }
   @media(min-width: 1440px){
     width: 560px;
     height: 560px;
-    left: -290px;
-    top: 2450px;
+    left: -340px;
+    top: 3450px;
   }
 `
 
