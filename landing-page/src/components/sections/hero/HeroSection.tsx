@@ -1,5 +1,6 @@
-import logo from '../../../assets/horizontal_logo_orange&white.svg';
 import styled from 'styled-components';
+
+import logo from '../../../assets/horizontal_logo_orange&white.svg';
 import blueY from '../../../assets/blue_logo2.svg';
 
 const text = `A Decentralized System of Vault \nCreation, Maintenance and Governance.`;
@@ -8,13 +9,33 @@ function HeroSection() {
   return (
     <Main>
       <Section>
-        <Logo src={logo} alt={"y-foundry dao"} />
+        <Logo src={logo} alt="y-foundry dao" />
         <HeaderText>{text}</HeaderText>
       </Section>
-      <BlueY src={blueY} alt={"big blue y"} />
+      <BlueY src={blueY} alt="big blue y" />
     </Main>
-  )
+  );
 }
+
+const Main = styled.main`
+  width: 93%;
+  padding-left: 5%;
+  margin-top: 13%;
+  display: flex;
+  justify-content: space-between;
+  
+  @media(min-width: 425px){
+    width: 86%;
+    padding-left: 9%;
+  }
+  @media(min-width: 756px){
+    margin-top: 16%;
+  }
+  @media(min-width: 1024px){
+    margin-top: 14%;
+    padding-left: 11%;
+  }
+`
 
 const Section = styled.section`
   display: flex;
@@ -50,41 +71,6 @@ const Logo = styled.img`
   }
 `
 
-const BlueY = styled.img`
-  position: absolute;
-  top: 120px;
-  right: 7%;
-  width: 28%;
-
-  @media(min-width: 1024px){
-    width: 26%;
-    right: 8%;
-  }
-  @media(max-width: 756px){
-    display: none;
-  }
-`
-
-const Main = styled.main`
-  width: 93%;
-  padding-left: 5%;
-  margin-top: 13%;
-  display: flex;
-  justify-content: space-between;
-  
-  @media(min-width: 425px){
-    width: 86%;
-    padding-left: 9%;
-  }
-  @media(min-width: 756px){
-    margin-top: 16%;
-  }
-  @media(min-width: 1024px){
-    margin-top: 14%;
-    padding-left: 11%;
-  }
-`
-
 const HeaderText = styled.h1`
   font-size: 1rem;
   font-weight: 400;
@@ -110,5 +96,24 @@ const HeaderText = styled.h1`
     line-height: 24px;
   }
 `
+
+const BlueY = styled.img`
+  position: absolute;
+  top: 120px;
+  right: 7%;
+  width: 28%;
+
+  @media(min-width: 1024px){
+    width: 26%;
+    right: 8%;
+  }
+  @media(max-width: 756px){
+    display: none;
+  }
+`
+
+
+
+
 
 export default HeroSection;

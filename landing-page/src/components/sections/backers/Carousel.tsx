@@ -1,4 +1,9 @@
 import styled from 'styled-components';
+
+import 'swiper/css';
+import { A11y, Autoplay, FreeMode } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 import xVentures from '../../../assets/0xVenturesWhite.svg';
 import apollo from '../../../assets/Apollo.png';
 import cetaceanCapital from '../../../assets/CetaceanCapital.png';
@@ -7,87 +12,55 @@ import hyperion from '../../../assets/HyperionLogo.png';
 import lambda from '../../../assets/LambdaLogo.png';
 import thorstarter from '../../../assets/Thorstarter.svg';
 import northRock from '../../../assets/NorthRockDigital.png';
-// Core modules imports are same as usual
 
-// Direct React component imports
-import { A11y, Autoplay, FreeMode } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-
-function InvestorCarousel() {
+// parameters:
+//  modules - swiper modules to add features
+//  autoplay - allows the carousel to move on its own
+//    delay - time between transitions in ms
+//    pauseOnMouseEnter - autoplay pauses on mouseover
+//    disableOnInteraction - when false, the carousel will restart autoplaying after user interaction
+//  freeMode - lets the carousel slide freely rather than snapping
+//  loop - enables continuous loop mode
+//  centeredSlides - centers the active slide
+//  grabCursor - shows 'grab' cursor on desktop view
+//  loopFillGroupWithBlank - loop mode will fill groups with insufficient number of slides with blank slides
+//  loopPreventsSlide - prevents transitions when transition already in progress
+//  slidesPerView - slides visible at the same time on slider's container
+//  speed - duration of the transition between slides
+//  breakpoints - different styles for various screen sizes
+function Carousel() {
   return (
-    <Div>
-      <Header>Our <OrangeText>Backers</OrangeText></Header>
     <StyledSwiper
-    slidesPerView={2}
-    loop={true}
-    centeredSlides={true}
-    grabCursor={true}
-    loopFillGroupWithBlank={true}
-    className="mySwiper"
-    modules={[A11y, Autoplay, FreeMode]}
-    autoplay={{delay:0, pauseOnMouseEnter:false, disableOnInteraction:false}}
-    freeMode
-    loopPreventsSlide={true}
-    speed={7200}
-    breakpoints={{
-      756:{
-        slidesPerView:4
-      }
-    }}
+      modules={[A11y, Autoplay, FreeMode]}
+      autoplay={{delay:0, pauseOnMouseEnter:false, disableOnInteraction:false}}
+      freeMode
+      loop
+      centeredSlides
+      grabCursor
+      loopFillGroupWithBlank
+      loopPreventsSlide
+      slidesPerView={2}
+      speed={7200}
+      breakpoints={{
+        756:{
+          slidesPerView:4
+        }
+      }}
     >
+      {/* data-swiper-autoplay - sets the individual delay for the slides */}
       <SwiperSlide data-swiper-autoplay="1200"><Logo src={hyperion} alt={"Hyperion Logo"} /></SwiperSlide>
-      <SwiperSlide data-swiper-autoplay="1200"><Logo src={apollo} alt={"Apollo"} /></SwiperSlide>
-      <SwiperSlide data-swiper-autoplay="1200"><LogoDeepVentures src={deepVentures} alt={"Deep Ventures logo"} /></SwiperSlide>
+      <SwiperSlide data-swiper-autoplay="1200"><Logo src={apollo} alt={"Apollo Logo"} /></SwiperSlide>
+      <SwiperSlide data-swiper-autoplay="1200"><LogoDeepVentures src={deepVentures} alt={"Deep Ventures Logo"} /></SwiperSlide>
       <SwiperSlide data-swiper-autoplay="1200"><Logo src={cetaceanCapital} alt={"Cetacean Capital Logo"} /></SwiperSlide>
       <SwiperSlide data-swiper-autoplay="1200"><Logo src={lambda} alt={"Lambda Logo"} /></SwiperSlide>
       <SwiperSlide data-swiper-autoplay="1200"><Logo src={thorstarter} alt={"Thorstarter Logo"} /></SwiperSlide>
       <SwiperSlide data-swiper-autoplay="1200"><Logo src={xVentures} alt={"0xVentures Logo"} /></SwiperSlide>
       <SwiperSlide data-swiper-autoplay="1200"><Logo src={northRock} alt={"North Rock Digital Logo"} /></SwiperSlide>
     </StyledSwiper>
-    </Div>
-
-  )
+  );
 }
 
-
-
-const Div = styled.section`
-  width: 100%;
-  margin-top: 18%;
-  display:flex;
-  flex-wrap:wrap;
-
-  @media(min-width:756px) {
-    margin-top: 24%;
-  }
-`
-
-const OrangeText = styled.span`
-  color:${props => `${props.theme.colors.orange}`};
-`
-
-const Header = styled.h2`
-  margin:0 0 3% 3%;
-  font-size:1.3rem;
-  width:70%;
-  padding-left:3%;
-
-  @media(min-width:425px){
-    font-size:1.5rem;
-  }
-  @media(min-width:756px){
-    font-size:1.6rem;
-    width:55%;
-    margin-left:11%;
-    padding-left:2%;
-  }
-  @media(min-width:1025px){
-    font-size:1.8rem;
-    width:60%;
-  }
-`
-
+// Styles for the carousel
 const StyledSwiper = styled(Swiper)`
   padding-top: 20px;
   padding-bottom:20px;
@@ -119,4 +92,4 @@ const LogoDeepVentures = styled(Logo)`
   padding-left:50px;
 `
 
-export default InvestorCarousel
+export default Carousel

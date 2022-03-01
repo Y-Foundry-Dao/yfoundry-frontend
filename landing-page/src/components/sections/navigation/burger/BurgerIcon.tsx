@@ -1,24 +1,25 @@
 import React from 'react';
+
 import styled from 'styled-components';
 
 interface ComponentProps{
   open: boolean,
   setOpen: any,
 };
+
 interface StyleProps {
   open: boolean,
   onClick: Function
 };
 
-const BurgerIcon:React.FC <ComponentProps> = (props:ComponentProps) => {
-  const {open, setOpen} = props;
+const BurgerIcon: React.FC <ComponentProps> = ({open, setOpen}: ComponentProps) => {
   return (
     <Burger aria-label="Burger Menu" open={open} onClick={() => setOpen(!open)}>
       <div />
       <div />
       <div />
     </Burger>
-  )
+  );
 }
 
 const Burger:React.FC <StyleProps> = styled.button<StyleProps>`
@@ -40,29 +41,34 @@ const Burger:React.FC <StyleProps> = styled.button<StyleProps>`
     outline: none;
   }
   
+  /* styles for the hamburger and the x */
   div {
     width: 1.9rem;
     height: 0.19rem;
     background: ${props => `${props.theme.colors.white}`};
     border-radius: 10px;
-    transition: all 0.2s linear;
     position: relative;
     transform-origin: 1px;
+    transition: all 0.2s linear;
 
+    /* transforms from hamburger to x */
     :first-child {
       transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
     }
 
+    /* transforms from hamburger to x */
     :nth-child(2) {
       opacity: ${({ open }) => open ? '0' : '1'};
       transform: ${({ open }) => open ? 'translateX(20px)' : 'translateX(0)'};
     }
 
+    /* transforms from hamburger to x */
     :nth-child(3) {
       transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
     }
   }
 
+  /* hides burger on desktop */
   @media(min-width:757px){
     display:none;
   }

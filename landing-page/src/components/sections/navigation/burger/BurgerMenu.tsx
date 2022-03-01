@@ -12,37 +12,27 @@ function Menu(props:Props) {
     <StyledMenu open={open}>
       <Ul>
         <Li onClick={() => setOpen(!open)}><Link href="#about">about</Link></Li>
-        <Li onClick={() => setOpen(!open)}><Link href="#blog">blog</Link></Li>
+        <Li onClick={() => setOpen(!open)}><Link href="#medium">medium</Link></Li>
         <Li onClick={() => setOpen(!open)}><Link href="#community">join community</Link></Li>
         <Li onClick={() => setOpen(!open)}><Link href="#roadmap">roadmap</Link></Li>
       </Ul>
     </StyledMenu>
-  )
+  );
 }
 
 const StyledMenu:any = styled.nav<Props>`
-  background: ${props => `${props.theme.colors.black}`};
-  opacity: ${({open}) => open ? 1 : 0};
-  z-index: ${({open}) => open ? 1 : -1};
-  width:100vw;
+  width: 100vw;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
-  transition: opacity 0.35s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
-`
-
-const Link = styled.a`
-  color: ${props => `${props.theme.colors.gray}`};
-  text-decoration: none;
-  text-transform: uppercase;
-  &:hover{
-    color: ${props => `${props.theme.colors.orange}`};
-    transition: .15s linear;
-  }
+  background: ${props => `${props.theme.colors.black}`};
+  opacity: ${({open}) => open ? 1 : 0};
+  z-index: ${({open}) => open ? 1 : -1};
+  transition: opacity 0.35s ease-in-out;
 `
 
 const Ul = styled.ul`
@@ -58,6 +48,17 @@ const Ul = styled.ul`
 const Li = styled.li`
   margin: 15px 0px 15px;
   text-align: center;
+`
+
+const Link = styled.a`
+  color: ${props => `${props.theme.colors.gray}`};
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover{
+    color: ${props => `${props.theme.colors.orange}`};
+    transition: .15s linear;
+  }
 `
 
 export default Menu;

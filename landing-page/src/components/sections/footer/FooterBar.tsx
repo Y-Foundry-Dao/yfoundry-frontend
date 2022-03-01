@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import SocialIcons from './SocialIcons';
 import logo from '../../../assets/horizontal_logo_orange&white.svg';
 
@@ -8,13 +9,13 @@ function FooterBar() {
       <Img src={logo} alt={"Y-Foundry Logo"} />
       <SocialIcons />
     </Footer>
-
-  )
+  );
 }
 
 const Img = styled.img`
   width: 24%;
   margin-left: 8%;
+
   @media(min-width: 425px){
     margin-left: 10%;
     width: 20%

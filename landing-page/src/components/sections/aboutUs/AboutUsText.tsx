@@ -16,12 +16,8 @@ function AboutUsText() {
         sustainable yield, while keeping reliance on reward emissions to a minimum.
       </P>
     </Section>
-  )
+  );
 }
-
-const Orange = styled.span`
-  color: ${props => `${props.theme.colors.orange}`};
-`
 
 const Section = styled.section`
   display: flex;
@@ -56,6 +52,11 @@ const Header = styled.h2`
     font-size: 1.8rem;
   }
 `
+
+const Orange = styled.span`
+  color: ${props => `${props.theme.colors.orange}`};
+`
+
 const P = styled.p`
   line-height: 24px;
   font-size: .8rem;
@@ -69,11 +70,11 @@ const P = styled.p`
     font-size: 1rem;
   }
   @media(min-width: 1025px){
-    line-height: 30px
+    line-height: 30px;
   }
   @media(min-width: 1440px){
     font-size: 1.3rem;
-    line-height: 36px
+    line-height: 36px;
   }
 `
 

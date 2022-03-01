@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 function RadialGradientTop() {
   return (
-      <Radial>
-      </Radial>
-    )
+    <Radial>
+    </Radial>
+  );
 }
 
 const Radial = styled.div`

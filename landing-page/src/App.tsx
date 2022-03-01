@@ -1,31 +1,30 @@
+import styled from 'styled-components';
+
 import HeaderBar from './components/sections/navigation/HeaderBar';
 import MainSection from './components/sections/hero/HeroSection';
-import InvestorCarousel from './components/sections/backers/InvestorCarousel';
+import Backers from './components/sections/backers/Backers';
 import AboutUs from './components/sections/aboutUs/AboutUs';
-import styled from 'styled-components';
 import FooterBar from './components/sections/footer/FooterBar';
-import Community from './components/sections/vision/Vision';
-import Blog from './components/sections/blog/Blog';
+import Vision from './components/sections/vision/Vision';
+import Medium from './components/sections/medium/Medium';
 import BackgroundComposition from './components/background/BackgroundComposition';
 import ScrollButton from './components/ScrollTopArrow';
-// import RoadmapTimeline from './components/sections/roadmap/RoadmapTimeline';
 import Roadmap from './components/sections/roadmap/Roadmap';
 
 function App() {
   return (
     <LandingPage>
-      <BackgroundComposition/>
+      <BackgroundComposition />
       <HeaderBar />
       <MainSection />
-      <InvestorCarousel />
+      <Backers />
       <AboutUs />
-      <Blog/>
-      <Community />
+      <Medium />
+      <Vision />
       <Roadmap />
-      {/* <RoadmapTimeline /> */}
-      <Div />
+      <Line />
       <FooterBar />
-      <ScrollButton/>
+      <ScrollButton />
     </LandingPage>
   );
 }
@@ -37,12 +36,15 @@ const LandingPage = styled.div`
   max-width: 100% !important;
   overflow-x: hidden !important;
 `
-const Div = styled.div`
+
+// Line above footer
+const Line = styled.div`
   width: 78%;
   height: 1px;
-  background: linear-gradient(0deg, #1f43bf 60%, #A9BCFF 30%);
   margin-top: 14%;
   margin-bottom: 5%;
+  background: linear-gradient(0deg, #1f43bf 60%, #A9BCFF 30%);
+  
   @media(min-width: 425px){
     margin-bottom: 4%;
     width: 80%;

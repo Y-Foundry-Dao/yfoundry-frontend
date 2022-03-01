@@ -1,7 +1,8 @@
-import yLogo from '../../../assets/logo_orange.svg';
 import styled from 'styled-components';
+
 import NavLinks from './NavLinks';
-import Burger from './burger/Burger'
+import Burger from './burger/Burger';
+import yLogo from '../../../assets/logo_orange.svg';
 
 function HeaderBar() {
   return (
@@ -10,14 +11,14 @@ function HeaderBar() {
       <NavLinks />
       <Burger />
     </Header>
-  )
+  );
 }
 
 const Logo = styled.img`
   margin: 15px 8% 15px;
   width: 21px;
 
-  @media(min-width:1440px){
+  @media(min-width: 1440px){
     margin: 14px 4% 14px;
     width: 28px;
   }
