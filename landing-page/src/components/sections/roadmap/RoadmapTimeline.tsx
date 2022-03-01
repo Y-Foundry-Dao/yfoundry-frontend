@@ -34,7 +34,7 @@ function RoadmapTimeline() {
         <Date>March 2022</Date>
         <Category>DGSF</Category>
         <ul>
-          <li>"Upsilon" DGSF Launch</li>
+          <li>DGSF Launch</li>
           <ul>
             <li>BETA</li>
           </ul>
@@ -119,25 +119,26 @@ const CompletedTimeline = styled.div`
     position: absolute;
     top: 0;
     left: 17px;
-    height: 22%;
+    height: 38.5%;
     width: 5px;
     background: ${props => `${props.theme.colors.orange}`};
 
     @media(min-width: 343px){
       /* fixes length of line so it doesn't show past icon */
-      height: 21.05%;
+      height: 38%;
     }
-    @media(min-width: 343px){
+    @media(min-width: 487px){
       /* fixes length of line so it doesn't show past icon */
-      height: 21.3%;
+      height: 36%;
     }
-    @media(min-width: 510px){
+    @media(min-width: 640px){
       /* fixes length of line so it doesn't show past icon */
-      height: 19.9%;
+      height: 34%;
     }
     
     /* moves the orange line to the center */
     @media(min-width: 1170px){
+      height: 35.5%;
       left: 49.80%;
     }
   }
