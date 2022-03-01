@@ -8,6 +8,7 @@ function NavLinks() {
         <li><StyledLink smooth to="about" >about</StyledLink></li>
         <li><StyledLink smooth to="medium" >medium</StyledLink></li>
         <li><StyledLink smooth to="community" >join community</StyledLink></li>
+        <li><StyledLink smooth to="roadmap" >roadmap</StyledLink></li>
       </Ul>
     </Nav>
   );
