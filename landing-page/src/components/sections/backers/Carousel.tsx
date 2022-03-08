@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import 'swiper/css';
 import { A11y, Autoplay, FreeMode } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { BackerLogoWrapper } from './BackerLogoWrapper';
 
 import xVentures from '../../../assets/0xVenturesWhite.svg';
 import apollo from '../../../assets/Apollo.png';
@@ -32,7 +33,11 @@ function Carousel() {
   return (
     <StyledSwiper
       modules={[A11y, Autoplay, FreeMode]}
-      autoplay={{delay:0, pauseOnMouseEnter:false, disableOnInteraction:false}}
+      autoplay={{
+        delay: 0,
+        pauseOnMouseEnter: false,
+        disableOnInteraction: false,
+      }}
       freeMode
       loop
       centeredSlides
@@ -42,20 +47,49 @@ function Carousel() {
       slidesPerView={2}
       speed={7200}
       breakpoints={{
-        756:{
-          slidesPerView:4
-        }
+        756: {
+          slidesPerView: 4,
+        },
       }}
     >
       {/* data-swiper-autoplay - sets the individual delay for the slides */}
-      <SwiperSlide data-swiper-autoplay="1200"><Logo src={hyperion} alt={"Hyperion Logo"} /></SwiperSlide>
-      <SwiperSlide data-swiper-autoplay="1200"><Logo src={apollo} alt={"Apollo Logo"} /></SwiperSlide>
-      <SwiperSlide data-swiper-autoplay="1200"><LogoDeepVentures src={deepVentures} alt={"Deep Ventures Logo"} /></SwiperSlide>
-      <SwiperSlide data-swiper-autoplay="1200"><Logo src={cetaceanCapital} alt={"Cetacean Capital Logo"} /></SwiperSlide>
-      <SwiperSlide data-swiper-autoplay="1200"><Logo src={lambda} alt={"Lambda Logo"} /></SwiperSlide>
-      <SwiperSlide data-swiper-autoplay="1200"><Logo src={thorstarter} alt={"Thorstarter Logo"} /></SwiperSlide>
-      <SwiperSlide data-swiper-autoplay="1200"><Logo src={xVentures} alt={"0xVentures Logo"} /></SwiperSlide>
-      <SwiperSlide data-swiper-autoplay="1200"><Logo src={northRock} alt={"North Rock Digital Logo"} /></SwiperSlide>
+      <SwiperSlide data-swiper-autoplay="1200">
+        <BackerLogoWrapper asset={hyperion} altLogoText={'Hyperion Logo'} />
+      </SwiperSlide>
+      <SwiperSlide data-swiper-autoplay="1200">
+        <BackerLogoWrapper asset={apollo} altLogoText={'Apollo Logo'} />
+      </SwiperSlide>
+      <SwiperSlide data-swiper-autoplay="1200">
+        <BackerLogoWrapper
+          asset={deepVentures}
+          altLogoText={'Deep Ventures Logo'}
+          hasPadding={true}
+        />
+      </SwiperSlide>
+      <SwiperSlide data-swiper-autoplay="1200">
+        <BackerLogoWrapper
+          asset={cetaceanCapital}
+          altLogoText={'Cetacean Capital Logo'}
+        />
+      </SwiperSlide>
+      <SwiperSlide data-swiper-autoplay="1200">
+        <BackerLogoWrapper asset={lambda} altLogoText={'Lambda Logo'} />
+      </SwiperSlide>
+      <SwiperSlide data-swiper-autoplay="1200">
+        <BackerLogoWrapper
+          asset={thorstarter}
+          altLogoText={'Thorstarter Logo'}
+        />
+      </SwiperSlide>
+      <SwiperSlide data-swiper-autoplay="1200">
+        <BackerLogoWrapper asset={xVentures} altLogoText={'0xVentures Logo'} />
+      </SwiperSlide>
+      <SwiperSlide data-swiper-autoplay="1200">
+        <BackerLogoWrapper
+          asset={northRock}
+          altLogoText={'North Rock Digital Logo'}
+        />
+      </SwiperSlide>
     </StyledSwiper>
   );
 }
@@ -63,33 +97,13 @@ function Carousel() {
 // Styles for the carousel
 const StyledSwiper = styled(Swiper)`
   padding-top: 20px;
-  padding-bottom:20px;
-  border: 1px ${props => `${props.theme.colors.orange}`};
+  padding-bottom: 20px;
+  border: 1px ${(props) => `${props.theme.colors.orange}`};
   border-style: solid none;
   display: flex;
   flex-wrap: nowrap;
   text-align: center;
-  z-index:0;
-`
+  z-index: 0;
+`;
 
-const Logo = styled.img`
-  height:40px;
-  padding-top:0px;
-
-  @media(min-width:425px){
-    height:45px;
-  }
-  @media(min-width:756px){
-    height:50px;
-  }
-  @media(min-width:1024px){
-    height:60px;
-  }
-`
-
-//Sets the padding on the Deep Ventures logo to fix its individual alignment
-const LogoDeepVentures = styled(Logo)`
-  padding-left:50px;
-`
-
-export default Carousel
+export default Carousel;
