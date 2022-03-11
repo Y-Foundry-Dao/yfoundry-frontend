@@ -86,13 +86,9 @@ const Logo = styled.img`
     height:60px;
   }
   ${({ src }) => src === deepVentures && `
-    padding-left:50px;
+    padding-left:55px;
   `}
 `
-// FIXED
-//Sets the padding on the Deep Ventures logo to fix its individual alignment
-// const LogoDeepVentures = styled(Logo)`
-//   padding-left:50px;
-// `
+
 
 export default Carousel
