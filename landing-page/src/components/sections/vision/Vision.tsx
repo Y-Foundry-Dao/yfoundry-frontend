@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-import SocialIcons from './SocialIcons';
-import orangeBars from '../../../assets/orange_bars_community.svg';
+import SocialIcons from 'components/sections/vision/SocialIcons';
+import orangeBars from 'assets/orange_bars_community.svg';
 
 function Community() {
   return (

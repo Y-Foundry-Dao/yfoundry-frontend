@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import RoadmapTimeline from './RoadmapTimeline'
-import roadmapBlueBars from '../../../assets/RoadmapBlueBars.svg';
-import roadmapOrangeBars from '../../../assets/RoadmapOrangeBars.svg';
+import RoadmapTimeline from 'components/sections/roadmap/RoadmapTimeline'
+import roadmapBlueBars from 'assets/RoadmapBlueBars.svg';
+import roadmapOrangeBars from 'assets/RoadmapOrangeBars.svg';
 
 function Roadmap() {
   return (

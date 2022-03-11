@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import MediumButton from './MediumButton';
+import MediumButton from 'components/sections/medium/MediumButton';
 
 function Medium() {
   return (

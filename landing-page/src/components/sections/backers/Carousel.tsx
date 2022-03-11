@@ -4,14 +4,14 @@ import 'swiper/css';
 import { A11y, Autoplay, FreeMode } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import xVentures from '../../../assets/0xVenturesWhite.svg';
-import apollo from '../../../assets/Apollo.png';
-import cetaceanCapital from '../../../assets/CetaceanCapital.png';
-import deepVentures from '../../../assets/DeepVentures.png';
-import hyperion from '../../../assets/HyperionLogo.png';
-import lambda from '../../../assets/LambdaLogo.png';
-import thorstarter from '../../../assets/Thorstarter.svg';
-import northRock from '../../../assets/NorthRockDigital.png';
+import xVentures from 'assets/0xVenturesWhite.svg';
+import apollo from 'assets/Apollo.png';
+import cetaceanCapital from 'assets/CetaceanCapital.png';
+import deepVentures from 'assets/DeepVentures.png';
+import hyperion from 'assets/HyperionLogo.png';
+import lambda from 'assets/LambdaLogo.png';
+import thorstarter from 'assets/Thorstarter.svg';
+import northRock from 'assets/NorthRockDigital.png';
 
 // parameters:
 //  modules - swiper modules to add features
@@ -50,7 +50,7 @@ function Carousel() {
       {/* data-swiper-autoplay - sets the individual delay for the slides */}
       <SwiperSlide data-swiper-autoplay="1200"><Logo src={hyperion} alt={"Hyperion Logo"} /></SwiperSlide>
       <SwiperSlide data-swiper-autoplay="1200"><Logo src={apollo} alt={"Apollo Logo"} /></SwiperSlide>
-      <SwiperSlide data-swiper-autoplay="1200"><LogoDeepVentures src={deepVentures} alt={"Deep Ventures Logo"} /></SwiperSlide>
+      <SwiperSlide data-swiper-autoplay="1200"><Logo src={deepVentures} alt={"Deep Ventures Logo"} /></SwiperSlide>
       <SwiperSlide data-swiper-autoplay="1200"><Logo src={cetaceanCapital} alt={"Cetacean Capital Logo"} /></SwiperSlide>
       <SwiperSlide data-swiper-autoplay="1200"><Logo src={lambda} alt={"Lambda Logo"} /></SwiperSlide>
       <SwiperSlide data-swiper-autoplay="1200"><Logo src={thorstarter} alt={"Thorstarter Logo"} /></SwiperSlide>
@@ -85,11 +85,14 @@ const Logo = styled.img`
   @media(min-width:1024px){
     height:60px;
   }
+  ${({ src }) => src === deepVentures && `
+    padding-left:50px;
+  `}
 `
-
+// FIXED
 //Sets the padding on the Deep Ventures logo to fix its individual alignment
-const LogoDeepVentures = styled(Logo)`
-  padding-left:50px;
-`
+// const LogoDeepVentures = styled(Logo)`
+//   padding-left:50px;
+// `
 
 export default Carousel

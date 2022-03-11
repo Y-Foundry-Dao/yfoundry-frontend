@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import socialInfo from '../../../utilities/socialInfo';
+import socialInfo from 'utilities/socialInfo';
 
 function SocialIcons() {
   return (
