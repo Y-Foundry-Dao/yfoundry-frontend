@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-import { medium } from '../../../utilities/socialInfo';
-import mediumLogo from '../../../assets/mediumLogo.svg';
-import mediumWords from '../../../assets/mediumWords.svg';
+import { medium } from 'utilities/socialInfo';
+import mediumLogo from 'assets/mediumLogo.svg';
+import mediumWords from 'assets/mediumWords.svg';
 
 function MediumButton() {
   return (

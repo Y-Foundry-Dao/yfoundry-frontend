@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 
-import HeaderBar from './components/sections/navigation/HeaderBar';
-import MainSection from './components/sections/hero/HeroSection';
-import Backers from './components/sections/backers/Backers';
-import AboutUs from './components/sections/aboutUs/AboutUs';
-import FooterBar from './components/sections/footer/FooterBar';
-import Vision from './components/sections/vision/Vision';
-import Medium from './components/sections/medium/Medium';
-import BackgroundComposition from './components/background/BackgroundComposition';
-import ScrollButton from './components/ScrollTopArrow';
-import Roadmap from './components/sections/roadmap/Roadmap';
+import HeaderBar from 'components/sections/navigation/HeaderBar';
+import MainSection from 'components/sections/hero/HeroSection';
+import Backers from 'components/sections/backers/Backers';
+import AboutUs from 'components/sections/aboutUs/AboutUs';
+import FooterBar from 'components/sections/footer/FooterBar';
+import Vision from 'components/sections/vision/Vision';
+import Medium from 'components/sections/medium/Medium';
+import BackgroundComposition from 'components/background/BackgroundComposition';
+import ScrollButton from 'components/ScrollTopArrow';
+import Roadmap from 'components/sections/roadmap/Roadmap';
 
 function App() {
   return (

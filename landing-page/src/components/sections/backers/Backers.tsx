@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import Carousel from './Carousel';
+import Carousel from 'components/sections/backers/Carousel';
 
 function Backers() {
   return (

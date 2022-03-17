@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-import AboutUsText from './AboutUsText';
-import verticalBars from '../../../assets/vertical_bars.svg';
-import brainDna from '../../../assets/brain_dna.svg';
+import AboutUsText from 'components/sections/aboutUs/AboutUsText';
+import verticalBars from 'assets/vertical_bars.svg';
+import brainDna from 'assets/brain_dna.svg';
 
 function AboutUs() {
   return (
