@@ -14,6 +14,17 @@ import lambda from 'assets/LambdaLogo.png';
 import thorstarter from 'assets/Thorstarter.svg';
 import northRock from 'assets/NorthRockDigital.png';
 
+let logos: { asset: string; altText: string; hasPadding?: boolean }[] = [
+  { "asset": hyperion, "altText": 'Hyperion Logo', "hasPadding": false },
+  { "asset": apollo, "altText": 'Apollo Logo', "hasPadding": false },
+  { "asset": deepVentures, "altText": 'Deep Ventures Logo', "hasPadding": true },
+  { "asset": cetaceanCapital, "altText": 'Cetacean Capital Logo',"hasPadding": false },
+  { "asset": lambda, "altText": 'Lambda Logo', "hasPadding": false },
+  { "asset": thorstarter, "altText": 'Thorstarter Logo', "hasPadding": false },
+  { "asset": xVentures, "altText": '0xVentures Logo', "hasPadding": false },
+  { "asset": northRock, "altText": 'North Rock Digital Logo', "hasPadding": false },
+];
+
 // parameters:
 //  modules - swiper modules to add features
 //  autoplay - allows the carousel to move on its own
@@ -52,44 +63,14 @@ function Carousel() {
         },
       }}
     >
-      {/* data-swiper-autoplay - sets the individual delay for the slides */}
-      <SwiperSlide data-swiper-autoplay="1200">
-        <BackerLogoWrapper asset={hyperion} altLogoText={'Hyperion Logo'} />
-      </SwiperSlide>
-      <SwiperSlide data-swiper-autoplay="1200">
-        <BackerLogoWrapper asset={apollo} altLogoText={'Apollo Logo'} />
-      </SwiperSlide>
-      <SwiperSlide data-swiper-autoplay="1200">
-        <BackerLogoWrapper
-          asset={deepVentures}
-          altLogoText={'Deep Ventures Logo'}
-          hasPadding={true}
-        />
-      </SwiperSlide>
-      <SwiperSlide data-swiper-autoplay="1200">
-        <BackerLogoWrapper
-          asset={cetaceanCapital}
-          altLogoText={'Cetacean Capital Logo'}
-        />
-      </SwiperSlide>
-      <SwiperSlide data-swiper-autoplay="1200">
-        <BackerLogoWrapper asset={lambda} altLogoText={'Lambda Logo'} />
-      </SwiperSlide>
-      <SwiperSlide data-swiper-autoplay="1200">
-        <BackerLogoWrapper
-          asset={thorstarter}
-          altLogoText={'Thorstarter Logo'}
-        />
-      </SwiperSlide>
-      <SwiperSlide data-swiper-autoplay="1200">
-        <BackerLogoWrapper asset={xVentures} altLogoText={'0xVentures Logo'} />
-      </SwiperSlide>
-      <SwiperSlide data-swiper-autoplay="1200">
-        <BackerLogoWrapper
-          asset={northRock}
-          altLogoText={'North Rock Digital Logo'}
-        />
-      </SwiperSlide>
+      {logos.map((logo, id) => (
+        // Note: data-swiper-autoplay - sets the individual delay for the slides
+        <span>
+            <SwiperSlide key={id} data-swiper-autoplay="1200">
+              <BackerLogoWrapper key={logo.altText} asset={logo.asset} altLogoText={logo.altText} hasPadding={logo.hasPadding} />
+            </SwiperSlide>
+        </span>
+      ))}
     </StyledSwiper>
   );
 }
