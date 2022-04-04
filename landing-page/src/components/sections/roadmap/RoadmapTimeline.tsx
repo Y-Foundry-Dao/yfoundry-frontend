@@ -15,6 +15,7 @@ function RoadmapTimeline() {
         <Category>Web Presence Launch</Category>
         <ul>
           <li>Website Launched</li>
+	  <li><a href="https://medium.com/@yfoundry/the-yfd-manifesto-c723a5adf888" target="_blank">The YFD Manifesto released</a></li>
         </ul>
       </MyVerticalTimelineElementRight>
 
@@ -26,71 +27,90 @@ function RoadmapTimeline() {
         </ul>
         <Category>DAO + Community Building</Category>
         <ul>
-          <li>Community Discord</li>
+          <li><a href="https://discord.gg/yfd" target="_blank">Community Discord</a></li>
         </ul>
       </MyVerticalTimelineElementLeft>
 
       <MyVerticalTimelineElementRight position='right'>
         <Date>March 2022</Date>
-        <Category>DGSF</Category>
+        <Category>Development</Category>
         <ul>
-          <li>DGSF Launch</li>
-          <ul>
-            <li>BETA</li>
-          </ul>
+          <li>DGSF Contract</li>
+	  <li><a href="https://github.com/Y-Foundry-Dao/terra-dapp-template" target="_blank">Terra dApp Creation Kit</a></li>
         </ul>
+	<Category>Tokenomics</Category>
+	<ul>
+	  <li><a href="https://medium.com/@yfoundry/introduction-to-yfd-token-82270ca521d3" target="_blank">$YFD Tokenomics Explained</a></li>
+	</ul>
       </MyVerticalTimelineElementRight>
 
       <MyVerticalTimelineElementLeft position='left'>
         <Date>April 2022</Date>
+        <Category>DGSF</Category>
+        <ul>
+          <li>Soft Launch</li>
+	  <li>Audits</li>
+        </ul>
         <Category >Hedge+</Category>
         <ul>
-          <li>Vault Launch</li>
-          <ul>
-            <li>BETA</li>
-          </ul>
+          <li>Contract Development</li>
         </ul>
+	<Category >Games Night</Category>
+	<ul>
+	  <li><a href="https://twitter.com/YFoundryDAO/status/1510667896133160970?t=IyfQUr2mYKmmoaXu0u3K7w&s=19" target="_blank">Community Event</a></li>
+	</ul>
       </MyVerticalTimelineElementLeft>
 
       <MyVerticalTimelineElementRight position='right'>
         <Date >May 2022</Date>
-        <Category >MVP</Category>
-        <ul>
-          <li>Governance</li>
-          <ul>
-            <li>BETA</li>
-          </ul>
-          <li>Community Farming Events</li>
-        </ul>
+	<Category >Development</Category>
+	<ul>
+	  <li>Governance</li>
+	  <li>Hedge+</li>
+	</ul>
+        <Category >Community Farming Events</Category>
       </MyVerticalTimelineElementRight>
 
       <MyVerticalTimelineElementLeft position='left'>
         <Date>June 2022</Date>
-        <Category>Shielded Shorts</Category>
+        <Category >MVP</Category>
         <ul>
-          <li>2nd Vault Product</li>
-          <ul>
-            <li>BETA</li>
-          </ul>
+          <li>DGSF</li>
+          <li>Hedge+</li>
         </ul>
+	<Category>Governance</Category>
+	<ul>
+	  <li>Launch</li>
+	</ul>
       </MyVerticalTimelineElementLeft>
 
       <MyVerticalTimelineElementRight position='right'>
-        <Date>July 2022</Date>
-        <Category>V1 Launch</Category>
+        <Date >July 2022</Date>
+        <Category >Shielded Shorts</Category>
         <ul>
-          <li>Simulation Engine</li>
-          <li>Vault moved out of BETA</li>
+	  <li>Second Vault Product</li>
+          <li>Contract Development</li>
+          <li>Audits</li>
         </ul>
       </MyVerticalTimelineElementRight>
 
       <MyVerticalTimelineElementLeft position='left'>
-        <Date>Quarter 3 2022</Date>
+        <Date>August 2022</Date>
+        <Category>V1 Launch</Category>
+        <ul>
+          <li>Simulation Engine</li>
+          <li>Contract Audits Completed</li>
+	  <li>Products moved out of BETA</li>
+        </ul>
+      </MyVerticalTimelineElementLeft>
+
+      <MyVerticalTimelineElementRight position='right'>
+        <Date>Quarter 4 2022</Date>
         <Category>Community Vaults</Category>
         <ul>
           <li>Community Vault Proposals</li>
         </ul>
-      </MyVerticalTimelineElementLeft>
+      </MyVerticalTimelineElementRight>
 
     </MyVerticalTimeline>
   )
@@ -119,26 +139,26 @@ const CompletedTimeline = styled.div`
     position: absolute;
     top: 0;
     left: 17px;
-    height: 38.5%;
+    height: 45.5%;
     width: 5px;
     background: ${props => `${props.theme.colors.orange}`};
 
     @media(min-width: 343px){
       /* fixes length of line so it doesn't show past icon */
-      height: 38%;
+      height: 45%;
     }
     @media(min-width: 487px){
       /* fixes length of line so it doesn't show past icon */
-      height: 36%;
+      height: 43%;
     }
     @media(min-width: 640px){
       /* fixes length of line so it doesn't show past icon */
-      height: 34%;
+      height: 41%;
     }
     
     /* moves the orange line to the center */
     @media(min-width: 1170px){
-      height: 35.5%;
+      height: 42.5%;
       left: 49.80%;
     }
   }
@@ -171,6 +191,20 @@ const MyVerticalTimeline = styled(VerticalTimeline)`
   @media(min-width: 1170px){
     margin-left: 0%;
     margin-right: 0;
+  }
+
+  a:link {
+	color: orange;
+	text-decoration: none;
+  }
+
+  a:hover {
+	color: orange;
+	font-weight: bold;
+  }
+
+  a:visited {
+	color: brown;
   }
 
   /* parameters for main vertical line */
