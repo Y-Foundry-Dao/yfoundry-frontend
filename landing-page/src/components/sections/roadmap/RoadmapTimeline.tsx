@@ -49,7 +49,6 @@ function RoadmapTimeline() {
         <Category>DGSF</Category>
         <ul>
           <li>Soft Launch</li>
-	  <li>Audits</li>
         </ul>
         <Category >Hedge+</Category>
         <ul>
