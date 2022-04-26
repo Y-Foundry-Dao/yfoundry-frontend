@@ -1,0 +1,36 @@
+a {
+  position: relative;
+  color: #D5DCE5;
+  text-decoration: none;
+  text-transform: uppercase;
+  z-index: 2;
+  cursor:pointer;
+}
+
+a:hover {
+    color: #D8552A;
+    transition: all .2s linear;
+
+    /* Styles for orange underline on hover */
+}
+
+a:hover::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 42px;
+      height: 2px;
+      animation: .2s 1 linear;
+      background: #D8552A;
+      border-radius: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-around;
+}
