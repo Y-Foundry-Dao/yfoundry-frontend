@@ -25,8 +25,4 @@ const Nav = styled.nav`
   }
 `
 
-const Ul = styled.ul`
-
-`
-
 export default NavLinks;
