@@ -5,7 +5,7 @@ const theme = {
     tan: "#D7B9A3",
     white: "#FCFEFF",
     blue: "#1F43BF",
-    gray:"rgba(255, 255, 255, 0.8)",
+    gray:"#D5DCE5",
   },
 };
 
