@@ -42,7 +42,9 @@ function RoadmapTimeline() {
         <Category>Development</Category>
         <ul>
           <CatText>DGSF Contract</CatText>
-	  <CatText><a href="https://github.com/Y-Foundry-Dao/terra-dapp-template" target="_blank">Terra dApp Creation Kit</a></CatText>
+        </ul>
+        <ul>
+      	  <CatText><a href="https://github.com/Y-Foundry-Dao/terra-dapp-template" target="_blank">Terra dApp Creation Kit</a></CatText>
         </ul>
 	<Category>Tokenomics</Category>
 	<ul>
@@ -121,6 +123,9 @@ function RoadmapTimeline() {
         </ul>
         <ul>
           <CatText>On-chain Governance</CatText>
+        </ul>
+        <ul>
+          <CatText>Vault Marketplace</CatText>          
         </ul>
       </MyVerticalTimelineElementLeft>
 
