@@ -10,12 +10,18 @@ function RoadmapTimeline() {
         <Date>January 2022</Date>
         <Category>Seed Round Funding</Category>
         <ul>
-          <li>1.5M in Funding Reached</li>
+          <CatText>1.5M in Funding Reached</CatText>
         </ul>
         <Category>Web Presence Launch</Category>
         <ul>
-          <li>Website Launched</li>
-	  <li><a href="https://medium.com/@yfoundry/the-yfd-manifesto-c723a5adf888" target="_blank">The YFD Manifesto released</a></li>
+          <CatText>
+            Website Launched
+          </CatText>
+        </ul>
+        <ul>
+          <CatText>
+	          <a href="https://medium.com/@yfoundry/the-yfd-manifesto-c723a5adf888" target="_blank">The YFD Manifesto released</a>
+          </CatText>
         </ul>
       </MyVerticalTimelineElementRight>
 
@@ -23,11 +29,11 @@ function RoadmapTimeline() {
         <Date>February 2022</Date>
         <Category>Development</Category>
         <ul>
-          <li>Core Contract Development</li>
+          <CatText>Core Contract Development</CatText>
         </ul>
-        <Category>DAO + Community Building</Category>
+        <Category>Community Building</Category>
         <ul>
-          <li><a href="https://discord.gg/yfd" target="_blank">Community Discord</a></li>
+          <CatText><a href="https://discord.gg/yfd" target="_blank">Community Discord</a></CatText>
         </ul>
       </MyVerticalTimelineElementLeft>
 
@@ -35,12 +41,12 @@ function RoadmapTimeline() {
         <Date>March 2022</Date>
         <Category>Development</Category>
         <ul>
-          <li>DGSF Contract</li>
-	  <li><a href="https://github.com/Y-Foundry-Dao/terra-dapp-template" target="_blank">Terra dApp Creation Kit</a></li>
+          <CatText>DGSF Contract</CatText>
+	  <CatText><a href="https://github.com/Y-Foundry-Dao/terra-dapp-template" target="_blank">Terra dApp Creation Kit</a></CatText>
         </ul>
 	<Category>Tokenomics</Category>
 	<ul>
-	  <li><a href="https://medium.com/@yfoundry/introduction-to-yfd-token-82270ca521d3" target="_blank">$YFD Tokenomics Explained</a></li>
+	  <CatText><a href="https://medium.com/@yfoundry/introduction-to-yfd-token-82270ca521d3" target="_blank">$YFD Tokenomics Explained</a></CatText>
 	</ul>
       </MyVerticalTimelineElementRight>
 
@@ -48,66 +54,87 @@ function RoadmapTimeline() {
         <Date>April 2022</Date>
         <Category>DGSF</Category>
         <ul>
-          <li>Soft Launch</li>
+          <CatText>Soft Launch</CatText>
         </ul>
         <Category >Hedge+</Category>
         <ul>
-          <li>Contract Development</li>
+          <CatText>Contract Development</CatText>
         </ul>
 	<Category >Games Night</Category>
 	<ul>
-	  <li><a href="https://twitter.com/YFoundryDAO/status/1510667896133160970?t=IyfQUr2mYKmmoaXu0u3K7w&s=19" target="_blank">Community Event</a></li>
+	  <CatText><a href="https://twitter.com/YFoundryDAO/status/1510667896133160970?t=IyfQUr2mYKmmoaXu0u3K7w&s=19" target="_blank">Community Event</a></CatText>
 	</ul>
       </MyVerticalTimelineElementLeft>
 
       <MyVerticalTimelineElementRight position='right'>
         <Date >May 2022</Date>
-	<Category >Development</Category>
+	<Category >UST / Terra Collapse</Category>
 	<ul>
-	  <li>Governance</li>
-	  <li>Hedge+</li>
+	  <CatText>Development Delayed</CatText>
 	</ul>
-        <Category >Community Farming Events</Category>
       </MyVerticalTimelineElementRight>
 
       <MyVerticalTimelineElementLeft position='left'>
         <Date>June 2022</Date>
-        <Category >MVP</Category>
+        <Category >Contract Development</Category>
         <ul>
-          <li>DGSF</li>
-          <li>Hedge+</li>
+          <CatText>Vault Proposals</CatText>
         </ul>
-	<Category>Governance</Category>
-	<ul>
-	  <li>Launch</li>
-	</ul>
+        <ul>
+          <CatText>Governance Proposals</CatText>
+        </ul>
       </MyVerticalTimelineElementLeft>
 
       <MyVerticalTimelineElementRight position='right'>
         <Date >July 2022</Date>
-        <Category >Shielded Shorts</Category>
+        <Category >On-Chain Governance</Category>
         <ul>
-	  <li>Second Vault Product</li>
-          <li>Contract Development</li>
-          <li>Audits</li>
+          <CatText>Live on Terra2 Testnet</CatText>
         </ul>
       </MyVerticalTimelineElementRight>
 
       <MyVerticalTimelineElementLeft position='left'>
         <Date>August 2022</Date>
-        <Category>V1 Launch</Category>
+        <Category >Terra 2 Testnet</Category>
         <ul>
-          <li>Simulation Engine</li>
-          <li>Contract Audits Completed</li>
-	  <li>Products moved out of BETA</li>
+          <CatText>On-Chain Testing</CatText>
+        </ul>
+      </MyVerticalTimelineElementLeft>
+
+      <MyVerticalTimelineElementRight position='right'>
+        <Date >September 2022</Date>
+        <Category >UI / UX</Category>
+        <ul>
+          <CatText>UI / UX Development</CatText>
+        </ul>
+          <Category >Governance Token</Category>
+        <ul>
+          <CatText>$YFD Launch</CatText>
+        </ul>
+      </MyVerticalTimelineElementRight>
+
+      <MyVerticalTimelineElementLeft position='left'>
+        <Date>October 2022</Date>
+        <Category>MVP Launch</Category>
+        <ul>
+          <CatText>Community Vault Proposals</CatText>          
+        </ul>
+        <ul>
+          <CatText>On-chain Governance</CatText>
         </ul>
       </MyVerticalTimelineElementLeft>
 
       <MyVerticalTimelineElementRight position='right'>
         <Date>Quarter 4 2022</Date>
-        <Category>Community Vaults</Category>
+        <Category>v1.0 Launch</Category>
         <ul>
-          <li>Community Vault Proposals</li>
+          <CatText>Expanded On-chain Proposals</CatText>
+        </ul>
+        <ul>
+          <CatText>Community Farming Events</CatText> 
+        </ul>
+        <ul>
+          <CatText>Learner's Journey</CatText>
         </ul>
       </MyVerticalTimelineElementRight>
 
@@ -118,6 +145,7 @@ function RoadmapTimeline() {
 // taken directly from the css code for the original center line
 // changed the values so it is orange
 // and added media queries to make it the right length
+
 const CompletedTimeline = styled.div`
   width: 100%;
   max-width: 1170px;
@@ -144,20 +172,20 @@ const CompletedTimeline = styled.div`
 
     @media(min-width: 343px){
       /* fixes length of line so it doesn't show past icon */
-      height: 45%;
+      height: 75.5%;
     }
     @media(min-width: 487px){
       /* fixes length of line so it doesn't show past icon */
-      height: 43%;
+      height: 73.5%;
     }
     @media(min-width: 640px){
       /* fixes length of line so it doesn't show past icon */
-      height: 41%;
+      height: 71%;
     }
     
     /* moves the orange line to the center */
     @media(min-width: 1170px){
-      height: 42.5%;
+      height: 72.5%;
       left: 49.80%;
     }
   }
@@ -336,9 +364,16 @@ const Date = styled.h3`
 const Category = styled.h4`
   color: ${props => `${props.theme.colors.tan}`};
   margin: 0;
+  padding-top: 5%;
   font-size: 1.7rem;
   letter-spacing: 1px;
   font-weight: 500;
+`
+
+const CatText = styled.li`
+  text-align: justified;
+  padding-left: 10%;
+  width: 100%;
 `
 
 export default RoadmapTimeline
