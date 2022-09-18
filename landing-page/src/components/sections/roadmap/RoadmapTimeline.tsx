@@ -109,14 +109,22 @@ function RoadmapTimeline() {
         <ul>
           <CatText>UI / UX Development</CatText>
         </ul>
-          <Category >Governance Token</Category>
+          <Category >The Future of Work</Category>
         <ul>
-          <CatText>$YFD Launch</CatText>
+          <CatText>Community Bounty Board</CatText>
         </ul>
       </MyVerticalTimelineElementRight>
 
       <MyVerticalTimelineElementLeft position='left'>
         <Date>October 2022</Date>
+        <Category>$YFD Economic Flywheel</Category>
+        <ul>
+          <CatText>$YFD Token Genesis Event (TGE)</CatText>          
+        </ul>
+        <ul>
+          <CatText>Bounty Board + Discord Integration</CatText>
+        </ul>
+        
         <Category>MVP Launch</Category>
         <ul>
           <CatText>Community Vault Proposals</CatText>          
@@ -171,26 +179,26 @@ const CompletedTimeline = styled.div`
     position: absolute;
     top: 0;
     left: 17px;
-    height: 45.5%;
+    height: 77.5%;
     width: 5px;
     background: ${props => `${props.theme.colors.orange}`};
 
     @media(min-width: 343px){
       /* fixes length of line so it doesn't show past icon */
-      height: 75.5%;
+      height: 78.5%;
     }
     @media(min-width: 487px){
       /* fixes length of line so it doesn't show past icon */
-      height: 73.5%;
+      height: 77.5%;
     }
     @media(min-width: 640px){
       /* fixes length of line so it doesn't show past icon */
-      height: 71%;
+      height: 77%;
     }
     
     /* moves the orange line to the center */
     @media(min-width: 1170px){
-      height: 72.5%;
+      height: 78.5%;
       left: 49.80%;
     }
   }
