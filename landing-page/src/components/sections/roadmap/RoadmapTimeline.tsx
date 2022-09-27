@@ -109,9 +109,12 @@ function RoadmapTimeline() {
         <ul>
           <CatText>UI / UX Development</CatText>
         </ul>
-          <Category >Governance Token</Category>
+        <Category >Future of Work</Category>
         <ul>
-          <CatText>$YFD Launch</CatText>
+          <CatText>Community Bounty Board</CatText>
+        </ul>
+        <ul>
+          <CatText>Bounty Board Discord Integration</CatText>
         </ul>
       </MyVerticalTimelineElementRight>
 
@@ -126,6 +129,10 @@ function RoadmapTimeline() {
         </ul>
         <ul>
           <CatText>Vault Marketplace</CatText>          
+        </ul>
+        <Category >Governance Token</Category>
+        <ul>
+          <CatText>$YFD Launch</CatText>
         </ul>
       </MyVerticalTimelineElementLeft>
 
@@ -177,20 +184,20 @@ const CompletedTimeline = styled.div`
 
     @media(min-width: 343px){
       /* fixes length of line so it doesn't show past icon */
-      height: 75.5%;
+      height: 80.5%;
     }
     @media(min-width: 487px){
       /* fixes length of line so it doesn't show past icon */
-      height: 73.5%;
+      height: 82.5%;
     }
     @media(min-width: 640px){
       /* fixes length of line so it doesn't show past icon */
-      height: 71%;
+      height: 78%;
     }
     
     /* moves the orange line to the center */
     @media(min-width: 1170px){
-      height: 72.5%;
+      height: 83.5%;
       left: 49.80%;
     }
   }
