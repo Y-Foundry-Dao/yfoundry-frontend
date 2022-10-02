@@ -6,8 +6,8 @@ import roadmapOrangeBars from 'assets/RoadmapOrangeBars.svg';
 function Roadmap() {
   return (
     <Section id='roadmap'>
-      <Header>Our <OrangeText>Roadmap</OrangeText></Header>
-      <BackText>Roadmap</BackText>
+      <Header><OrangeText>Progress</OrangeText></Header>
+      <BackText>Progress</BackText>
       <RoadmapSection>
         <RoadmapBlueBars src={roadmapBlueBars} alt="" role="presentation" />
         <RoadmapTimeline  />
@@ -55,7 +55,7 @@ const BackText = styled.p`
   margin: 0;
   position: relative;
   font-size: 3.5rem;
-  letter-spacing: .02em;
+  letter-spacing: .05em;
   font-weight: 600;
   top: -20px;
   opacity: .2;
@@ -94,6 +94,10 @@ const Header = styled.h4`
 
 const OrangeText = styled.span`
   color: ${props => `${props.theme.colors.orange}`};
+  letter-spacing: 0.7em;
+  text-align: left;
+  margin-left: -70px;
+  margin-top: -70px;
 `
 
 export default Roadmap

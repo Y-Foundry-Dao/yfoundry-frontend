@@ -16,7 +16,7 @@ function Menu(props:Props) {
         <Li onClick={() => setOpen(!open)}><Link href="#community">join community</Link></Li>
         <Li onClick={() => setOpen(!open)}><Link href="https://app.dework.xyz/y-foundry-dao">bounties</Link></Li>        
         <Li onClick={() => setOpen(!open)}><Link href="https://brand.yfoundry.io/">brand kit</Link></Li>
-        <Li onClick={() => setOpen(!open)}><Link href="#roadmap">roadmap</Link></Li>
+        <Li onClick={() => setOpen(!open)}><Link href="#roadmap">progress</Link></Li>
       </Ul>
     </StyledMenu>
   );

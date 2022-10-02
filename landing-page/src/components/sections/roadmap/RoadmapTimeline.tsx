@@ -119,38 +119,19 @@ function RoadmapTimeline() {
         <Date>October 2022</Date>
         <Category>$YFD Economic Flywheel</Category>
         <ul>
-          <CatText>$YFD Token Genesis Event (TGE)</CatText>          
+          <CatText><a href="https://medium.com/@yfoundry/y-foundry-terra-phoenix-pre-launch-announcement-298a1702196f" target="_blank">$YFD Token Genesis Event (TGE)</a></CatText>          
         </ul>        
         <Category>MVP Launch</Category>
         <ul>
           <CatText>Community Vault Proposals</CatText>          
         </ul>
         <ul>
-          <CatText>On-chain Governance</CatText>
+          <CatText><a href="https://medium.com/@yfoundry/yfds-novel-mechanics-governance-non-custodial-claims-eb7683608abf" target="_blank">On-chain Governance</a></CatText>
         </ul>
         <ul>
           <CatText>Vault Marketplace</CatText>          
         </ul>
-        <Category >Governance Token</Category>
-        <ul>
-          <CatText>$YFD Launch</CatText>
-        </ul>
       </MyVerticalTimelineElementLeft>
-
-      <MyVerticalTimelineElementRight position='right'>
-        <Date>Quarter 4 2022</Date>
-        <Category>v1.0 Launch</Category>
-        <ul>
-          <CatText>Expanded On-chain Proposals</CatText>
-        </ul>
-        <ul>
-          <CatText>Community Farming Events</CatText> 
-        </ul>
-        <ul>
-          <CatText>Learner's Journey</CatText>
-        </ul>
-      </MyVerticalTimelineElementRight>
-
     </MyVerticalTimeline>
   )
 }
@@ -179,26 +160,26 @@ const CompletedTimeline = styled.div`
     position: absolute;
     top: 0;
     left: 17px;
-    height: 81.5%;
+    height: 89%;
     width: 5px;
     background: ${props => `${props.theme.colors.orange}`};
 
     @media(min-width: 343px){
       /* fixes length of line so it doesn't show past icon */
-      height: 81.5%;
+      height: 86%;
     }
     @media(min-width: 487px){
       /* fixes length of line so it doesn't show past icon */
-      height: 82.5%;
+      height: 88%;
     }
     @media(min-width: 640px){
       /* fixes length of line so it doesn't show past icon */
-      height: 83%;
+      height: 89%;
     }
     
     /* moves the orange line to the center */
     @media(min-width: 1170px){
-      height: 81.5%;
+      height: 91%;
       left: 49.80%;
     }
   }
