@@ -10,8 +10,8 @@ function Community() {
         <TextSection>
           <Header>Our <OrangeText>Vision</OrangeText></Header>
           <TextParagraph>
-            Y-Foundry DAO's aim is to bring about a new type of yield-enhancer that evolves beyond the need for reward-based high-inflationary yield farming,
-            and rises to the current challenges plaguing yield-generating strategies and the Terra ecosystem writ large.
+            Y-Foundry DAO brings about a new type of immutable governance and community strategy funding that evolves beyond the need for reward-based high-inflationary yield farming,
+            and rises to the current challenges of providing financial tools in an ever-evolving blockchain ecosystem.
           </TextParagraph>
         </TextSection>
         <OrangeBars src={orangeBars} alt="" />

@@ -116,7 +116,19 @@ function RoadmapTimeline() {
       </MyVerticalTimelineElementRight>
 
       <MyVerticalTimelineElementLeft position='left'>
-        <Date>October 2022</Date>
+        <Date >October 2022</Date>
+        <Category >User Experience</Category>
+        <ul>
+          <CatText>UI / UX Development</CatText>
+        </ul>
+          <Category >Testing</Category>
+        <ul>
+          <CatText>Terra 2 Testnet + Community Testing</CatText>
+        </ul>
+      </MyVerticalTimelineElementLeft>
+
+      <MyVerticalTimelineElementRight position='right'>
+        <Date>November 2022</Date>
         <Category>$YFD Economic Flywheel</Category>
         <ul>
           <CatText><a href="https://medium.com/@yfoundry/y-foundry-terra-phoenix-pre-launch-announcement-298a1702196f" target="_blank">$YFD Token Genesis Event (TGE)</a></CatText>          
@@ -131,7 +143,7 @@ function RoadmapTimeline() {
         <ul>
           <CatText>Vault Marketplace</CatText>          
         </ul>
-      </MyVerticalTimelineElementLeft>
+      </MyVerticalTimelineElementRight>
     </MyVerticalTimeline>
   )
 }

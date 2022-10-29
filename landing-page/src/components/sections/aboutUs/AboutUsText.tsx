@@ -5,15 +5,20 @@ function AboutUsText() {
     <Section>
       <Header>About <Orange>Us</Orange></Header>
       <P>
-        Y-Foundry DAO is a decentralized framework designed to govern, manage and align incentives of
-        community owned vaults with the long-term goals of any blockchain ecosystem
-        (network utilization, total value locked (TVL) and user growth).
+        Y-Foundry DAO is projects getting made and builders getting paid. Developed by a community that thinks core teams running a protocol are relics from a distant past.
       </P>
       <br />
       <P>
-        Y-Foundry DAO has been designed to do this by encouraging the crafting of bespoke strategies
-        that utilize the assets and services of existing protocols in new, creative ways to generate
-        sustainable yield, while keeping reliance on reward emissions to a minimum.
+        The protocol for creating, funding, launching community ideas in an ecosystem of similarly aligned interests across diverse backgrounds working together to build the ultimate idea launchpad for all of Web3.
+      </P>
+      <P>
+        Open-source.
+      </P>
+      <P>
+        Transparent and accessible.
+      </P>
+      <P>
+        Trustless.      
       </P>
     </Section>
   );
