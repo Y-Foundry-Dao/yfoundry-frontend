@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import logo from 'assets/horizontal_logo_orange&white.svg';
 import blueY from 'assets/blue_logo2.svg';
 
-const text = `Immutably Good Goverance \n and \n Community Strategy Funding`;
+const text = `Immutably Good Goverance\nand\nCommunity Strategy Funding`;
 
 function HeroSection() {
   return (
