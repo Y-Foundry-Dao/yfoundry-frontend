@@ -7,7 +7,7 @@ function SocialIcons() {
     <Ul>
       {Object.values(socialInfo).map((social) => {
         return (
-          <Li>
+          <Li key={social.link}>
             <Link href={social.link} target="_blank" rel="noreferrer" aria-label="Telegram">
               {social.iconFooter}
             </Link>
