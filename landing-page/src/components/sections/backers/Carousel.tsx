@@ -16,15 +16,15 @@ import lambda from 'assets/LambdaLogo.png';
 import thorstarter from 'assets/Thorstarter.svg';
 import northRock from 'assets/NorthRockDigital.png';
 
-let logos: { asset: string; altText: string; hasPadding?: boolean }[] = [
-  { "asset": hyperion, "altText": 'Hyperion Logo', "hasPadding": false },
-  { "asset": apollo, "altText": 'Apollo Logo', "hasPadding": false },
-  { "asset": deepVentures, "altText": 'Deep Ventures Logo', "hasPadding": true },
-  { "asset": cetaceanCapital, "altText": 'Cetacean Capital Logo',"hasPadding": false },
-  { "asset": lambda, "altText": 'Lambda Logo', "hasPadding": false },
-  { "asset": thorstarter, "altText": 'Thorstarter Logo', "hasPadding": false },
-  { "asset": xVentures, "altText": '0xVentures Logo', "hasPadding": false },
-  { "asset": northRock, "altText": 'North Rock Digital Logo', "hasPadding": false },
+let logos: {logoId: number; asset: string; altText: string; hasPadding?: boolean }[] = [
+  { "logoId": 1, "asset": hyperion, "altText": 'Hyperion Logo', "hasPadding": false },
+  { "logoId": 2, "asset": apollo, "altText": 'Apollo Logo', "hasPadding": false },
+  { "logoId": 3, "asset": deepVentures, "altText": 'Deep Ventures Logo', "hasPadding": true },
+  { "logoId": 4, "asset": cetaceanCapital, "altText": 'Cetacean Capital Logo',"hasPadding": false },
+  { "logoId": 5, "asset": lambda, "altText": 'Lambda Logo', "hasPadding": false },
+  { "logoId": 6, "asset": thorstarter, "altText": 'Thorstarter Logo', "hasPadding": false },
+  { "logoId": 7, "asset": xVentures, "altText": '0xVentures Logo', "hasPadding": false },
+  { "logoId": 8, "asset": northRock, "altText": 'North Rock Digital Logo', "hasPadding": false },
 ];
 
 // parameters:
@@ -65,14 +65,14 @@ function Carousel() {
         },
       }}
     >
-      {logos.map((logo, id) => (
+      {logos.map((logo) => {
+        return (
         // Note: data-swiper-autoplay - sets the individual delay for the slides
-        <span>
-            <SwiperSlide key={id} data-swiper-autoplay="1200">
-              <BackerLogoWrapper key={logo.altText} asset={logo.asset} altLogoText={logo.altText} hasPadding={logo.hasPadding} />
-            </SwiperSlide>
-        </span>
-      ))}
+          <SwiperSlide key={logo.asset} data-swiper-autoplay="1200">
+            <BackerLogoWrapper asset={logo.asset} altLogoText={logo.altText} hasPadding={logo.hasPadding} />
+          </SwiperSlide>
+        )
+      })}
     </StyledSwiper>
   );
 }
