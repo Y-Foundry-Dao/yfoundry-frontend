@@ -9,8 +9,10 @@ interface ComponentProps{
 
 interface StyleProps {
   open: boolean,
-  onClick: Function
+  onClick: Function,
+  children: React.ReactNode
 };
+
 
 const BurgerIcon: React.FC <ComponentProps> = ({open, setOpen}: ComponentProps) => {
   return (

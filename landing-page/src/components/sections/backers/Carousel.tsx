@@ -5,6 +5,8 @@ import { A11y, Autoplay, FreeMode } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { BackerLogoWrapper } from './BackerLogoWrapper';
 
+import 'swiper/css';
+
 import xVentures from 'assets/0xVenturesWhite.svg';
 import apollo from 'assets/Apollo.png';
 import cetaceanCapital from 'assets/CetaceanCapital.png';
