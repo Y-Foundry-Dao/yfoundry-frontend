@@ -20,7 +20,7 @@ function RoadmapTimeline() {
         </ul>
         <ul>
           <CatText>
-	          <a href="https://medium.com/@yfoundry/the-yfd-manifesto-c723a5adf888"  rel="noreferrer" target="_blank">The YFD Manifesto released</a>
+	          The YFD Manifesto released
           </CatText>
         </ul>
       </MyVerticalTimelineElementRight>
@@ -48,7 +48,7 @@ function RoadmapTimeline() {
         </ul>
 	<Category>Tokenomics</Category>
 	<ul>
-	  <CatText><a href="https://medium.com/@yfoundry/introduction-to-yfd-token-82270ca521d3" rel="noreferrer" target="_blank">$YFD Tokenomics Explained</a></CatText>
+	  <CatText>$YFD Tokenomics Explained</CatText>
 	</ul>
       </MyVerticalTimelineElementRight>
 
@@ -128,22 +128,50 @@ function RoadmapTimeline() {
       </MyVerticalTimelineElementLeft>
 
       <MyVerticalTimelineElementRight position='right'>
-        <Date>November 2022</Date>
+        <Date >November 2022</Date>
+        <Category >Vault Partnerships</Category>
+        <ul>
+          <CatText><a href="https://twitter.com/depegn"  rel="noreferrer" target="_blank">Depeg Nation</a></CatText>
+        </ul>
+        <ul>
+          <CatText><a href="https://twitter.com/terra_bots_io"  rel="noreferrer" target="_blank">TerraBots</a></CatText>
+        </ul>
+        <ul>
+          <CatText><a href="https://twitter.com/tradooorsnft"  rel="noreferrer" target="_blank">Tradooors</a></CatText>
+        </ul>
+        <Category>UI / UX</Category>
+        <ul>
+          <CatText>Development Completion</CatText>
+        </ul>
+        <ul>
+          <CatText>Public Testing</CatText>
+        </ul>
+          <Category >Smart Contract Audits</Category>
+        <ul>
+          <CatText><a href="https://www.scv.services/"  rel="noreferrer" target="_blank">Performed by SCV Services</a></CatText>
+        </ul>
+      </MyVerticalTimelineElementRight>
+
+      <MyVerticalTimelineElementLeft position='left'>
+        <Date>December 2022</Date>
         <Category>$YFD Economic Flywheel</Category>
         <ul>
           <CatText><a href="https://medium.com/@yfoundry/y-foundry-terra-phoenix-pre-launch-announcement-298a1702196f" rel="noreferrer" target="_blank">$YFD Token Genesis Event (TGE)</a></CatText>          
         </ul>        
         <Category>MVP Launch</Category>
         <ul>
-          <CatText>Community Vault Proposals</CatText>          
+          <CatText>Community Vault Proposals</CatText>
         </ul>
         <ul>
-          <CatText><a href="https://medium.com/@yfoundry/yfds-novel-mechanics-governance-non-custodial-claims-eb7683608abf" rel="noreferrer" target="_blank">On-chain Governance</a></CatText>
+          <CatText>DAO Governance Activities</CatText>
         </ul>
         <ul>
           <CatText>Vault Marketplace</CatText>          
         </ul>
-      </MyVerticalTimelineElementRight>
+        <ul>
+          <CatText><a href="https://medium.com/@yfoundry/yfds-novel-mechanics-governance-non-custodial-claims-eb7683608abf" rel="noreferrer" target="_blank">On-chain Governance</a></CatText>
+        </ul>
+      </MyVerticalTimelineElementLeft>
     </MyVerticalTimeline>
   )
 }
