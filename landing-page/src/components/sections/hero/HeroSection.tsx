@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import logo from 'assets/horizontal_logo_orange&white.svg';
 import blueY from 'assets/blue_logo2.svg';
 
-const text = `Immutably Good Goverance\nand\nCommunity Strategy Funding`;
+const text = `Propose. Vote. Build.`;
 
 function HeroSection() {
   return (
@@ -74,25 +74,24 @@ const Logo = styled.img`
 const HeaderText = styled.h1`
   font-size: 1rem;
   font-weight: 400;
-  line-height: 24px;
   text-align: justify;
   white-space: pre-wrap;
   margin-bottom: 20px;
 
   @media(min-width: 600px){
-    font-size: 1.1rem;
+    font-size: 2.1rem;
   }
   @media(min-width: 756px){
-    font-size: 1.2rem;
+    font-size: 2.2rem;
   }
   @media(min-width: 1024px){
-    font-size: 1.25em;
+    font-size: 2.25rem;
   }
   @media(min-width: 1440px){
-    font-size: 1.4rem;
+    font-size: 2.4rem;
   }
   @media(min-width: 1760px){
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     line-height: 24px;
   }
 `
