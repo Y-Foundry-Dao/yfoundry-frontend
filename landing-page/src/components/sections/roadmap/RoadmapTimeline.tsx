@@ -154,10 +154,7 @@ function RoadmapTimeline() {
 
       <MyVerticalTimelineElementLeft position='left'>
         <Date>December 2022</Date>
-        <Category>$YFD Economic Flywheel</Category>
-        <ul>
-          <CatText><a href="https://medium.com/@yfoundry/y-foundry-terra-phoenix-pre-launch-announcement-298a1702196f" rel="noreferrer" target="_blank">$YFD Token Genesis Event (TGE)</a></CatText>          
-        </ul>        
+        <Category>$YFD Token Genesis Event (TGE)</Category>
         <Category>MVP Launch</Category>
         <ul>
           <CatText>Community Vault Proposals</CatText>
@@ -200,26 +197,26 @@ const CompletedTimeline = styled.div`
     position: absolute;
     top: 0;
     left: 17px;
-    height: 89%;
+    height: 90%;
     width: 5px;
     background: ${props => `${props.theme.colors.orange}`};
 
     @media(min-width: 343px){
       /* fixes length of line so it doesn't show past icon */
-      height: 86%;
+      height: 87%;
     }
     @media(min-width: 487px){
       /* fixes length of line so it doesn't show past icon */
-      height: 88%;
+      height: 89%;
     }
     @media(min-width: 640px){
       /* fixes length of line so it doesn't show past icon */
-      height: 89%;
+      height: 90%;
     }
     
     /* moves the orange line to the center */
     @media(min-width: 1170px){
-      height: 91%;
+      height: 92%;
       left: 49.80%;
     }
   }
