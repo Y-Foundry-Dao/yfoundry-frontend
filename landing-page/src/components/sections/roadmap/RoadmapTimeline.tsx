@@ -33,7 +33,7 @@ function RoadmapTimeline() {
         </ul>
         <Category>Community Building</Category>
         <ul>
-          <CatText><a href="https://discord.gg/yfd" rel="noreferrer" target="_blank">Community Discord</a></CatText>
+          <CatText><a href="https://discord.yfoundry.io" rel="noreferrer" target="_blank">Community Discord</a></CatText>
         </ul>
       </MyVerticalTimelineElementLeft>
 
@@ -153,22 +153,41 @@ function RoadmapTimeline() {
       </MyVerticalTimelineElementRight>
 
       <MyVerticalTimelineElementLeft position='left'>
-        <Date>December 2022</Date>
-        <Category>$YFD Token Genesis Event (TGE)</Category>
-        <Category>MVP Launch</Category>
+        <Date>February 2023</Date>
+        <Category>Audit Remediations Complete</Category>
         <ul>
-          <CatText>Community Vault Proposals</CatText>
+          <CatText>
+            <a href="https://github.com/Y-Foundry-Dao/audits-public/blob/main/Y-Foundry%20DAO%20-%20YFD%20Contracts%20-%20Audit%20Report%20v1.0%20.pdf" rel="noreferrer" target="_blank">
+              SCV Audit Report Released
+            </a>
+          </CatText>
         </ul>
-        <ul>
-          <CatText>DAO Governance Activities</CatText>
-        </ul>
-        <ul>
-          <CatText>Vault Marketplace</CatText>          
-        </ul>
-        <ul>
-          <CatText><a href="https://medium.com/@yfoundry/yfds-novel-mechanics-governance-non-custodial-claims-eb7683608abf" rel="noreferrer" target="_blank">On-chain Governance</a></CatText>
-        </ul>
+        <Category>Station Wallet Integration</Category>
       </MyVerticalTimelineElementLeft>
+      <MyVerticalTimelineElementRight position='right'>
+        <Date >March 2023</Date>
+        <Category >Comdex Deployment Agreement</Category>
+        <ul>
+          <CatText><a href="https://forum.comdex.one/t/bringing-yfd-to-comdex-community-strategy-factory-create-custom-strategies-on-comdex/800"  rel="noreferrer" target="_blank">Forum Proposal</a></CatText>
+        </ul>
+        <ul>
+          <CatText><a href="https://www.mintscan.io/comdex/proposals/116"  rel="noreferrer" target="_blank">On-Chain Proposal</a></CatText>
+        </ul>
+        <ul>
+          <CatText><a href="https://comdex.one/"  rel="noreferrer" target="_blank">Comdex Website</a></CatText>
+        </ul>
+      </MyVerticalTimelineElementRight>
+      <MyVerticalTimelineElementLeft position='left'>
+        <Date >April 2023</Date>
+        <Category >Juno Testnet Deployment</Category>
+        <ul>
+          <CatText><a href="https://dapp-test.yfoundry.io"  rel="noreferrer" target="_blank">Juno Testnet</a></CatText>
+        </ul>
+        <Category >IBC Bridge Integration</Category>
+      </MyVerticalTimelineElementLeft>
+      <MyVerticalTimelineElementRight position='right'>
+        <Date>May 2023</Date>
+      </MyVerticalTimelineElementRight>
     </MyVerticalTimeline>
   )
 }
@@ -203,20 +222,20 @@ const CompletedTimeline = styled.div`
 
     @media(min-width: 343px){
       /* fixes length of line so it doesn't show past icon */
-      height: 87%;
+      height: 92%;
     }
     @media(min-width: 487px){
       /* fixes length of line so it doesn't show past icon */
-      height: 89%;
+      height: 94%;
     }
     @media(min-width: 640px){
       /* fixes length of line so it doesn't show past icon */
-      height: 90%;
+      height: 96%;
     }
     
     /* moves the orange line to the center */
     @media(min-width: 1170px){
-      height: 92%;
+      height: 98%;
       left: 49.80%;
     }
   }

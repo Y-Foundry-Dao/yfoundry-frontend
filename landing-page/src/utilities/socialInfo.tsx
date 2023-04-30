@@ -73,25 +73,25 @@ const StyledTelegramFooter = styled(Telegram)`
 
 const socialInfo = {
   discord: {
-    link: "https://discord.gg/yfd", 
+    link: "https://discord.yfoundry.io", 
     iconVision: <StyledDiscordVision />,
     iconFooter: <StyledDiscordFooter />,
     text: "discord"
   },
   telegram: {
-    link: "https://t.me/yfoundrydao", 
+    link: "https://telegram.yfoundry.io", 
     iconVision: <StyledTelegramVision />,
     iconFooter: <StyledTelegramFooter />,
     text: "telegram"
   },
   twitter: {
-    link: "https://twitter.com/YFoundryDAO", 
+    link: "https://twitter.yfoundry.io", 
     iconVision: <StyledTwitterVision />,
     iconFooter: <StyledTwitterFooter />,
     text: "twitter"
   }
 }
 
-export const medium = "https://medium.com/@yfoundry/"
+export const medium = "https://blog.yfoundry.io/"
 
 export default socialInfo
