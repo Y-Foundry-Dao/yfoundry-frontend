@@ -9,7 +9,7 @@ function NavLinks() {
         <li><Link smooth to="about" >about</Link></li>
         <li><Link smooth to="medium" >medium</Link></li>
         <li><Link smooth to="community" >join community</Link></li>
-        <li><a href="https://app.dework.xyz/y-foundry-dao" rel="noreferrer" target="_blank">bounties</a></li>
+        <li><a href="https://work.yfoundry.io/" rel="noreferrer" target="_blank">bounties</a></li>
         <li><a href="https://brand.yfoundry.io/">brand kit</a></li>
         <li><Link smooth to="roadmap" >progress</Link></li>
       </ul>
