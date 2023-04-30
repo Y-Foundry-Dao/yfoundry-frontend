@@ -33,7 +33,7 @@ function RoadmapTimeline() {
         </ul>
         <Category>Community Building</Category>
         <ul>
-          <CatText><a href="https://discord.gg/yfd" rel="noreferrer" target="_blank">Community Discord</a></CatText>
+          <CatText><a href="https://discord.yfoundry.io" rel="noreferrer" target="_blank">Community Discord</a></CatText>
         </ul>
       </MyVerticalTimelineElementLeft>
 
