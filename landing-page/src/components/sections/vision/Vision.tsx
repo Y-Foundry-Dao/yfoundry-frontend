@@ -10,8 +10,34 @@ function Community() {
         <TextSection>
           <Header>Our <OrangeText>Vision</OrangeText></Header>
           <TextParagraph>
-            Y-Foundry DAO brings about a new type of immutable governance and community strategy funding that evolves beyond the need for reward-based high-inflationary yield farming,
-            and rises to the current challenges of providing financial tools in an ever-evolving blockchain ecosystem.
+            If you have an idea, the Y-Foundry platform and community can help make it a reality.
+            <br /><br />
+            <u>Launch initiatives like:</u>
+            <br /><br />
+            <VisionList>
+              <VisionListItem>
+                Automating DeFi strategies such as auto-compounding, arbitrage, or hedging
+              </VisionListItem>
+              <VisionListItem>
+                Releasing an NFT collection
+              </VisionListItem>
+              <VisionListItem>
+                Building a dApp
+              </VisionListItem>
+              <VisionListItem>
+                Funding a charitable idea
+              </VisionListItem>
+              <VisionListItem>
+                Creating grants for open-source development
+              </VisionListItem>
+              <VisionListItem>
+                Starting an off-chain business
+              </VisionListItem>
+            </VisionList>
+            <br /><br />
+              Fund ideas and share in the success of the project. Discover and complete interesting tasks to earn reputation points.
+            <br /><br />
+              Work on projects funded and supported by the community with payment guaranteed by smart contracts.
           </TextParagraph>
         </TextSection>
         <OrangeBars src={orangeBars} alt="" />
@@ -36,6 +62,17 @@ const Section = styled.section`
     margin-bottom: 4%;
     margin-top: 8%;
   }
+`
+
+const VisionList = styled.ul`
+  list-style-type: square;
+  list-style-position: outside;
+  display: grid;
+`
+
+const VisionListItem = styled.li`
+  margin-left: 10%;
+  padding-bottom: 2%;
 `
 
 const Div = styled.div`
