@@ -5,21 +5,21 @@ function AboutUsText() {
     <Section>
       <Header>About <Orange>Us</Orange></Header>
       <P>
-        Y-Foundry DAO is projects getting made and builders getting paid. Developed by a community that thinks core teams running a protocol are relics from a distant past.
-      </P>
-      <br />
-      <P>
-        The protocol for creating, funding, launching community ideas in an ecosystem of similarly aligned interests across diverse backgrounds working together to build the ultimate idea launchpad for all of Web3.
-      </P>
-      <P>
-        Open-source.
-      </P>
-      <P>
-        Transparent and accessible.
-      </P>
-      <P>
-        Trustless.      
-      </P>
+      Y-Foundry is a platform connecting the community with creators to propose, vote, and build their ideas.
+      <br /><br />
+      <b>Developed by the community —
+        <br />
+        Owned by the community
+      </b>
+      <br /><br />
+      Bringing an idea to market requires massive amounts of effort to coordinate developers, creators, and capital.
+      <br /><br />
+      Y-Foundry seeks to provide creators with the means to connect with the community and launch their projects.
+      <br /><br />
+      Anyone with a great idea can propose it to the Y-Foundry DAO, receive support to expand on their ideas, and find additional resources within the community.
+      <br /><br />
+      Y-Foundry enables creators and developers to connect, ideate, fund, and build the community-owned crypto projects of tomorrow.
+    </P>
     </Section>
   );
 }

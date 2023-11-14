@@ -186,8 +186,16 @@ function RoadmapTimeline() {
         <Category >IBC Bridge Integration</Category>
       </MyVerticalTimelineElementLeft>
       <MyVerticalTimelineElementRight position='right'>
-        <Date>May 2023</Date>
+        <Date>September 2023</Date>
+        <Category >Terra $LUNA Governance Integration</Category>
       </MyVerticalTimelineElementRight>
+      <MyVerticalTimelineElementLeft position='left'>
+        <Date >November 2023</Date>
+        <Category >Y-Foundry Updated Testnet</Category>
+        <ul>
+          <CatText><a href="https://dapp-test.yfoundry.io"  rel="noreferrer" target="_blank">Terra Testnet</a></CatText>
+        </ul>
+      </MyVerticalTimelineElementLeft>
     </MyVerticalTimeline>
   )
 }
